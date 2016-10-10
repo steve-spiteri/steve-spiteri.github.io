@@ -21,9 +21,30 @@
      <ul><li><a href="http://blog.mcmelectronics.com/post/Raspberry-Pi-3-GPIO-Pin-Layout#.V_sA0iQ_tlw">Raspberry Pi 3 GPIO Pin Layout Diagram</a> – Shows the pin number and names of the Raspberry Pi 3 GPIO pins.</li>
       <li><a href="https://beebotte.com/tutorials/monitor_humidity_and_temperature_with_raspberrypi">DHT11 to Raspberry Pi</a> – A tutorial on how to connect a DHT11 humidity/temperature sensor to a Raspberry Pi. The DHT11 I have purchased is not identical but this was helpful in identifying which GPIO pins to interface with.</li>
       <li><a href="https://learn.adafruit.com/using-the-bmp085-with-raspberry-pi/overview">BMP085 to Raspberry Pi</a> – A tutorial on how to connect an Adafruit BMP085 barometric sensor to a Raspberry Pi. The barometric pressure sensor I have purchased is not identical but this was helpful in identifying the Raspberry Pi’s I2C GPIO pins.</li>
-      <li><a href="https://en.wikipedia.org/wiki/Lux">What is Lux</li></ul></li>
+      <li><a href="https://en.wikipedia.org/wiki/Lux">What is Lux</a></li></ul></li>
   </ul>
   </p>
+ <p>DHT11 Humidity Sensor</p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="312" valign="top"><br>
+      <img width="209" height="157" src="http://modtronix.com/images/detailed/1/mod-dht11.jpg"></td>
+    <td width="312" valign="top"><p>+             3.3v Input<br>
+      -              Ground<br>
+      S              Signal to GPIO 4 (pin7)</p></td>
+  </tr>
+</table>
+ <p>Octopus Barometric Pressure Sensor</p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="312" valign="top"><br>
+      <img width="162" height="162" src="http://www.robotshop.com/media/catalog/product/cache/7/image/800x800/9df78eab33525d08d6e5fb8d27136e95/o/c/octopus-barometric-pressure-sensor-brick.jpg"></td>
+    <td width="312" valign="top"><p>SC           IICClock to GPIO 3    (pin5)<br>
+      SD           IICData to GPIO 2    (pin3)<br>
+      V             3.3v input (but    has a regulator that can accept 5v)<br>
+      G             Ground</p></td>
+  </tr>
+</table>
  </SECTION>
  
  <SECTION ID="Section_5">
