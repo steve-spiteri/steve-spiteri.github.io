@@ -1,0 +1,309 @@
+<ARTICLE ID="Article_1">
+ <HEADER ID="Header_Article_1">
+  <H2>Solar Panel Project Build Instructions</H2>
+ </HEADER>
+
+<br>
+ 
+<SECTION ID="introduction">
+	<H3>Introduction</H3>
+    <hr>
+    <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/final.jpg?raw=true" width="275" height="275" alt=""/>
+ 	<p>Accessing solar panel data can be difficult. Many homeowners may not be aware of how much power is being generated. Even if they are aware, they may have questions. For example, “Why is my solar panel generating so little power?”. The Solar Panel Project allows weather data to be viewed for analysis so a comparison can be made by homeowners to see how weather affects power generation.
+    </p>
+    <center><img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/SystemDiagram.png?raw=true" alt=""/></center>
+ </SECTION>
+
+<br>
+
+<SECTION ID="bill">
+	<H3>Requirements/Materials/Budget</H3>
+    <hr>
+    <p>Before you begin it is recommended you possess the following:</p>
+    <ul>
+    	<li>Beginner soldering skills. <b>Practice safety when soldering. Wear protective eye wear and solder in a well ventilated room as soldering produces hazardous fumes.</b></li>
+        <li>Knowledge of reading schematic diagrams.</li>
+        <li>Beginner knowledge of Unix based operating systems.</li>
+        <li>Knowledge on how to operate a multimeter.</li>
+        <li>A USB mouse and keyboard.</li>
+    </ul>
+    <br>
+    <table width="100%" border="0">
+  <tr>
+    <th scope="col">Item</th>
+    <th scope="col">Source</th>
+    <th scope="col">Price</th>
+  </tr>
+  <tr>
+    <td>Raspberry Pi 3 Complete Starter Kit - 32 GB Edition (PI3-STR32-C4-BLK)</td>
+    <td><a href="http://www.canakit.com/raspberry-pi-3-starter-kit.html">CanaKit</a></td>
+    <td>$125.89</td>
+  </tr>
+  <tr>
+    <td><b>Sensors</b></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Octopus Barometric Pressure Sensor Brick (RB-Elf-208)</td>
+    <td><a href="http://www.robotshop.com/ca/en/octopus-barometric-pressure-sensor-brick.html">RobotShop</a></td>
+    <td>$15.68</td>
+  </tr>
+  <tr>
+    <td>Electronic Brick DHT11 Humidity / Temperature Sensor (RB-Ite-59)</td>
+    <td><a href="http://www.robotshop.com/ca/en/electronic-brick-humidity-temperature-sensor.html">RobotShop</a></td>
+    <td>$10.84</td>
+  </tr>
+  <tr>
+    <td>Solar Cell (237344)</td>
+    <td><a href="http://sayal.com/STORE/View_SPEC.asp?SKU=237344">Sayal</a></td>
+    <td>$6.72</td>
+  </tr>
+  <tr>
+    <td><b>Parts</b></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Jumper Wires 7.8" M/F (10pk) (RB-Dfr-456)</td>
+    <td><a href="http://www.robotshop.com/ca/en/jumper-wires-78-m-f-10pk.html">RobotShop</a></td>
+    <td>$8.88</td>
+  </tr>
+  <tr>
+    <td>M3 x 30mm Nylon Standoffs Kit (10) (RB-Dfr-290)</td>
+    <td><a href="http://www.robotshop.com/ca/en/m3-x-30mm-nylon-standoffs-kit-10.html">RobotShop</a></td>
+    <td>$9.46</td>
+  </tr>
+  <tr>
+    <td>10k Resistor</td>
+    <td>Humber Parts Crib</td>
+    <td>$0.10</td>
+  </tr>
+  <tr>
+    <td><b>Additional</b></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Modular Sensor Hat</td>
+    <td><a href="http://humber.zone/">Humber College - Prototype Lab</a></td>
+    <td>$35.00</td>
+  </tr>
+  <tr>
+    <td>Supplemental PCB</td>
+    <td><a href="http://humber.zone/">Humber College - Prototype Lab</a></td>
+    <td>$10.00</td>
+  </tr>
+  <tr>
+    <td>40 Position Receptacle Connector (952-1369-5-ND)</td>
+    <td><a href="http://www.digikey.ca/product-detail/en/harwin-inc/M50-3002045/952-1369-5-ND/2264350">DigiKey</a></td>
+    <td>$14.23</td>
+  </tr>
+  <tr>
+    <td>2 x 5 Position Header (S6103-ND)</td>
+    <td><a href="http://www.digikey.ca/product-search/en?keywords=s6103-nd">DigiKey</a></td>
+    <td>$10.01</td>
+  </tr>
+  <tr>
+    <td>Acrylic Case</td>
+    <td><a href="http://humber.zone/">Humber College - Prototype Lab</a></td>
+    <td>$5.00</td>
+  </tr>
+  <tr>
+    <td>Lead Free Solder (100g) (RB-Spa-1097)</td>
+    <td><a href="http://www.robotshop.com/ca/en/lead-free-solder-100g.html">RobotShop</a></td>
+    <td>$17.78</td>
+  </tr>
+  <tr>
+    <td>Testor's Cement For Plastic Models (212607)</td>
+    <td><a href="http://sayal.com/STORE/View_SPEC.asp?SKU=212607">Sayal</a></td>
+    <td>$3.95</td>
+  </tr>
+  <tr>
+    <td><b>Tools</b>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td></td>
+  </tr>
+  <tr>
+    <td>M-1000E Compact Digital Multimeter (RB-Ibo-30)</td>
+    <td><a href="http://www.robotshop.com/ca/en/elenco-sr-1-standard-25w-pencil-soldering-iron.html">RobotShop</a></td>
+    <td>$23.19</td>
+  </tr>
+  <tr>
+    <td>SR-1 Standard 25W Pencil Soldering Iron (RB-Ibo-112)</td>
+    <td><a href="http://www.robotshop.com/ca/en/m-1000e-compact-digital-multimeter.html">RobotShop</a></td>
+    <td>$13.95</td>
+  </tr>
+  <tr>
+    <td><b>Total</b></td>
+    <td>&nbsp;</td>
+    <td>$310.68</td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+
+<p>The Humber College - Prototype Lab will require you to provide the necessary files for the Modular Sensor Hat, Supplemental Printed Circuit Board, and Acrylic Case. They can be found here:
+<br><a href="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/documents/ModularSenseHatStripped-master.zip?raw=true">Download ModularSenseHatStripped-master.zip</a> - This archive contains the necessary Eagle CAD files for the Humber College - Prototype Lab to produce the Modular Sensor Hat.
+<br><a href="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/documents/supplementalboard.zip?raw=true">Download supplementalboard.zip</a> - This archive contains the necessary Eagle CAD files for the Humber College - Prototype Lab to produce the Supplemental Printed Circuit Board.
+<br><a href="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/documents/solar_box.zip?raw=true">Download solar_box.zip</a> - This archive contains the necessary COREL Draw files for the Humber College - Prototype Lab to produce the Acrylic Case.</p>
+<p>The YL-40 is equipped with a real-time clock. In order to maintain the time even after powering off it makes use of a CR2032 battery. This is not required for the Solar Panel Project. Do not insert a CR2032 battery into the YL-40. <b>Inserting a battery may cause damage.</b></p>
+</SECTION>
+ 
+<br>
+ 
+<SECTION ID="time">
+	<H3>Time Commitment</H3>
+    <hr>
+    <p>2 hours and 15 minutes - 3 hours <i></i></p>
+    <table width="100%" border="0">
+  <tr>
+    <td>Soldering</td>
+    <td>30 minutes - 1 hour<br></td>
+  </tr>
+  <tr>
+    <td>Unit Testing</td>
+    <td>15 minutes - 30 minutes<br></td>
+  </tr>
+  <tr>
+    <td>Mechanical Assembly</td>
+    <td>10 minutes</td>
+  </tr>
+  <tr>
+    <td>Acrylic Case Assembly</td>
+    <td>20 minutes</td>
+  </tr>
+  <tr>
+    <td>Raspberry Pi 3 Rasbian Installation</td>
+    <td>1 hour</td>
+  </tr>
+</table>
+</SECTION>
+  
+<br>
+ 
+<SECTION ID="pcb">
+	<H3>PCB/Soldering</H3>
+    <hr>
+    <table width="100%" border="0">
+  <tr>
+    <th scope="col"><img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/wsensorhat.jpg?raw=true" width="275" height="275" alt=""/></th>
+    <th scope="col"><img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/pcb.jpg?raw=true" width="275" height="275" alt=""/></th>
+  </tr>
+</table>
+
+    <ul>
+    	<li>Before you begin soldering scrub the printed circuit boards with a scouring pad to remove any dust or debris. Scouring the printed circuit boards prior to soldering is an important step and will allow the solder to adhere more easily.</li>
+    	<li>Ensure that the correct components have been included with your Modular Sensor Hat from the Humber College - Prototype lab. You should have one 40 position receptacle connector, two 5 position headers, one 1k resistor, two 3.9k resistors, two 4.7k resistors, four 100 nF capacitors, one 10 uF capacitor, two mosfet transistors, and one LED. You should also have brick, YL-40. This is the component responsible for analog-to-digital conversion and reading light levels. This will not be soldered to the modular sensor hat.</li>
+        <li>All components are soldered to the topside of the printed circuit board <b>except for the 40 position receptacle connector.</b> The pins for the 40 position receptacle connector are put through the board from the underside. Solder the modular sensor hat according to this diagram.
+        <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/sensorhatboard.PNG?raw=true" alt=""/></li>
+        <li>Ensure that you have the correct components for the Supplemental Printed Circuit Board. You should have one 40 position receptacle connecter, two 5 position headers, and one 10k resistor. Similarly, the 40 position receptacle connector is soldered in the same way on the supplemental printed circuit board. The 5 position header is soldered to the topside. Solder the supplemental printed circuit board according to this diagram.
+        <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/custom_board.png?raw=true" alt=""/></li>
+    </ul>
+</SECTION>
+  
+<br>
+ 
+<SECTION ID="unit">
+	<H3>Unit Testing</H3>
+    <hr>
+    <p>Before powering up the Raspberry Pi 3 it is important to independently scrutinize your now soldered printed circuit boards for proper operation. If the board is soldered incorrectly you will cause irreversible damage to your Raspberry Pi. To ensure that you soldered the printed circuit boards correctly you will make use of the multimeter. Analyze the diagrams from PCB/Soldering and identify which position in the 5 position headers correlate to which position in the 40 position receptacle connector. Using the ohm meter functionality of the multimeter you should examine there is zero resistance between these two points. If along the trace/path solder has splashed and is touching the copper of the printed circuit board you will examine infinite resistance.</p>
+</SECTION>
+
+<br>
+ 
+<SECTION ID="mechanical">
+	<H3>Mechanical Assembly</H3>
+    <hr>
+    <ul>
+    	<li>Fasten the Raspberry Pi 3 to the bottom of the case using the M3 x 30mm Nylon Standoffs Kit. <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step1.jpg?raw=true" alt=""/></li>
+        <li>Plug the modular sensor hat on the GPIO pins of the Raspberry Pi 3 so the board sits over top of the Raspberry Pi.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step2.jpg?raw=true" alt=""/></li>
+        <li>Plug the supplemental printed circuit board on the pins of the modular sensor hat so the board does not sit atop the modular sensor hat.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step3.jpg?raw=true" alt=""/></li>
+        <li>Insert the YL-40 into the 5 position head labeled PCF - ADC on the modular sensor hat.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step4.jpg?raw=true" alt=""/></li>
+        <li>Insert the Octopus Barometric Pressure Sensor Brick into the 5 position header labeled DS-RTC on the modular sensor hat.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step5.jpg?raw=true" alt=""/></li>
+        <li>Insert the Electronic Brick DHT11 Humidity / Temperature Sensor into the 5 position header labeled JP4 on the supplemental printed circuit board. <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step6.jpg?raw=true" alt=""/></li>
+        <li>Using one of the Jumper Wires 7.8" M/F, insert the female end into the 4th position on the 5 position header labeled JP1 on the supplemental printed circuit board. <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step7.jpg?raw=true" alt=""/></li>
+        <li>Attach the male end to the pin labeled AIN2 on the YL-40.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step8.jpg?raw=true" alt=""/></li>
+        <img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/step9.jpg?raw=true" alt=""/>
+        <li>Assemble the Acrylic Case using the Testor's Cement For Plastic Models. <b>Do not fasten the top.</b></li>
+        <li>Feed the wires of the Solar Cell through a hole on the side of the case. Insert the red wire into position 3 and the black wire into position 5 on the 5 position header labeled JP1 on the supplemental printed circuit board.</li> 
+    </ul>
+</SECTION>
+
+<br>
+
+<SECTION ID="power">
+	<H3>Power Up</H3>
+    <hr>
+    <ul>
+    	<li>Connect the Raspberry Pi to a display using the provided HDMI cable. Connect a USB mouse and keyboard to the Raspberry Pi.</li>
+        <li>An installation wizard named NOOBS will guide you through the installation of the Rasbian Operating System.</li>
+        <li>After the installation is complete you will be at the desktop. Click Menu in the top-left corner and click Text Editor.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/raspbian.png?raw=true" alt=""/></li>
+        <li>Type the following code.
+        <br><pre style="background-color: lightblue;"><code >#!/usr/bin/python
+
+import Adafruit_BMP.BMP085 as BMP085
+import Adafruit_DHT
+import RPi.GPIO as GPIO
+import time
+import smbus
+import sys
+
+GPIO.VERSION
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+GPIO.setup(11, GPIO.OUT)
+GPIO.setup(12,GPIO.OUT)
+
+try:
+    while True:
+        sensor = BMP085.BMP085()
+        bus = smbus.SMBus(1)
+
+        humidity, temperature = Adafruit_DHT.read_retry(11, 4)
+        # Un-comment the line below to convert the temperature to Fahrenheit.
+        # temperature = temperature * 9/5.0 + 32
+        print('Temp = {0:0.2f} *C'.format(sensor.read_temperature()))
+        print('Humidity={0:0.1f}%'.format(humidity))
+        print('Pressure = {0:0.2f} Pa'.format(sensor.read_pressure()))
+        print('Altitude = {0:0.2f} m'.format(sensor.read_altitude()))
+        print('Sealevel Pressure = {0:0.2f} Pa'.format(sensor.read_sealevel_pressure()))
+        bus.write_byte_data(0x48,0x40 | ((0) & 0x03), 0)
+        print('Solar Panel (V) = {0:0.2f}'.format(bus.read_byte(0x48)/50))
+        bus.write_byte_data(0x48,0x40 | ((2) & 0x03), 0)
+        print('Light Level = {0:0.2f}\n\n'.format(bus.read_byte(0x48)))
+        # if the code reaches here, all sensors worked, turn led green
+        GPIO.output(11,0)
+        GPIO.output(12,1)
+        time.sleep(1)
+        
+except Exception:
+    # if the code reaches here, a sensor failed, led turns red
+    GPIO.output(11,1)
+    GPIO.output(12,0)
+except KeyboardInterrupt:
+    GPIO.cleanup()</code></pre></li>
+    <li>Save the file as example.py to the desktop.</li>
+    <li>From the system console, navigate to the desktop and execute following command:
+    <br><code style="background-color: lightblue;">sudo python example.py</code>
+    <li>If all sensors are connected properly the LED on the modular sensor hat will be green. If any of the sensors are not connected properly the LED will be red.
+    <table width="100%" border="0">
+  <tr>
+    <th scope="col"><img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/ledgreen.jpg?raw=true" width="275" height="275" alt=""/></th>
+    <th scope="col"><img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/ledred.jpg?raw=true" width="275" height="275" alt=""/></th>
+  </tr>
+</table>
+</li>
+    <li>Examine the output of the sensors on the system console.<img src="https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/outputc.png?raw=true" alt=""/></li>
+    </ul>
+</SECTION>
+ 
+<br>
+ 
+<SECTION ID="production">
+	<H3>Production Testing</H3>
+    <hr>
+    <p>Congratulations on assembling your own Solar Panel Project. You can immediately start testing how the solar cell and light sensor on the YL-40 will behave in different light levels with a flash light. Now you can power the Solar Panel Project in different environments and finally analyze how weather affects power generation.</p>
+</SECTION>
+</ARTICLE>
+
