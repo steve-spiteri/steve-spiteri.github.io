@@ -11,17 +11,16 @@
 Solar Panel Project
 ===================
 
-Project Website:
-[https://steve-spiteri.github.io/](https://steve-spiteri.github.io/)
+Project Website: <https://steve-spiteri.github.io/>
 
  
 
 Table of Contents
 =================
 
-1.  Proposal
+1.  [Proposal](https://github.com/steve-spiteri/steve-spiteri.github.io#proposal)
 
-2.  References
+2.  [References](https://github.com/steve-spiteri/steve-spiteri.github.io#references)
 
  
 
@@ -70,8 +69,17 @@ will be available to view at a glance and historically. With this data you
 understand performance variations day to day.
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read [2] which provides insight into
+Subscribed Content”[1] and have found and read three which provide insight into
 similar efforts.
+
+The first journal discusses how shade can reduce power generation up to 10-20%
+annually.[@6892936]
+
+The second journal discusses low cost options for measuring solar panel defects.
+[@5762585]
+
+The third and final journal we found provides information about how extreme high
+temperature can affect solar panel degradation. [@7072567]
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
