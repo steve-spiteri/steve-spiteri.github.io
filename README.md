@@ -224,7 +224,21 @@ Abstract
 Table of Contents
 =================
 
- 
+[Approved Proposal](#approved-proposal)
+
+[Executive Summary](#executive-summary)
+
+[Background](#background)
+
+[Methodology](#methodology)
+
+[Concluding Remarks](#concluding-remarks)
+
+[Abstract](#abstract)
+
+[Illustrations/Diagrams](#illustrationsdiagrams)
+
+[Body](#body)
 
 \pagebreak
 
