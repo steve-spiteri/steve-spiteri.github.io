@@ -7,12 +7,6 @@ bibliography: SpringCitations.bib
 
  
 
-| **apa** | **bibliography**    |
-|---------|---------------------|
-| apa.csl | SpringCitations.bib |
-
- 
-
 Solar Panel Project
 ===================
 
