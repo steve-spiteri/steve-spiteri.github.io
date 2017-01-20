@@ -3,28 +3,32 @@ csl: apa.csl
 bibliography: SpringCitations.bib
 ---
 
-![](https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/images/final_small.png?raw=true)
-
- 
-
 Solar Panel Project
 ===================
 
+From: Steven Spiteri, Richard Burak, and Salvatore Angilletta
+
+Discipline: Computer Engineering Technology
+
 Project Website: <https://steve-spiteri.github.io/>
 
+Date of Submission: January 27th, 2017
+
+\pagebreak
+
+\pagebreak
+
+Declaration of Joint Authorship
+===============================
+
  
 
-Table of Contents
+\pagebreak
+
+\pagebreak
+
+Approved Proposal
 =================
-
-1.  [Proposal](#proposal)
-
-2.  [References](#references)
-
- 
-
-Proposal
-========
 
 *Proposal for the development of a solar panel project*
 
@@ -208,7 +212,68 @@ interactive display. This is an opportunity to integrate the knowledge and
 skills developed in our program to create a collaborative IoT capstone project.
 I request approval of this project.
 
+\pagebreak
+
+Abstract
+========
+
  
 
-**References**
-==============
+\pagebreak
+
+Table of Contents
+=================
+
+ 
+
+\pagebreak
+
+Illustrations/Diagrams
+======================
+
+ 
+
+\pagebreak
+
+Introduction
+============
+
+ 
+
+\pagebreak
+
+Body
+====
+
+3.4 Software Requirements Specifications
+
+3.4.1 Database
+
+3.4.2 Mobile Application
+
+3.4.3 Web Interface
+
+ 
+
+3.4.1 Database
+
+ 
+
+\pagebreak
+
+Conclusion
+==========
+
+ 
+
+\pagebreak
+
+Recommendations
+===============
+
+ 
+
+\pagebreak
+
+Bibliography
+============
