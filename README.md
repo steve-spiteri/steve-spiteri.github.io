@@ -269,7 +269,117 @@ Body
 
  
 
-3.4.1 Database
+1.1 Purpose
+
+This project is to be used in tandem with a solar power generation system. It is
+meant to enhance solar panel ownership by providing an intuitive way of
+gathering and examining data for both home owners and researchers.
+
+ 
+
+1.2 Product Scope
+
+The project is built using a Broadcom development platform to interface with a
+solar cell and a variety of sensors. All of the data is gathered using these
+on-board sensors, which collect information about the humidity, temperature,
+barometric pressure, and light level around the hardware. Because the power
+generation of the solar cell is also tracked, it can be correlated with the
+weather data and used to further our research into solar energy.
+
+ 
+
+2.1 Product Perspective
+
+This product is aimed to be an all-new way to gather and display data from any
+existing solar power generation system.
+
+*\*add system diagram*
+
+ 
+
+2.2 Product Functions
+
+The various sensors are tasked with gathering the raw data. The DHT-11 is used
+for humidity, the BMP085 for barometric pressure and temperature, the YL-40 for
+light-levels, and finally any solar cell may be connected and have its voltage
+generation measured. The development platform contains software to convert this
+raw data into readable values. These values are then uploaded to a remote
+database for future access. This database can be read using either the Android
+application or the online web interface.
+
+ 
+
+2.3 User Classes and Characteristics
+
+The user expected to use this product is any homeowner with a private solar
+panel system. The software’s interface is geared towards being simple and
+accessible for casual smartphone users. A secondary user base can include
+researchers looking to further work in solar panel technology.
+
+ 
+
+2.4 Operating Environment
+
+The mobile application must run on Android API 19 and above, on either a
+smartphone or tablet device. The software running on the development platform is
+designed to work with a Linux-based operating system. Finally, the database uses
+MySQL and is interacted with using PHP scripts.
+
+ 
+
+2.5 User Documentation
+
+Users will have access to hardware build instructions that provide a
+step-by-step guide for putting the project together. Instructions for the Linux
+software configuration are included as part of the build instructions.
+
+\**Link to build inst*
+
+ 
+
+3.1 Database
+
+The MySQL database will run on a co-located free-hosting website. The database
+will use phpMyAdmin to for administrative interaction on the front-end. The
+information contained includes formatted data downloaded from the development
+platform. There are two tables, one with a username and password for the Android
+app users, and on with entries for all the weather data collected (power,
+temperature, light, barometric pressure, humidity, and time).
+
+(Developed by Richard Burak)
+
+ 
+
+3.2 Mobile Application
+
+The mobile application (currently only available on Android platforms) will take
+the data from the MySQL database and temporarily store it on the target device
+in memory. It will display the data in an easy-to-read manner for the end user.
+There is the option to view the data in a graph view which the user can
+customize to see a different range of historical data. The application has a
+total of three activities: login, main and a settings activities. The login
+activity allows the user to log into an account and have access to their data.
+The main activity has two fragments, one containing the graph view and another
+containing a home page equivalent. The settings activity currently only allows
+the user to change the temperature notation from Celsius to Fahrenheit.
+
+(Developed by Salvatore Angilletta)
+
+ 
+
+3.3 Web Interface
+
+A web interface will be developed and attempt to mirror the functionality of the
+mobile application. After the user logs in they will have access to their data
+in an easy-to-read manner. On a single page the web interface will contain the
+specific users database entries. When the web interface is loaded the most
+recent will be downloaded from the database and displayed to the user. An optiol
+willl be available for the user to change the temperature notation from Celsius
+to Fahrenheit.
+
+ 
+
+(Developed by Steven Spiteri)
 
  
 
