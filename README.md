@@ -275,27 +275,27 @@ Specifications](#software-requirements-specifications)
 
             2.1.2.1 Product Perspective
 
-           2.1.2.2 Product Functions
+            2.1.2.2 Product Functions
 
             2.1.2.3 User Classes and Characteristics
 
             2.1.2.4 Operating Environment
 
-           2.1.2.5 User Documentation
+            2.1.2.5 User Documentation
 
         2.1.3 External Interface Requirements
 
             2.1.3.1 Database
 
-           2.1.3.2 Mobile Application
+            2.1.3.2 Mobile Application
 
             2.1.3.3 Web Interface
 
-           2.1.3.4 Additional Hardware
+            2.1.3.4 Additional Hardware
 
        2.1.4 Other Non-Functional Requirements
 
-           2.1.4.1 Safety Requirements
+            2.1.4.1 Safety Requirements
 
             2.1.4.2 Security Requirements
 
@@ -327,6 +327,17 @@ determining the effect of environmental elements. Home owners have adopted a
 relatively new technology and should be confident in knowing that information
 regarding it is always available. Since this product automates the collection
 and distribution of the data, the responsibility of the home owner is minimized.
+
+ 
+
+This product uses an off-site database which can be accessed through both the
+online web interface and Android mobile application. This will allow the end
+user to monitor their solar panel power generation system from a remote
+location.
+
+ 
+
+ 
 
  
 
