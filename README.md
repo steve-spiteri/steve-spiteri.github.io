@@ -19,7 +19,14 @@ Date of Submission: January 27th, 2017
 Declaration of Joint Authorship
 ===============================
 
- 
+Steven Spiteri, Richard Burak, and Salvatore Angilletta confirm that the
+following work found in this technical report is a joint effort and is an
+expression of our own ideas and research. All works cited are property of their
+respective owners and are properly acknowledged using the APA format. Steven
+Spiteri has developed the online web interface. Richard Burak has built the
+MySQL database. Salvatore Angilletta was in charge of managing the Android
+mobile application. Work on the hardware was distributed amongst the three of
+us.
 
 \pagebreak
 
@@ -213,7 +220,22 @@ project. I request approval of this project.
 Abstract
 ========
 
- 
+Home owners, who posses solar power generation systems, have difficulty easily
+accessing power production information and determining the effect of
+environmental elements. To address this, a product must be created to assist in
+the monitoring and collection of data to clearly determine power production and
+its relationship with weather factors. This product monitors solar cell voltage
+generation, surrounding temperature,  light levels, barometric pressure, and
+humidity. Each entry has a date and time associated with it to provide context.
+Data retrieved from the sensors is processed on the Broadcom development
+platform before being sent to a co-located database. The database stores the
+sensor data and is accessed by both the Android mobile application and the
+online web interface. The Android mobile application displays the data in an
+easy-to-read manner for the end user with the option to view it in a graph. The
+online web interface provides the same functionality with a more interactive
+approach. This product has the potential to enhance solar panel ownership and
+research by allowing users to intuitively manage their solar power generation
+system.
 
 \pagebreak
 
@@ -236,7 +258,7 @@ Table of Contents
 
 [1. Introduction](#introduction)
 
-[2. Project Description] (#project-description)
+2. Project Description
 
     [2.1 Software Requirements
 Specifications](#software-requirements-specifications)
@@ -253,27 +275,27 @@ Specifications](#software-requirements-specifications)
 
             2.1.2.1 Product Perspective
 
-            2.1.2.2 Product Functions
+           2.1.2.2 Product Functions
 
             2.1.2.3 User Classes and Characteristics
 
             2.1.2.4 Operating Environment
 
-            2.1.2.5 User Documentation
+           2.1.2.5 User Documentation
 
         2.1.3 External Interface Requirements
 
             2.1.3.1 Database
 
-            2.1.3.2 Mobile Application
+           2.1.3.2 Mobile Application
 
             2.1.3.3 Web Interface
 
-            2.1.3.4 Additional Hardware
+           2.1.3.4 Additional Hardware
 
-        2.1.4 Other Non-Functional Requirements
+       2.1.4 Other Non-Functional Requirements
 
-            2.1.4.1 Safety Requirements
+           2.1.4.1 Safety Requirements
 
             2.1.4.2 Security Requirements
 
@@ -299,7 +321,30 @@ Illustrations/Diagrams
 1. Introduction
 ===============
 
+In the current marketplace home owners, who posses solar power generation
+systems, have difficulty easily accessing power production information and
+determining the effect of environmental elements. Home owners have adopted a
+relatively new technology and should be confident in knowing that information
+regarding it is always available. Since this product automates the collection
+and distribution of the data, the responsibility of the home owner is minimized.
+
  
+
+This product monitors solar cell voltage generation, surrounding temperature,
+light levels, barometric pressure, and humidity. Each entry has a date and time
+associated with it to provide context. Data retrieved from the sensors is
+processed on the Broadcom development platform before being sent to a co-located
+database.
+
+ 
+
+The database stores the sensor data and is accessed by both the Android mobile
+application and the online web interface. The Android mobile application
+displays the data in an easy-to-read manner for the end user with the option to
+view it in a graph. The online web interface provides the same functionality
+with a more interactive approach. This product has the potential to enhance
+solar panel ownership and research by allowing users to intuitively manage their
+solar power generation system.
 
 \pagebreak
 
@@ -441,7 +486,7 @@ Fahrenheit.
 
 ### 2.1.3.4 Additional Hardware
 
-A new top for the product casing will be 3-D printed to allow mounting of the
+A new top for the product casing will be laser cut to allow mounting of the
 solar cell and allow routing for the solar cell connection.
 
  
