@@ -236,7 +236,7 @@ Table of Contents
 
 [1. Introduction](#introduction)
 
-[2. Project Description]
+[2. Project Description] (#project-description)
 
     [2.1 Software Requirements
 Specifications](#software-requirements-specifications)
