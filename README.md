@@ -68,7 +68,7 @@ will be available to view at a glance and historically. With this data you
 understand performance variations day to day.
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read three which provide insight into
+Subscribed Content” and have found and read three which provide insight into
 similar efforts.
 
 The first journal discusses how shade can reduce power generation up to 10-20%
@@ -121,7 +121,7 @@ as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
 
 *Phase 2 System integration*
 
-The system integration will be completed in the fall term.
+The system integration has been completed in the winter term.
 
 *Phase 3 Demonstration to future employers*
 
@@ -194,7 +194,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                                                          |
 | **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                                                          |
 | **Phase 3**                                                                               |                |                                                                                                                                                                          |
-| Off campus colocation                                                                     | \<\$100.00     | An example: [4].                                                                                                                                                         |
+| Off campus colocation                                                                     | *TBD*          |                                                                                                                                                                          |
 | *Shipping*                                                                                | *TBD*          |                                                                                                                                                                          |
 | *Tax*                                                                                     | *TBD*          |                                                                                                                                                                          |
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                                          |
@@ -203,10 +203,10 @@ important to start tasks as soon as possible to be able to meet deadlines.
 **Concluding remarks**
 ----------------------
 
-This proposal presents a plan for providing an IoT solution for solar panel
-interactive display. This is an opportunity to integrate the knowledge and
-skills developed in our program to create a collaborative IoT capstone project.
-I request approval of this project.
+This proposal presents a plan for providing an IoT solution for the difficulty
+accessing solar panel data. This is an opportunity to integrate the knowledge
+and skills developed in our program to create a collaborative IoT capstone
+project. I request approval of this project.
 
 \pagebreak
 
@@ -236,43 +236,46 @@ Table of Contents
 
 [1. Introduction](#introduction)
 
-[2. Software Requirements Specifications](#software-requirements-specifications)
+2. Project Description
 
-    2.1 Production Introduction
+    [2.1 Software Requirements
+Specifications](#software-requirements-specifications)
 
-        2.1.1 Purpose
+        2.1.1 Production Introduction
 
-        2.1.2 Intended Audience
+            2.1.1.1 Purpose
 
-        2.1.3 Product Scope
+            2.1.1.1 Intended Audience
 
-    2.2 Overall Description
+            2.1.1.3 Product Scope
 
-        2.2.1 Product Perspective
+        2.1.2 Overall Description
 
-        2.2.2 Product Functions
+            2.1.2.1 Product Perspective
 
-        2.2.3 User Classes and Characteristics
+            2.1.2.2 Product Functions
 
-        2.2.4 Operating Environment
+            2.1.2.3 User Classes and Characteristics
 
-        2.2.5 User Documentation
+            2.1.2.4 Operating Environment
 
-    2.3 External Interface Requirements
+            2.1.2.5 User Documentation
 
-        2.3.1 Database
+        2.1.3 External Interface Requirements
 
-        2.3.2 Mobile Application
+            2.1.3.1 Database
 
-        2.3.3 Web Interface
+            2.1.3.2 Mobile Application
 
-        2.3.4 Additional Hardware
+            2.1.3.3 Web Interface
 
-    2.4 Other Non-Functional Requirements
+            2.1.3.4 Additional Hardware
 
-        2.4.1 Safety Requirements
+        2.1.4 Other Non-Functional Requirements
 
-        2.4.2 Security Requirements
+            2.1.4.1 Safety Requirements
+
+            2.1.4.2 Security Requirements
 
 [3. Progress Reports](#progress-reports)
 
@@ -300,15 +303,18 @@ Illustrations/Diagrams
 
 \pagebreak
 
-2. Software Requirements Specifications
-=======================================
+2. Product Description
+======================
 
-2.1 Product Introduction
-------------------------
+2.1 Software Requirements Specifications
+----------------------------------------
+
+2.1.1 Product Introduction
+--------------------------
 
  
 
-### 2.1.1 Purpose
+### 2.1.1.1 Purpose
 
 This product is to be used in tandem with a solar power generation system. It is
 meant to enhance solar panel ownership by providing an intuitive way of
@@ -316,14 +322,14 @@ gathering and examining data for both home owners and researchers.
 
  
 
-### 2.1.2 Intended Audience
+### 2.1.1.2 Intended Audience
 
 This document is intended for industry professionals and educational
 institutions for research and evaluation.
 
  
 
-### 2.1.3 Product Scope
+### 2.1.1.3 Product Scope
 
 The product is built using a Broadcom development platform to interface with a
 solar cell and a variety of sensors. All of the data is gathered using these
@@ -334,19 +340,19 @@ weather data and used to further our research into solar energy.
 
  
 
-2.2 Overall Description
------------------------
+2.1.2 Overall Description
+-------------------------
 
  
 
-### 2.2.1 Product Perspective
+### 2.1.2.1 Product Perspective
 
 This product is aimed to be a new way to gather and display data from any
 existing solar power generation system.
 
  
 
-### 2.2.2 Product Functions
+### 2.1.2.2 Product Functions
 
 The various sensors are tasked with gathering the raw data. The DHT-11 is used
 for humidity, the BMP085 for barometric pressure and temperature, the YL-40 for
@@ -358,7 +364,7 @@ application or the online web interface.
 
  
 
-### 2.2.3 User Classes and Characteristics
+### 2.1.2.3 User Classes and Characteristics
 
 The expected user of this product is any homeowner with a private solar power
 generation system. The software interface is geared towards being simple and
@@ -367,7 +373,7 @@ researchers looking to further work in solar panel technology.
 
  
 
-### 2.2.4 Operating Environment
+### 2.1.2.4 Operating Environment
 
 The mobile application must run on Android API 19 and above, on either a
 smartphone or tablet device. The software running on the development platform is
@@ -376,7 +382,7 @@ MySQL and is accessed with PHP scripts.
 
  
 
-### 2.2.5 User Documentation
+### 2.1.2.5 User Documentation
 
 Users will have access to hardware build instructions that provide a
 step-by-step guide for putting the product together. Instructions for the Linux
@@ -384,12 +390,12 @@ software configuration are included as part of the build instructions.
 
  
 
-2.3 External Interface Requirements
------------------------------------
+2.1.3 External Interface Requirements
+-------------------------------------
 
  
 
-### 2.3.1 Database
+### 2.1.3.1 Database
 
 The MySQL database will run on a co-located free-hosting website. The database
 will use phpMyAdmin to for administrative interaction on the front-end. The
@@ -403,7 +409,7 @@ be populated by data downloaded from the hardware.
 
  
 
-### 2.3.2 Mobile Application
+### 2.1.3.2 Mobile Application
 
 The mobile application, available on Android platforms, will take the data from
 the MySQL database and temporarily store it on the target device in memory. It
@@ -420,7 +426,7 @@ Fahrenheit.
 
  
 
-### 2.3.3 Online Web Interface
+### 2.1.3.3 Online Web Interface
 
 An online web interface will be developed and mirror the functionality of the
 mobile application. After the user logs in they will have access to their data
@@ -433,7 +439,7 @@ Fahrenheit.
 
  
 
-### 2.3.4 Additional Hardware
+### 2.1.3.4 Additional Hardware
 
 A new top for the product casing will be 3-D printed to allow mounting of the
 solar cell and allow routing for the solar cell connection.
@@ -444,12 +450,12 @@ solar cell and allow routing for the solar cell connection.
 
  
 
-2.4 Other Non-Functional Requirements
--------------------------------------
+2.1.4 Other Non-Functional Requirements
+---------------------------------------
 
  
 
-### 2.4.1 Safety Requirements
+### 2.1.4.1 Safety Requirements
 
 -   This product shall only be connected to an external power supply rated at 5
     Volts DC.
@@ -465,7 +471,7 @@ solar cell and allow routing for the solar cell connection.
 
  
 
-### 2.4.2 Security Requirements
+### 2.1.4.2 Security Requirements
 
 -   Do not share your identity authentication and password.
 
