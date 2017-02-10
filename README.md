@@ -184,7 +184,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Raspberry Pi 3 Kit                                                                        | \$119.99       | [CanaKit](https://www.amazon.ca/CanaKit-Raspberry-Ultimate-Starter-Kit/dp/B01CCF9BYG/ref=sr_1_3?ie=UTF8&qid=1474395691&sr=8-3&keywords=raspberry+pi)                     |
 | Barmetric Pressure Sensor                                                                 | \$8.33         | [RobotShop](http://www.robotshop.com/ca/en/octopus-barometric-pressure-sensor-brick.html)                                                                                |
 | DHT-11 Sensor Breakout                                                                    | \$4.04         | [RobotShop](http://www.robotshop.com/ca/en/electronic-brick-humidity-temperature-sensor.html)                                                                            |
-| 6V Solar Cell                                                                             | \$5.95         | [Sayal](sayal.com/STORE/View_SPEC.asp?SKU=237344)                                                                                                                        |
+| 6V Solar Cell                                                                             | \$5.95         | [Sayal](http://www.sayal.com/STORE/View_SPEC.asp?SKU=237344)                                                                                                                        |
 | Safety Glasses                                                                            | \$5.04         | [Pyramex](https://www.amazon.ca/Pyramex-Mini-S2510SN-Safety-Glasses/dp/B000NP5D3G/ref=sr_1_4?ie=UTF8&qid=1480724554&sr=8-4&keywords=safety+glasse)                       |
 | Lead Free Solder (10g)                                                                    | \$4.49         | [RobotShop](http://www.robotshop.com/ca/en/lead-free-solder-wire-10g-tube.html)                                                                                          |
 | Soldering Iron (25W)                                                                      | \$6.80         | [RobotShop](http://www.robotshop.com/ca/en/elenco-sr-1-standard-25w-pencil-soldering-iron.html)                                                                          |
@@ -337,7 +337,7 @@ A goal when creating this product was to follow a tight budget so the cost of
 building it has remained relatively low. The price for consumers should remain low
 and researchers will have a low-cost monitoring solution.
 
-Following GPLv2, all of our source code will be made available online for public
+Following AGPLv3, all of our source code will be made available online for public
 viewing. This is due to the Android application using GraphView and our firmware using 
 Adafruit Python libraries.
 
