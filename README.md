@@ -328,6 +328,8 @@ relatively new technology and should be confident in knowing that information
 regarding it is always available. Since this product automates the collection
 and distribution of the data, the responsibility of the home owner is minimized.
 
+With this product it will grant solar panel owners the ability to easily monitor their system status, track their power production, view historical production data, and view weather data from an interactive display and simple mobile application.
+
 This product uses an off-site database which can be accessed through both the
 online web interface and Android mobile application. This will allow the end
 user to monitor their solar panel power generation system from a remote
