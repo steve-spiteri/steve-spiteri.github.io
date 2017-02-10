@@ -330,7 +330,7 @@ and distribution of the data, the responsibility of the home owner is minimized.
 
 With this product it will grant solar panel owners the ability to easily monitor their system status, track their power production, view historical production data, and view weather data from an interactive display and simple mobile application.
 
-The hardware, powered by a Raspberry Pi 3, will operate in series with a solar panel system. Information will be gathered to indicate if all is well with the system and power production overview. Multiple sensors such as temperature, humidity, barometric pressure sensors will be used to gather weather data. Weather data will be available to view at a glance and historically. 
+The hardware, powered by a Raspberry Pi 3, will operate in series with a solar panel system. Information will be gathered to indicate if all is well with the system and power production overview. Multiple sensors such as light, temperature, humidity, barometric pressure sensors will be used to gather weather data. Weather data will be available to view at a glance and historically. 
 
 This product uses an off-site database which can be accessed through both the
 online web interface and Android mobile application. This will allow the end
