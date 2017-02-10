@@ -328,34 +328,18 @@ relatively new technology and should be confident in knowing that information
 regarding it is always available. Since this product automates the collection
 and distribution of the data, the responsibility of the home owner is minimized.
 
- 
-
 This product uses an off-site database which can be accessed through both the
 online web interface and Android mobile application. This will allow the end
 user to monitor their solar panel power generation system from a remote
 location.
 
- 
+A goal when creating this product was to follow a tight budget so the cost of
+building it has remained relatively low. The price for consumers should remain low
+and researchers will have a low-cost monitoring solution.
 
- 
-
- 
-
-This product monitors solar cell voltage generation, surrounding temperature,
-light levels, barometric pressure, and humidity. Each entry has a date and time
-associated with it to provide context. Data retrieved from the sensors is
-processed on the Broadcom development platform before being sent to a co-located
-database.
-
- 
-
-The database stores the sensor data and is accessed by both the Android mobile
-application and the online web interface. The Android mobile application
-displays the data in an easy-to-read manner for the end user with the option to
-view it in a graph. The online web interface provides the same functionality
-with a more interactive approach. This product has the potential to enhance
-solar panel ownership and research by allowing users to intuitively manage their
-solar power generation system.
+Following GPLv2, all of our source code will be made available online for public
+viewing. This is due to the Android application using GraphView and our firmware using 
+Adafruit Python libraries.
 
 \pagebreak
 
