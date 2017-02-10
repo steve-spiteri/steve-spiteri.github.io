@@ -226,7 +226,7 @@ environmental elements. To address this, a product must be created to assist in
 the monitoring and collection of data to clearly determine power production and
 its relationship with weather factors. This product monitors solar cell voltage
 generation, surrounding temperature,  light levels, barometric pressure, and
-humidity. Each entry has a date and time associated with it to provide context.
+humidity and stores the data in a co-located database. Each entry in the database has a date and time associated with it to provide context.
 Data retrieved from the sensors is processed on the Broadcom development
 platform before being sent to a co-located database. The database stores the
 sensor data and is accessed by both the Android mobile application and the
