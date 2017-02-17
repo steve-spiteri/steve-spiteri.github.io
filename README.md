@@ -184,7 +184,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Raspberry Pi 3 Kit                                                                        | \$119.99       | [CanaKit](https://www.amazon.ca/CanaKit-Raspberry-Ultimate-Starter-Kit/dp/B01CCF9BYG/ref=sr_1_3?ie=UTF8&qid=1474395691&sr=8-3&keywords=raspberry+pi)                     |
 | Barmetric Pressure Sensor                                                                 | \$8.33         | [RobotShop](http://www.robotshop.com/ca/en/octopus-barometric-pressure-sensor-brick.html)                                                                                |
 | DHT-11 Sensor Breakout                                                                    | \$4.04         | [RobotShop](http://www.robotshop.com/ca/en/electronic-brick-humidity-temperature-sensor.html)                                                                            |
-| 6V Solar Cell                                                                             | \$5.95         | [Sayal](http://www.sayal.com/STORE/View_SPEC.asp?SKU=237344)                                                                                                                        |
+| 6V Solar Cell                                                                             | \$5.95         | [Sayal](http://www.sayal.com/STORE/View_SPEC.asp?SKU=237344)                                                                                                             |
 | Safety Glasses                                                                            | \$5.04         | [Pyramex](https://www.amazon.ca/Pyramex-Mini-S2510SN-Safety-Glasses/dp/B000NP5D3G/ref=sr_1_4?ie=UTF8&qid=1480724554&sr=8-4&keywords=safety+glasse)                       |
 | Lead Free Solder (10g)                                                                    | \$4.49         | [RobotShop](http://www.robotshop.com/ca/en/lead-free-solder-wire-10g-tube.html)                                                                                          |
 | Soldering Iron (25W)                                                                      | \$6.80         | [RobotShop](http://www.robotshop.com/ca/en/elenco-sr-1-standard-25w-pencil-soldering-iron.html)                                                                          |
@@ -225,45 +225,44 @@ accessing power production information and determining the effect of
 environmental elements. To address this, a product must be created to assist in
 the monitoring and collection of data to clearly determine power production and
 its relationship with weather factors. This product monitors solar cell voltage
-generation, surrounding temperature,  light levels, barometric pressure, and
-humidity. Data retrieved from the sensors is processed on the Broadcom development
-platform before being sent to a co-located database. Each entry in the database has a date and time associated with it to provide context.
- The database stores the
-sensor data and is accessed by both the Android mobile application and the
-online web interface. The Android mobile application displays the data in an
-easy-to-read manner for the end user with the option to view it in a graph. The
-online web interface provides the same functionality with a more interactive
-approach. This product has the potential to enhance solar panel ownership and
-research by allowing users to intuitively manage their solar power generation
-system.
+generation, surrounding temperature, light levels, barometric pressure, and
+humidity. Data retrieved from the sensors is processed on the Broadcom
+development platform before being sent to a co-located database. Each entry in
+the database has a date and time associated with it to provide context. The
+database stores the sensor data and is accessed by both the Android mobile
+application and the online web interface. The Android mobile application
+displays the data in an easy-to-read manner for the end user with the option to
+view it in a graph. The online web interface provides the same functionality
+with a more interactive approach. This product has the potential to enhance
+solar panel ownership and research by allowing users to intuitively manage their
+solar power generation system.
 
 \pagebreak
 
 Table of Contents
 =================
 
-[Approved Proposal](#approved-proposal)
+Approved Proposal
 
-    [Executive Summary](#executive-summary)
+    Executive Summary
 
-    [Background](#background)
+    Background
 
-    [Methodology](#methodology)
+    Methodology
 
-    [Concluding Remarks](#concluding-remarks)
+    Concluding Remarks
 
-[Abstract](#abstract)
+Abstract
 
-[Illustrations/Diagrams](#illustrationsdiagrams)
+Illustrations/Diagrams
 
-[1. Introduction](#introduction)
+1. Introduction
 
-[2. Project Description](#2-project-description)
+2. Project Description
 
-    [2.1 Software Requirements
-Specifications](#software-requirements-specifications)
+    2.1 Software Requirements Specifications
 
-        2.1.1 Production Introduction
+            2.1.1 Production Introduction
 
             2.1.1.1 Purpose
 
@@ -287,25 +286,25 @@ Specifications](#software-requirements-specifications)
 
             2.1.3.1 Database
 
-            2.1.3.2 Mobile Application
+            2.1.3.2 Mobile Application
 
             2.1.3.3 Web Interface
 
-            2.1.3.4 Additional Hardware
+            2.1.3.4 Additional Hardware
 
        2.1.4 Other Non-Functional Requirements
 
-            2.1.4.1 Safety Requirements
+            2.1.4.1 Safety Requirements
 
             2.1.4.2 Security Requirements
 
-[3. Progress Reports](#progress-reports)
+3. Progress Reports
 
-[4. Conclusion](#conclusion)
+4. Conclusion
 
-[5. Recommendations](#recommendations)
+5. Recommendations
 
-[6. Bibliography](#bibliography)
+6. Bibliography
 
  
 
@@ -328,9 +327,17 @@ relatively new technology and should be confident in knowing that information
 regarding it is always available. Since this product automates the collection
 and distribution of the data, the responsibility of the home owner is minimized.
 
-With this product it will grant solar panel owners the ability to easily monitor their system status, track their power production, view historical production data, and view weather data from an interactive display and simple mobile application.
+With this product it will grant solar panel owners the ability to easily monitor
+their system status, track their power production, view historical production
+data, and view weather data from an interactive display and simple mobile
+application.
 
-The hardware, powered by a Raspberry Pi 3, will operate in series with a solar panel system. Information will be gathered to indicate if all is well with the system and power production overview. Multiple sensors such as light, temperature, humidity, barometric pressure sensors will be used to gather weather data. Weather data will be available to view at a glance and historically. 
+The hardware, powered by a Raspberry Pi 3, will operate in series with a solar
+panel system. Information will be gathered to indicate if all is well with the
+system and power production overview. Multiple sensors such as light,
+temperature, humidity, barometric pressure sensors will be used to gather
+weather data. Weather data will be available to view at a glance and
+historically.
 
 This product uses an off-site database which can be accessed through both the
 online web interface and Android mobile application. This will allow the end
@@ -338,12 +345,12 @@ user to monitor their solar panel power generation system from a remote
 location.
 
 A goal when creating this product was to follow a tight budget so the cost of
-building it has remained relatively low. The price for consumers should remain low
-and researchers will have a low-cost monitoring solution.
+building it has remained relatively low. The price for consumers should remain
+low and researchers will have a low-cost monitoring solution.
 
-Following AGPLv3, all of our source code will be made available online for public
-viewing. This is due to the Android application using GraphView and our firmware using 
-Adafruit Python libraries.
+Following AGPLv3, all of our source code will be made available online for
+public viewing. This is due to the Android application using GraphView and our
+firmware using Adafruit Python libraries.
 
 \pagebreak
 
