@@ -256,53 +256,65 @@ Abstract
 
 Illustrations/Diagrams
 
-1. Introduction
+[1.] Introduction
 
-2. Project Description
+[2.] Project Description
 
-    2.1 Software Requirements Specifications
+    [2.1] Software Requirements Specifications
 
-        2.1.1 Production Introduction
+        [2.1.1] Production Introduction
 
-        2.1.1.1 Purpose
+            [2.1.1.1] Purpose
 
-        2.1.1.1 Intended Audience
+            [2.1.1.1] Intended Audience
 
-        2.1.1.3 Product Scope
+            [2.1.1.3] Product Scope
 
-    2.1.2 Overall Description
+        [2.1.2] Overall Description
 
-        2.1.2.1 Product Perspective
+            [2.1.2.1] Product Perspective
 
-        2.1.2.2 Product Functions
+            [2.1.2.2] Product Functions
 
-        2.1.2.3 User Classes and Characteristics
+            [2.1.2.3] User Classes and Characteristics
 
-        2.1.2.4 Operating Environment
+            [2.1.2.4] Operating Environment
 
-        2.1.2.5 User Documentation
+            [2.1.2.5] User Documentation
 
-    2.1.3 External Interface Requirements
+        [2.1.3] External Interface Requirements
 
-        2.1.3.1 Database
+            [2.1.3.1] Database
 
-        2.1.3.2 Mobile Application
+            [2.1.3.2] Mobile Application
 
-        2.1.3.3 Web Interface
+            [2.1.3.3] Web Interface
 
-        2.1.3.4 Additional Hardware
+            [2.1.3.4] Additional Hardware
 
-    2.1.4 Other Non-Functional Requirements
+        [2.1.4] Other Non-Functional Requirements
 
-        2.1.4.1 Safety Requirements
+            [2.1.4.1] Safety Requirements
 
-        2.1.4.2 Security Requirements
+            [2.1.4.2] Security Requirements
 
-3. Progress Reports
+[3.] Schedule/Progress Reports
 
-4. Conclusion
+    [3.1] Schedule
 
-5. Recommendations
+    [3.2] Progress Reports
+
+[3.2.1] Progress Report DD/MM/YY
+
+[3.2.2] Progress Report DD/MM/YY
+
+[4.] Build Instructions
+
+[5.] Progress Reports
+
+[6.] Conclusion
+
+[7.] Recommendations
 
  
 
@@ -332,10 +344,10 @@ their system status, track their power production, view historical production
 data, and view weather data from an interactive display and simple mobile
 application.
 
-The hardware, powered by a Raspberry Pi 3, will operate in series with a solar
-panel system. Information will be gathered to indicate if all is well with the
-system and power production overview. Multiple sensors such as light,
-temperature, humidity, barometric pressure sensors will be used to gather
+The hardware, powered by a Broadcom development platform, will operate in series
+with a solar panel system. Information will be gathered to indicate if all is
+well with the system and power production overview. Multiple sensors such as
+light, temperature, humidity, barometric pressure sensors will be used to gather
 weather data. Weather data will be available to view at a glance and
 historically.
 
