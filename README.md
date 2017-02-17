@@ -262,41 +262,41 @@ Illustrations/Diagrams
 
     2.1 Software Requirements Specifications
 
-            2.1.1 Production Introduction
+        2.1.1 Production Introduction
 
-            2.1.1.1 Purpose
+        2.1.1.1 Purpose
 
-            2.1.1.1 Intended Audience
+        2.1.1.1 Intended Audience
 
-            2.1.1.3 Product Scope
+        2.1.1.3 Product Scope
 
-        2.1.2 Overall Description
+    2.1.2 Overall Description
 
-            2.1.2.1 Product Perspective
+        2.1.2.1 Product Perspective
 
-            2.1.2.2 Product Functions
+        2.1.2.2 Product Functions
 
-            2.1.2.3 User Classes and Characteristics
+        2.1.2.3 User Classes and Characteristics
 
-            2.1.2.4 Operating Environment
+        2.1.2.4 Operating Environment
 
-            2.1.2.5 User Documentation
+        2.1.2.5 User Documentation
 
-        2.1.3 External Interface Requirements
+    2.1.3 External Interface Requirements
 
-            2.1.3.1 Database
+        2.1.3.1 Database
 
-            2.1.3.2 Mobile Application
+        2.1.3.2 Mobile Application
 
-            2.1.3.3 Web Interface
+        2.1.3.3 Web Interface
 
-            2.1.3.4 Additional Hardware
+        2.1.3.4 Additional Hardware
 
-       2.1.4 Other Non-Functional Requirements
+    2.1.4 Other Non-Functional Requirements
 
-            2.1.4.1 Safety Requirements
+        2.1.4.1 Safety Requirements
 
-            2.1.4.2 Security Requirements
+        2.1.4.2 Security Requirements
 
 3. Progress Reports
 
@@ -304,7 +304,7 @@ Illustrations/Diagrams
 
 5. Recommendations
 
-6. Bibliography
+ 
 
  
 
