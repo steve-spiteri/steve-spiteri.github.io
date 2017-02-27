@@ -67,7 +67,7 @@ owner the ability to easily monitor their system status, track their power
 production, view historical production data, and view weather data from a web
 interface and simple mobile application.
 
-The hardware, powered by a Raspberry Pi 3, will operate in series with a solar
+The hardware, powered by a Broadcom development platform, will operate in series with a solar
 panel system. Information will be gathered to indicate if all is well with the
 system and power production overview. Multiple sensors such as temperature,
 humidity, barometric sensors will be used to gather weather data. Weather data
@@ -308,7 +308,7 @@ Illustrations/Diagrams
 
 [3.2.2] Progress Report DD/MM/YY
 
-[4.] Build Instructions
+[4.] Hardware Build Instructions
 
 [5.] Progress Reports
 
@@ -551,7 +551,193 @@ solar cell and allow routing for the solar cell connection.
 
 \pagebreak
 
-4. Conclusion
+4. Hardware Build Instructions
+
+4.1 Build Introduction
+----------------------------------------
+
+
+This section contains all the knowledge nesscessary in order to reproduce the solar panel project. An individual should be able to 
+recreate this product by following these instructions. Before continuing with this section, be sure to remember all proper safety
+procedures when interacting with computer hardware and electrical components.
+
+
+4.2 Basic System Overview
+----------------------------------------
+
+The system will require the input from the sensors, which will recieve their input from the physical environment surrounding them.
+The data must then be processed and converted to values that are readable and relevant. Once these number values are obtained, they will
+be displayed on demand, or whenever a user requests it. 
+
+
+4.3 Budget and Materials
+----------------------------------------
+
+TO be done with texts
+
+4.4 Time Commitment
+----------------------------------------
+
+TO be done with texts
+
+4.5 Development Platform Setup
+----------------------------------------
+
+Once the Broadcom development platform has been aquired, begin by connecting it to a display. Next, connect the keyboard and mouse. You 
+can now plug the development platform into power and begin configuring the operating system. The setup will be explained on screen, and 
+you may begin using the development platform once it has completed.
+In the top right-hand corner of the screen, select the network you want the development platform to automatically connect to when it boots 
+up (skip this step if the device is using a wired connection). Be sure to make note of the IP address, as it may be required later if 
+remotely connecting to the device. The IP can be found by hovering the mouse over the WiFi symbol on the top-right.
+Once connected to the internet, open the command line terminal and run the following command:
+
+ sudo apt-get update
+
+This will update the development platform to the most recent version. This is important, as security updates are required to keep the 
+device safe.
+Next, SSH must be enabled by default, otherwise you will not be able to remotely access the development platform. To ensure SSH starts 
+when the development platform is booted up, run this in the command line:
+
+ mv /boot/boot_enable_ssh.rc /boot/boot.rc
+
+Now that SSH is enabled, VNC must be installed and enabled. VNC allows users to navigate the GUI of the development platform remotely. To 
+install this, run the following commands:
+
+ sudo install tightvncserver
+ tightvncserver
+
+Setup a password for VNC when asked. You will now be able to run VNC server by accessing the development platform through SSH, then 
+interface using any VNC client.
+To prepare the development platform for use with the sensors, I2C must be enabled. To do this, start by running the following command:
+
+ sudo raspi-config
+
+Use the arrow keys to navigate to advanced options and hit enter. Once there, navigate to I2C and hit enter again. Select "Yes" to have 
+I2C enabled on the development platform.
+Next, we must prepare the Python program used to interface with the sensors. The program below (solar.py) will show the data gathered by 
+the sensors in the circuit. It will not successfully run until all the sensors have been tested and connected.
+Simply place the file in any directory on the development platform.
+
+With the development platform now configured, we can move on to the hardware part of this project. 
+
+
+4.6 PCB Soldering/Testing
+----------------------------------------
+
+The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was provided by Humber College. The board must first be printed, 
+and the components aquired (from the Prototype Lab in J building). Solder the components provided according to the Eagle .brd and .sch 
+files. Be sure to wear safety glasses while soldering, and consider all aspects of your own (and others') safety.
+
+Caution: There is a problem with the Modular Sensor Hat, we have included a quote from our instructor regarding the problem below.
+
+    "RTC module can charge the CR2032 battery causing damage. To permanently disable the charging circuit, please remove the 200 ohm 
+    surface mount resistor near the unused I2C header by pushing it off the PCB with a hot soldering iron." 
+
+Since this project is not using the RTC, it should not cause a problem, but it is something to keep in mind when building.
+
+Next, the additional Custom PCB must be printed and soldered. The materials required for this step are as follows:
+
+    10K Resistor (From Pi Starter Kit)
+    5-pin Header (x2)
+    2x20 pin GPIO Header
+    Short pieces (~2cm) of 22 gauge wire (x3)
+
+The final step with the boards is to ensure all the connections are working before connecting them. If faulty boards are connected to 
+sensors (or the development platform) they can cause permanent damage to either. Save youself time (and money) by making sure they work 
+before continuing. To do this, power and ground the boards first. Apply 3.3V to pin 1, and ground pin 6. Now we need the digital 
+multimeter. Connect the multimeter to the same ground as the development platform, and use the other connection to probe the different 
+parts of the circuit. Measure both resistance and voltage, to make sure the values are correct. If any problems are detected, resoldering 
+may be required. If the boards pass all the tests, then you are ready to move on. 
+
+
+4.7 Unit Testing Sensors
+----------------------------------------
+
+To test the sensors, first connect the Modular Sensor Hat to your development platform. Next, connect the barometric pressure sensor to 
+the 4-pin header labelled "DS-RTC", making sure to match the labels on the board and breakout. Next, connect the YL-40 board provided in 
+the Humber components pack to the neighbouring 4-pin header labelled "PCF - ADC", also making sure to match the labels.
+Back on the development platform, run the following command to test the connection to the sensors:
+
+ i2cdetect -y 1
+
+The output should contain 48 and 77. To test the Solar Cell, simply connect it to a multimeter and measure how much voltage is being 
+generated. Try covering it and moving it closer to light to see if the readings varry. Finally, to test the DHT-11, connect it to the Pi's 
+GPIO. Make sure to correctly connect ground and power, as the DHT is fragile. Connect the pin labelled 'S' to pin 7 of the GPIO. In the 
+solar.py file, comment out lines 26-32. This will mean that only the DHT will be read from. Run the program using:
+
+ python solar.py
+
+If the DHT is functioning, then readings will appear on screen, otherwise the program will fail to run.
+If all of the sensors are functioning, you are ready to connect the circuit.
+
+4.8 Connecting the Circuit
+----------------------------------------
+
+ In this step, the mechanical assembly will be complete. The components required here are:
+
+    Broadcom development platform
+    Modular Sensor Hat
+    Custom PCB
+    DHT-11 Humidity & Temperature Sensor
+    BMP180 Barometric Pressure Sensor
+    YL-40 Breakout Board
+    6V Solar Cell
+    Male-to-female Prototyping Wire (From Canakit Starter Kit)
+
+To assemble the project, follow these steps:
+
+    Disconnect the development platform from power
+    Connect the BMP180 and YL-40 to the Modular Sensor Hat, the same way when you were testing
+    Install the Modular Sensor Hat on the development platform 3 GPIO header. Connect it so that the Sensor Hat hovers over the 
+    development platform, and does not extend beyond it
+    Stack the Custom PCB with the Sensor Hat. This time, make sure the Custom PCB hangs over the edge of the development platform, and 
+    does NOT hover over the Sensor Hat
+    Look at the Custom PCB board file. Connect the DHT-11 to the right-hand 5-pin header. Looking at the DHT-11 breakout board, make sure 
+    that the pins go into the correct header input. Make sure it is properly inserted by following the traces to the GPIO header (G to pin 
+    6, V to pin 1, S to pin 7)
+    Connect the Solar Cell to the left-hand 5-pin header. The black wire (ground) should plug into the right-most header input (which is 
+    connected to GPIO pin 6). The red wire can connect to either header input connected to the 10K resistor
+    Connect the male end of the prototyping wire to the remaining resistor-connected header input. This will be used to probe the Solar 
+    Cell. The female end should connect to AIN2 on the top of the YL-40, which leads to an analog-to-digital converter.
+
+Double-check the connections to make sure they are correct. Once you are sure, power up the development platform. Once the development 
+platform has booted up, edit the solar.py file again, removing the comment you made in Step 3. Run the program again, and you should see a 
+flow of readings on the screen. You should see the LED on the Sensor Hat light up green when everything is working 
+fine. If it lights up red, that means a sensor is not connected properly. With a functioning piece of hardware, it is time to make a nice 
+box to put it in. 
+
+4.9 Box Creation and Final Assembly
+----------------------------------------
+
+It is recommended that clear 3mm acrylic is used for the process, but any colour/transparency can be used. To print my box, we used 
+Humber's Prototype Lab, and the helpful staff setup and laser-cut the box for us. It is recommended that you go to them, or find another 
+professional service, to have the box cut.
+
+Once the box has been cut, use acrylic glue to put everything (except the top) together. Be careful when using the glue, as it may contain 
+harmful chemicals. Once everything has dried, you may begin to mount the development platform in the box. The full drying process may take 
+up to 24 hours, but keep an eye on it The picture above has the colour-coded bars to represent the sides that go together. Just follow the 
+lines and make sure the development platform's IO is accessible when in the box.
+
+The M2.5 kit is required for this step, and you will make sure the development platform is mounted on the standoffs with its IO ports 
+facing the cutouts provided. Before securing the development platform, remove the Modular Sensor Hat from the development platform. Make 
+sure the development platform is securely mounted (but not too tight) before reconnecting the circuit. Briefly disconnect the Solar Cell, 
+and reconnect it by feeding the red and black wire through the holes in the side of the box. The Solar Cell must rest outside of the box 
+to make sure it generates optimal power. Now just put the top on (do not glue) and the build is complete. If the circuit is too tall, you 
+may carefully bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
+
+4.10 Build Conclusion
+----------------------------------------
+
+ By following this guide, you should be able to reproduce this project with relative ease. While the current construction and parts are 
+ great for small scale use and production (student projects, prototyping), but improvements can be made that can make production cheaper 
+ and quicker.
+
+The Modular Sensor Hat was provided as a general IO board, containing componenets that can be used for many different sensors and 
+applications. This can be scaled down and combined with the Custom PCB to reduce the amount of wasted PCB material and un-needed 
+components. This will reduce the cost, time to produce, and size of the project. Next, efforts can be made to get the components cheaper 
+and separate. The Canakit Starter Kit is expensive, and not all of the parts are used. Finally, with the smaller scale of the 
+project, the box can be made smaller. Again, smaller means less acrylic is used, and the cost is reduced. 
+
 =============
 
  
