@@ -67,12 +67,12 @@ owner the ability to easily monitor their system status, track their power
 production, view historical production data, and view weather data from a web
 interface and simple mobile application.
 
-The hardware, powered by a Broadcom development platform, will operate in series with a solar
-panel system. Information will be gathered to indicate if all is well with the
-system and power production overview. Multiple sensors such as temperature,
-humidity, barometric sensors will be used to gather weather data. Weather data
-will be available to view at a glance and historically. With this data you
-understand performance variations day to day.
+The hardware, powered by a Broadcom development platform, will operate in series
+with a solar panel system. Information will be gathered to indicate if all is
+well with the system and power production overview. Multiple sensors such as
+temperature, humidity, barometric sensors will be used to gather weather data.
+Weather data will be available to view at a glance and historically. With this
+data you understand performance variations day to day.
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content” and have found and read three which provide insight into
@@ -193,7 +193,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | 2x20 GPIO Header                                                                          | \$9.99         | [Adafruit](https://www.amazon.ca/GPIO-Stacking-Header-Pi-Extra-long/dp/B00TW0W9HQ/ref=sr_1_2?ie=UTF8&qid=1480734825&sr=8-2&keywords=gpio+header)                         |
 | Humber PCB Components Kit                                                                 | \~\$40.00      | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
 | Custom PCB                                                                                | **TBD**        | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
-| Laser-cut Acrylic Box                                                                     | **TBD**        | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
+| Laser-cut Acrylic Box                                                                     | \~\$30.00**​**  | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
 | Digital Multimeter                                                                        | \$14.59        | [RobotShop](http://www.robotshop.com/ca/en/m-1000e-compact-digital-multimeter.html)                                                                                      |
 | M2.5 Screws/Standoffs                                                                     | \$11.99 (Bulk) | [HVAZI](https://www.amazon.com/HVAZI-Standoff-Stainless-Assortment-Male-Female/dp/B01L06CUJG/ref=sr_1_5?s=industrial&ie=UTF8&qid=1480722221&sr=1-5&keywords=m2.5+screws) |
 | **Phase 1 Total**                                                                         | **\$​267.43**   |                                                                                                                                                                          |
@@ -304,11 +304,31 @@ Illustrations/Diagrams
 
     [3.2] Progress Reports
 
-[3.2.1] Progress Report DD/MM/YY
+        [3.2.1] Progress Report 3/02/2017
 
-[3.2.2] Progress Report DD/MM/YY
+        [3.2.2] Progress Report 16/02/2017
 
 [4.] Hardware Build Instructions
+
+    [4.1] Build Introduction
+
+    [4.2] Basic System Overview
+
+    [4.3] Budget and Materials
+
+    [4.4] Time Commitment
+
+    [4.5] Development Platform Setup
+
+    [4.6] PCB Soldering/Testing
+
+    [4.7] Unit Testing Sensors
+
+    [4.8] Connecting the Circuit
+
+    [4.9] Box Creation and Final Assembly
+
+    [4.10] Build Conclusion
 
 [5.] Progress Reports
 
@@ -544,199 +564,392 @@ solar cell and allow routing for the solar cell connection.
 
 \pagebreak
 
-3. Progress Reports
-===================
+3. Schedule/Progress Reports
+============================
+
+3.1 Schedule
+------------
+
+ 
+
+3.2 Progress Reports
+--------------------
+
+### 3.2.1 Progress Report 3/02/2017
+
+This status report will give you an idea of what our group has done for our
+project so far, what we plan to do in the near future, and any problems we have
+encountered. This week, Salvatore, Steven, and I have created the skeleton for
+our technical report in markdown using Texts. A Requirements Specification is
+written within this skeleton, and includes a description of the project and a
+breakdown of the work we assigned ourselves to. A template from a book was used
+(Wiegers, K. E. (1999). *Software requirements*. Redmond, WA: Microsoft Press).  
+
+
+We have roughly planned out the web interface, and Steven had begun work on a
+basic and functional version. It will be hosted on the same co-located server as
+the database.  
+
+
+Meanwhile, I have worked on a way to integrate the hardware with the database.
+Because many of the PHP scripts were written in the Software Project course, it
+was just be a matter of adding code to our Python program. Next, I hope to
+explore more ways on managing the data to improve efficiency and add redundancy.  
+
+
+Finally, Salvatore has been working on improving the Android application. The
+application is working well, but it could use some polish to be more
+presentable, better performing, and more efficient.
+
+Getting used to the markdown language is a challenge, but it is a welcome skill
+to our portfolios. The problems encountered were with learning markdown
+formatting. The solution was to find online resources to help us learn the
+language, as well as ask you for some assistance during class periods.  
+
+
+Financially, no significant changes have been made to the budget. We hope to
+improve our hardware by 3D printing a new case component to hold the solar cell
+in place on top of the box. This will be free for us at Humber, but we must make
+an effort to estimate the cost of this and add it to the budget. All other parts
+were purchased last semester, and we have no plans of adding more components to
+the hardware.  
+
+
+Regarding progress made in the previous semester, the database and Android
+application are mostly complete, and fully integrated with each other. This
+means there is less work needed here, and our time can be allocated to other
+parts of the project. All of our hardware from last semester is in working
+order, but we have decided to use mine as our primary development platform for
+this class.  
+
+
+I believe we have solid plan in place for our project, and we hope to remain on
+schedule throughout the semester. We do not expect to encounter many problems
+during our development, so I am confident we can continue to meet your
+expectations with our project.
+
+ 
+
+### 3.2.2 Progress Report 16/02/2017
+
+Over the past two weeks, Richard, Steven and I went to the new prototype lab in
+J233 to cut and glue an acrylic holder for our solar cell. We modified the
+existing Coral Draw file and laser cut the necessary pieces. We then decided to
+glue the pieces together with acrylic cement, and we got to experience the new
+venting chamber in the prototype lab.
+
+Development has begun on the online web interface. A working login function has
+been created and initial tests for data manipulation have been completed. Our
+research into data presentation for HTML5 has lead us to use Chart.js. This is
+an open source HTML5 Javascript library that allows us to make our data
+presentable in interactive graph form very easily.
+
+Lastly, we have started integration of our hardware with the database. Last
+Friday we pushed real data to our database for the first time. A new test user
+was created to use this real data across the mobile application and web
+interface. Besides little formatting issues, everything pushes fine. More pushes
+to the database will occur.
+
+Our report is on track to comply with OACETT standards for technical reports.
+Since the last status update we have added and you have looked over our
+Introduction, Abstract and Declaration of Authorship sections.
+
+Financially, as stated in the last status report we needed to get an estimate on
+how much our solar cell holder would cost. We emailed HotPopFactory.com to get
+an estimate for how much the entire case would be as a whole on the
+recommendation that you gave us. The estimated price of the entire case with the
+new top was about \$31.60. This will be reflected in the budget.
+
+In terms of bugs, we have encountered one in the mobile application. The library
+resource we used to display graphs has a known problem for not displaying
+anything if you let it dynamically adjust the x or y axis. When we pushed the
+real data to the database, there were some issues with displaying the power of
+the solar cell. This problem was solved by letting the y axis be a set minimum
+of zero.
 
  
 
 \pagebreak
 
 4. Hardware Build Instructions
+==============================
 
 4.1 Build Introduction
-----------------------------------------
+----------------------
 
+This section contains all the knowledge nesscessary in order to reproduce the
+solar panel project. An individual should be able to recreate this product by
+following these instructions. Before continuing with this section, be sure to
+remember all proper safety procedures when interacting with computer hardware
+and electrical components.
 
-This section contains all the knowledge nesscessary in order to reproduce the solar panel project. An individual should be able to 
-recreate this product by following these instructions. Before continuing with this section, be sure to remember all proper safety
-procedures when interacting with computer hardware and electrical components.
-
+ 
 
 4.2 Basic System Overview
-----------------------------------------
+-------------------------
 
-The system will require the input from the sensors, which will recieve their input from the physical environment surrounding them.
-The data must then be processed and converted to values that are readable and relevant. Once these number values are obtained, they will
-be displayed on demand, or whenever a user requests it. 
+The system will require the input from the sensors, which will recieve their
+input from the physical environment surrounding them. The data must then be
+processed and converted to values that are readable and relevant. Once these
+number values are obtained, they will be displayed on demand, or whenever a user
+requests it.
 
+ 
 
 4.3 Budget and Materials
-----------------------------------------
+------------------------
 
-TO be done with texts
+| **Material Estimates**    | **Cost**       | **Notes**                                                                                                                                                                |
+|---------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Raspberry Pi 3 Kit        | \$119.99       | [CanaKit](https://www.amazon.ca/CanaKit-Raspberry-Ultimate-Starter-Kit/dp/B01CCF9BYG/ref=sr_1_3?ie=UTF8&qid=1474395691&sr=8-3&keywords=raspberry+pi)                     |
+| Barmetric Pressure Sensor | \$8.33         | [RobotShop](http://www.robotshop.com/ca/en/octopus-barometric-pressure-sensor-brick.html)                                                                                |
+| DHT-11 Sensor Breakout    | \$4.04         | [RobotShop](http://www.robotshop.com/ca/en/electronic-brick-humidity-temperature-sensor.html)                                                                            |
+| 6V Solar Cell             | \$5.95         | [Sayal](http://www.sayal.com/STORE/View_SPEC.asp?SKU=237344)                                                                                                             |
+| Safety Glasses            | \$5.04         | [Pyramex](https://www.amazon.ca/Pyramex-Mini-S2510SN-Safety-Glasses/dp/B000NP5D3G/ref=sr_1_4?ie=UTF8&qid=1480724554&sr=8-4&keywords=safety+glasse)                       |
+| Lead Free Solder (10g)    | \$4.49         | [RobotShop](http://www.robotshop.com/ca/en/lead-free-solder-wire-10g-tube.html)                                                                                          |
+| Soldering Iron (25W)      | \$6.80         | [RobotShop](http://www.robotshop.com/ca/en/elenco-sr-1-standard-25w-pencil-soldering-iron.html)                                                                          |
+| Soldering Iron Holder     | \$4.56         | [RobotShop](http://www.robotshop.com/ca/en/elenco-soldering-iron-holder.html)                                                                                            |
+| 5-pin PCB Header (female) | \$0.89         | [Digi-Key](http://www.digikey.ca/product-detail/en/sullins-connector-solutions/PPTC051LFBN-RC/S6103-ND/807239)                                                           |
+| 2x20 GPIO Header          | \$9.99         | [Adafruit](https://www.amazon.ca/GPIO-Stacking-Header-Pi-Extra-long/dp/B00TW0W9HQ/ref=sr_1_2?ie=UTF8&qid=1480734825&sr=8-2&keywords=gpio+header)                         |
+| Humber PCB Components Kit | \~\$40.00      | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
+| Custom PCB                | **TBD**        | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
+| Laser-cut Acrylic Box     | \~\$30.00**​**  | [Humber College - Prototype Lab or Hot Pop Factory](http://www.hotpopfactory.com/http://humber.zone/)                                                                    |
+| Digital Multimeter        | \$14.59        | [RobotShop](http://www.robotshop.com/ca/en/m-1000e-compact-digital-multimeter.html)                                                                                      |
+| M2.5 Screws/Standoffs     | \$11.99 (Bulk) | [HVAZI](https://www.amazon.com/HVAZI-Standoff-Stainless-Assortment-Male-Female/dp/B01L06CUJG/ref=sr_1_5?s=industrial&ie=UTF8&qid=1480722221&sr=1-5&keywords=m2.5+screws) |
+
+ 
 
 4.4 Time Commitment
-----------------------------------------
+-------------------
 
-TO be done with texts
+| **Task**                   | **Time Required (Approx.)** |
+|----------------------------|-----------------------------|
+| Ordering Parts             | 1 hour                      |
+| Parts Delivery             | 2 weeks                     |
+| Development Platform Setup | 2 hours                     |
+| Printing PCBs              | 20 minutes                  |
+| Soldering PCBs             | 3 hours                     |
+| Testing PCBs               | 30 minutes                  |
+| Unit Testing Sensors       | 2 hours                     |
+| Connecting Circuits        | 10 minutes                  |
+| Laser-cutting Box          | 10 minutes                  |
+| Box Assembly               | 1 hour (24 hours to dry)    |
+| Mount project in box       | 5 minutes                   |
+
+ 
 
 4.5 Development Platform Setup
-----------------------------------------
+------------------------------
 
-Once the Broadcom development platform has been aquired, begin by connecting it to a display. Next, connect the keyboard and mouse. You 
-can now plug the development platform into power and begin configuring the operating system. The setup will be explained on screen, and 
-you may begin using the development platform once it has completed.
-In the top right-hand corner of the screen, select the network you want the development platform to automatically connect to when it boots 
-up (skip this step if the device is using a wired connection). Be sure to make note of the IP address, as it may be required later if 
-remotely connecting to the device. The IP can be found by hovering the mouse over the WiFi symbol on the top-right.
-Once connected to the internet, open the command line terminal and run the following command:
+Once the Broadcom development platform has been aquired, begin by connecting it
+to a display. Next, connect the keyboard and mouse. You can now plug the
+development platform into power and begin configuring the operating system. The
+setup will be explained on screen, and you may begin using the development
+platform once it has completed. In the top right-hand corner of the screen,
+select the network you want the development platform to automatically connect to
+when it boots up (skip this step if the device is using a wired connection). Be
+sure to make note of the IP address, as it may be required later if remotely
+connecting to the device. The IP can be found by hovering the mouse over the
+WiFi symbol on the top-right. Once connected to the internet, open the command
+line terminal and run the following command:
 
- sudo apt-get update
+sudo apt-get update
 
-This will update the development platform to the most recent version. This is important, as security updates are required to keep the 
-device safe.
-Next, SSH must be enabled by default, otherwise you will not be able to remotely access the development platform. To ensure SSH starts 
-when the development platform is booted up, run this in the command line:
+This will update the development platform to the most recent version. This is
+important, as security updates are required to keep the device safe. Next, SSH
+must be enabled by default, otherwise you will not be able to remotely access
+the development platform. To ensure SSH starts when the development platform is
+booted up, run this in the command line:
 
- mv /boot/boot_enable_ssh.rc /boot/boot.rc
+mv /boot/boot_enable_ssh.rc /boot/boot.rc
 
-Now that SSH is enabled, VNC must be installed and enabled. VNC allows users to navigate the GUI of the development platform remotely. To 
-install this, run the following commands:
+Now that SSH is enabled, VNC must be installed and enabled. VNC allows users to
+navigate the GUI of the development platform remotely. To install this, run the
+following commands:
 
- sudo install tightvncserver
- tightvncserver
+sudo install tightvncserver tightvncserver
 
-Setup a password for VNC when asked. You will now be able to run VNC server by accessing the development platform through SSH, then 
-interface using any VNC client.
-To prepare the development platform for use with the sensors, I2C must be enabled. To do this, start by running the following command:
+Setup a password for VNC when asked. You will now be able to run VNC server by
+accessing the development platform through SSH, then interface using any VNC
+client. To prepare the development platform for use with the sensors, I2C must
+be enabled. To do this, start by running the following command:
 
- sudo raspi-config
+sudo raspi-config
 
-Use the arrow keys to navigate to advanced options and hit enter. Once there, navigate to I2C and hit enter again. Select "Yes" to have 
-I2C enabled on the development platform.
-Next, we must prepare the Python program used to interface with the sensors. The program below (solar.py) will show the data gathered by 
-the sensors in the circuit. It will not successfully run until all the sensors have been tested and connected.
-Simply place the file in any directory on the development platform.
+Use the arrow keys to navigate to advanced options and hit enter. Once there,
+navigate to I2C and hit enter again. Select "Yes" to have I2C enabled on the
+development platform. Next, we must prepare the Python program used to interface
+with the sensors. The program below (solar.py) will show the data gathered by
+the sensors in the circuit. It will not successfully run until all the sensors
+have been tested and connected. Simply place the file in any directory on the
+development platform.
 
-With the development platform now configured, we can move on to the hardware part of this project. 
+With the development platform now configured, we can move on to the hardware
+part of this project.
 
+ 
 
 4.6 PCB Soldering/Testing
-----------------------------------------
+-------------------------
 
-The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was provided by Humber College. The board must first be printed, 
-and the components aquired (from the Prototype Lab in J building). Solder the components provided according to the Eagle .brd and .sch 
-files. Be sure to wear safety glasses while soldering, and consider all aspects of your own (and others') safety.
+The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was
+provided by Humber College. The board must first be printed, and the components
+aquired (from the Prototype Lab in J building). Solder the components provided
+according to the Eagle .brd and .sch files. Be sure to wear safety glasses while
+soldering, and consider all aspects of your own (and others') safety.
 
-Caution: There is a problem with the Modular Sensor Hat, we have included a quote from our instructor regarding the problem below.
+Caution: There is a problem with the Modular Sensor Hat, we have included a
+quote from our instructor regarding the problem below.
 
-    "RTC module can charge the CR2032 battery causing damage. To permanently disable the charging circuit, please remove the 200 ohm 
-    surface mount resistor near the unused I2C header by pushing it off the PCB with a hot soldering iron." 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"RTC module can charge the CR2032 battery causing damage. To permanently disable the charging circuit, please remove the 200 ohm 
+surface mount resistor near the unused I2C header by pushing it off the PCB with a hot soldering iron." 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Since this project is not using the RTC, it should not cause a problem, but it is something to keep in mind when building.
+Since this project is not using the RTC, it should not cause a problem, but it
+is something to keep in mind when building.
 
-Next, the additional Custom PCB must be printed and soldered. The materials required for this step are as follows:
+Next, the additional Custom PCB must be printed and soldered. The materials
+required for this step are as follows:
 
-    10K Resistor (From Pi Starter Kit)
-    5-pin Header (x2)
-    2x20 pin GPIO Header
-    Short pieces (~2cm) of 22 gauge wire (x3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10K Resistor (From Pi Starter Kit)
+5-pin Header (x2)
+2x20 pin GPIO Header
+Short pieces (~2cm) of 22 gauge wire (x3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The final step with the boards is to ensure all the connections are working before connecting them. If faulty boards are connected to 
-sensors (or the development platform) they can cause permanent damage to either. Save youself time (and money) by making sure they work 
-before continuing. To do this, power and ground the boards first. Apply 3.3V to pin 1, and ground pin 6. Now we need the digital 
-multimeter. Connect the multimeter to the same ground as the development platform, and use the other connection to probe the different 
-parts of the circuit. Measure both resistance and voltage, to make sure the values are correct. If any problems are detected, resoldering 
-may be required. If the boards pass all the tests, then you are ready to move on. 
+The final step with the boards is to ensure all the connections are working
+before connecting them. If faulty boards are connected to sensors (or the
+development platform) they can cause permanent damage to either. Save youself
+time (and money) by making sure they work before continuing. To do this, power
+and ground the boards first. Apply 3.3V to pin 1, and ground pin 6. Now we need
+the digital multimeter. Connect the multimeter to the same ground as the
+development platform, and use the other connection to probe the different parts
+of the circuit. Measure both resistance and voltage, to make sure the values are
+correct. If any problems are detected, resoldering may be required. If the
+boards pass all the tests, then you are ready to move on.
 
+ 
 
 4.7 Unit Testing Sensors
-----------------------------------------
+------------------------
 
-To test the sensors, first connect the Modular Sensor Hat to your development platform. Next, connect the barometric pressure sensor to 
-the 4-pin header labelled "DS-RTC", making sure to match the labels on the board and breakout. Next, connect the YL-40 board provided in 
-the Humber components pack to the neighbouring 4-pin header labelled "PCF - ADC", also making sure to match the labels.
-Back on the development platform, run the following command to test the connection to the sensors:
+To test the sensors, first connect the Modular Sensor Hat to your development
+platform. Next, connect the barometric pressure sensor to the 4-pin header
+labelled "DS-RTC", making sure to match the labels on the board and breakout.
+Next, connect the YL-40 board provided in the Humber components pack to the
+neighbouring 4-pin header labelled "PCF - ADC", also making sure to match the
+labels. Back on the development platform, run the following command to test the
+connection to the sensors:
 
- i2cdetect -y 1
+i2cdetect -y 1
 
-The output should contain 48 and 77. To test the Solar Cell, simply connect it to a multimeter and measure how much voltage is being 
-generated. Try covering it and moving it closer to light to see if the readings varry. Finally, to test the DHT-11, connect it to the Pi's 
-GPIO. Make sure to correctly connect ground and power, as the DHT is fragile. Connect the pin labelled 'S' to pin 7 of the GPIO. In the 
-solar.py file, comment out lines 26-32. This will mean that only the DHT will be read from. Run the program using:
+The output should contain 48 and 77. To test the Solar Cell, simply connect it
+to a multimeter and measure how much voltage is being generated. Try covering it
+and moving it closer to light to see if the readings varry. Finally, to test the
+DHT-11, connect it to the Pi's GPIO. Make sure to correctly connect ground and
+power, as the DHT is fragile. Connect the pin labelled 'S' to pin 7 of the GPIO.
+In the solar.py file, comment out lines 26-32. This will mean that only the DHT
+will be read from. Run the program using:
 
- python solar.py
+python solar.py
 
-If the DHT is functioning, then readings will appear on screen, otherwise the program will fail to run.
-If all of the sensors are functioning, you are ready to connect the circuit.
+If the DHT is functioning, then readings will appear on screen, otherwise the
+program will fail to run. If all of the sensors are functioning, you are ready
+to connect the circuit.
 
 4.8 Connecting the Circuit
-----------------------------------------
+--------------------------
 
- In this step, the mechanical assembly will be complete. The components required here are:
+In this step, the mechanical assembly will be complete. The components required
+here are:
 
-    Broadcom development platform
-    Modular Sensor Hat
-    Custom PCB
-    DHT-11 Humidity & Temperature Sensor
-    BMP180 Barometric Pressure Sensor
-    YL-40 Breakout Board
-    6V Solar Cell
-    Male-to-female Prototyping Wire (From Canakit Starter Kit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Broadcom development platform
+Modular Sensor Hat
+Custom PCB
+DHT-11 Humidity & Temperature Sensor
+BMP180 Barometric Pressure Sensor
+YL-40 Breakout Board
+6V Solar Cell
+Male-to-female Prototyping Wire (From Canakit Starter Kit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To assemble the project, follow these steps:
 
-    Disconnect the development platform from power
-    Connect the BMP180 and YL-40 to the Modular Sensor Hat, the same way when you were testing
-    Install the Modular Sensor Hat on the development platform 3 GPIO header. Connect it so that the Sensor Hat hovers over the 
-    development platform, and does not extend beyond it
-    Stack the Custom PCB with the Sensor Hat. This time, make sure the Custom PCB hangs over the edge of the development platform, and 
-    does NOT hover over the Sensor Hat
-    Look at the Custom PCB board file. Connect the DHT-11 to the right-hand 5-pin header. Looking at the DHT-11 breakout board, make sure 
-    that the pins go into the correct header input. Make sure it is properly inserted by following the traces to the GPIO header (G to pin 
-    6, V to pin 1, S to pin 7)
-    Connect the Solar Cell to the left-hand 5-pin header. The black wire (ground) should plug into the right-most header input (which is 
-    connected to GPIO pin 6). The red wire can connect to either header input connected to the 10K resistor
-    Connect the male end of the prototyping wire to the remaining resistor-connected header input. This will be used to probe the Solar 
-    Cell. The female end should connect to AIN2 on the top of the YL-40, which leads to an analog-to-digital converter.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Disconnect the development platform from power
+Connect the BMP180 and YL-40 to the Modular Sensor Hat, the same way when you were testing
+Install the Modular Sensor Hat on the development platform 3 GPIO header. Connect it so that the Sensor Hat hovers over the 
+development platform, and does not extend beyond it
+Stack the Custom PCB with the Sensor Hat. This time, make sure the Custom PCB hangs over the edge of the development platform, and 
+does NOT hover over the Sensor Hat
+Look at the Custom PCB board file. Connect the DHT-11 to the right-hand 5-pin header. Looking at the DHT-11 breakout board, make sure 
+that the pins go into the correct header input. Make sure it is properly inserted by following the traces to the GPIO header (G to pin 
+6, V to pin 1, S to pin 7)
+Connect the Solar Cell to the left-hand 5-pin header. The black wire (ground) should plug into the right-most header input (which is 
+connected to GPIO pin 6). The red wire can connect to either header input connected to the 10K resistor
+Connect the male end of the prototyping wire to the remaining resistor-connected header input. This will be used to probe the Solar 
+Cell. The female end should connect to AIN2 on the top of the YL-40, which leads to an analog-to-digital converter.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Double-check the connections to make sure they are correct. Once you are sure, power up the development platform. Once the development 
-platform has booted up, edit the solar.py file again, removing the comment you made in Step 3. Run the program again, and you should see a 
-flow of readings on the screen. You should see the LED on the Sensor Hat light up green when everything is working 
-fine. If it lights up red, that means a sensor is not connected properly. With a functioning piece of hardware, it is time to make a nice 
-box to put it in. 
+Double-check the connections to make sure they are correct. Once you are sure,
+power up the development platform. Once the development platform has booted up,
+edit the solar.py file again, removing the comment you made in Step 3. Run the
+program again, and you should see a flow of readings on the screen. You should
+see the LED on the Sensor Hat light up green when everything is working fine. If
+it lights up red, that means a sensor is not connected properly. With a
+functioning piece of hardware, it is time to make a nice box to put it in.
+
+ 
 
 4.9 Box Creation and Final Assembly
-----------------------------------------
+-----------------------------------
 
-It is recommended that clear 3mm acrylic is used for the process, but any colour/transparency can be used. To print my box, we used 
-Humber's Prototype Lab, and the helpful staff setup and laser-cut the box for us. It is recommended that you go to them, or find another 
-professional service, to have the box cut.
+It is recommended that clear 3mm acrylic is used for the process, but any
+colour/transparency can be used. To print my box, we used Humber's Prototype
+Lab, and the helpful staff setup and laser-cut the box for us. It is recommended
+that you go to them, or find another professional service, to have the box cut.
 
-Once the box has been cut, use acrylic glue to put everything (except the top) together. Be careful when using the glue, as it may contain 
-harmful chemicals. Once everything has dried, you may begin to mount the development platform in the box. The full drying process may take 
-up to 24 hours, but keep an eye on it The picture above has the colour-coded bars to represent the sides that go together. Just follow the 
-lines and make sure the development platform's IO is accessible when in the box.
+Once the box has been cut, use acrylic glue to put everything (except the top)
+together. Be careful when using the glue, as it may contain harmful chemicals.
+Once everything has dried, you may begin to mount the development platform in
+the box. The full drying process may take up to 24 hours, but keep an eye on it
+The picture above has the colour-coded bars to represent the sides that go
+together. Just follow the lines and make sure the development platform's IO is
+accessible when in the box.
 
-The M2.5 kit is required for this step, and you will make sure the development platform is mounted on the standoffs with its IO ports 
-facing the cutouts provided. Before securing the development platform, remove the Modular Sensor Hat from the development platform. Make 
-sure the development platform is securely mounted (but not too tight) before reconnecting the circuit. Briefly disconnect the Solar Cell, 
-and reconnect it by feeding the red and black wire through the holes in the side of the box. The Solar Cell must rest outside of the box 
-to make sure it generates optimal power. Now just put the top on (do not glue) and the build is complete. If the circuit is too tall, you 
-may carefully bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
+The M2.5 kit is required for this step, and you will make sure the development
+platform is mounted on the standoffs with its IO ports facing the cutouts
+provided. Before securing the development platform, remove the Modular Sensor
+Hat from the development platform. Make sure the development platform is
+securely mounted (but not too tight) before reconnecting the circuit. Briefly
+disconnect the Solar Cell, and reconnect it by feeding the red and black wire
+through the holes in the side of the box. The Solar Cell must rest outside of
+the box to make sure it generates optimal power. Now just put the top on (do not
+glue) and the build is complete. If the circuit is too tall, you may carefully
+bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
+
+ 
 
 4.10 Build Conclusion
-----------------------------------------
+---------------------
 
- By following this guide, you should be able to reproduce this project with relative ease. While the current construction and parts are 
- great for small scale use and production (student projects, prototyping), but improvements can be made that can make production cheaper 
- and quicker.
+By following this guide, you should be able to reproduce this project with
+relative ease. While the current construction and parts are great for small
+scale use and production (student projects, prototyping), but improvements can
+be made that can make production cheaper and quicker.
 
-The Modular Sensor Hat was provided as a general IO board, containing componenets that can be used for many different sensors and 
-applications. This can be scaled down and combined with the Custom PCB to reduce the amount of wasted PCB material and un-needed 
-components. This will reduce the cost, time to produce, and size of the project. Next, efforts can be made to get the components cheaper 
-and separate. The Canakit Starter Kit is expensive, and not all of the parts are used. Finally, with the smaller scale of the 
-project, the box can be made smaller. Again, smaller means less acrylic is used, and the cost is reduced. 
+The Modular Sensor Hat was provided as a general IO board, containing
+componenets that can be used for many different sensors and applications. This
+can be scaled down and combined with the Custom PCB to reduce the amount of
+wasted PCB material and un-needed components. This will reduce the cost, time to
+produce, and size of the project. Next, efforts can be made to get the
+components cheaper and separate. The Canakit Starter Kit is expensive, and not
+all of the parts are used. Finally, with the smaller scale of the project, the
+box can be made smaller. Again, smaller means less acrylic is used, and the cost
+is reduced.
 
 =============
 
