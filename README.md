@@ -410,8 +410,6 @@ firmware using Adafruit Python libraries.
 
 ### 2.1.1 Product Introduction
 
- 
-
 ### 2.1.1.1 Purpose
 
 This product is to be used in tandem with a solar power generation system. It is
@@ -439,8 +437,6 @@ weather data and used to further our research into solar energy.
  
 
 ### 2.1.2 Overall Description
-
- 
 
 ### 2.1.2.1 Product Perspective
 
@@ -488,8 +484,6 @@ software configuration are included as part of the build instructions.
  
 
 ### 2.1.3 External Interface Requirements
-
- 
 
 ### 2.1.3.1 Database
 
@@ -547,8 +541,6 @@ solar cell and allow routing for the solar cell connection.
  
 
 ### 2.1.4 Other Non-Functional Requirements
-
- 
 
 ### 2.1.4.1 Safety Requirements
 
