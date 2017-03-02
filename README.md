@@ -3,8 +3,8 @@ csl: apa.csl
 bibliography: SpringCitations.bib
 ---
 
-Solar Panel Project
-===================
+**Solar Panel Project**
+=======================
 
 From: Steven Spiteri, Richard Burak, and Salvatore Angilletta
 
@@ -13,6 +13,8 @@ Discipline: Computer Engineering Technology
 Project Website: <https://steve-spiteri.github.io/>
 
 Date of Submission: January 27th, 2017
+
+ 
 
 \pagebreak
 
@@ -28,6 +30,8 @@ MySQL database. Salvatore Angilletta was in charge of managing the Android
 mobile application. Work on the hardware was distributed amongst the three of
 us.
 
+ 
+
 \pagebreak
 
 Approved Proposal
@@ -39,8 +43,10 @@ Prepared by Steven Spiteri, Richard Burak, Salvatore Angilletta
 *Computer Engineering Technology Students*  
 steve-spiteri.github.io
 
-**Executive Summary**
----------------------
+ 
+
+Executive Summary
+-----------------
 
 As student’s in the Computer Engineering Technology program, we will be
 integrating the knowledge and skills we have learned from our program into this
@@ -58,8 +64,10 @@ Production Techniques independently and the application has been completed in
 CENG 319 Software Project. These will be integrated together this term in CENG
 355 Computer Systems Project as a member of a 3 student group.
 
-**Background**
---------------
+ 
+
+Background
+----------
 
 The problem solved by project is how to track a solar panel system. With the
 purposed hardware and companion mobile application it will allow solar panel
@@ -108,8 +116,10 @@ following topics from the respective relevant courses:
 This knowledge and skill set will enable me to build the subsystems and
 integrate them together as my capstone project.
 
-**Methodology**
----------------
+ 
+
+Methodology
+-----------
 
 This proposal is assigned in the first week of class and is due at the beginning
 of class in the second week of the fall semester. My coursework will focus on
@@ -207,13 +217,17 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                                          |
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                                          |
 
-**Concluding remarks**
-----------------------
+ 
+
+Concluding remarks
+------------------
 
 This proposal presents a plan for providing an IoT solution for the difficulty
 accessing solar panel data. This is an opportunity to integrate the knowledge
 and skills developed in our program to create a collaborative IoT capstone
 project. I request approval of this project.
+
+ 
 
 \pagebreak
 
@@ -236,6 +250,8 @@ view it in a graph. The online web interface provides the same functionality
 with a more interactive approach. This product has the potential to enhance
 solar panel ownership and research by allowing users to intuitively manage their
 solar power generation system.
+
+ 
 
 \pagebreak
 
@@ -338,8 +354,6 @@ Illustrations/Diagrams
 
  
 
- 
-
 \pagebreak
 
 Illustrations/Diagrams
@@ -384,6 +398,8 @@ Following AGPLv3, all of our source code will be made available online for
 public viewing. This is due to the Android application using GraphView and our
 firmware using Adafruit Python libraries.
 
+ 
+
 \pagebreak
 
 2. Product Description
@@ -392,8 +408,7 @@ firmware using Adafruit Python libraries.
 2.1 Software Requirements Specifications
 ----------------------------------------
 
-2.1.1 Product Introduction
---------------------------
+### 2.1.1 Product Introduction
 
  
 
@@ -423,8 +438,7 @@ weather data and used to further our research into solar energy.
 
  
 
-2.1.2 Overall Description
--------------------------
+### 2.1.2 Overall Description
 
  
 
@@ -473,8 +487,7 @@ software configuration are included as part of the build instructions.
 
  
 
-2.1.3 External Interface Requirements
--------------------------------------
+### 2.1.3 External Interface Requirements
 
  
 
@@ -533,8 +546,7 @@ solar cell and allow routing for the solar cell connection.
 
  
 
-2.1.4 Other Non-Functional Requirements
----------------------------------------
+### 2.1.4 Other Non-Functional Requirements
 
  
 
@@ -677,7 +689,7 @@ of zero.
 4.1 Build Introduction
 ----------------------
 
-This section contains all the knowledge nesscessary in order to reproduce the
+This section contains all the knowledge necessary in order to reproduce the
 solar panel project. An individual should be able to recreate this product by
 following these instructions. Before continuing with this section, be sure to
 remember all proper safety procedures when interacting with computer hardware
@@ -688,7 +700,7 @@ and electrical components.
 4.2 Basic System Overview
 -------------------------
 
-The system will require the input from the sensors, which will recieve their
+The system will require the input from the sensors, which will receive their
 input from the physical environment surrounding them. The data must then be
 processed and converted to values that are readable and relevant. Once these
 number values are obtained, they will be displayed on demand, or whenever a user
@@ -741,7 +753,7 @@ requests it.
 4.5 Development Platform Setup
 ------------------------------
 
-Once the Broadcom development platform has been aquired, begin by connecting it
+Once the Broadcom development platform has been acquired, begin by connecting it
 to a display. Next, connect the keyboard and mouse. You can now plug the
 development platform into power and begin configuring the operating system. The
 setup will be explained on screen, and you may begin using the development
@@ -859,6 +871,8 @@ If the DHT is functioning, then readings will appear on screen, otherwise the
 program will fail to run. If all of the sensors are functioning, you are ready
 to connect the circuit.
 
+ 
+
 4.8 Connecting the Circuit
 --------------------------
 
@@ -950,8 +964,6 @@ components cheaper and separate. The Canakit Starter Kit is expensive, and not
 all of the parts are used. Finally, with the smaller scale of the project, the
 box can be made smaller. Again, smaller means less acrylic is used, and the cost
 is reduced.
-
-=============
 
  
 
