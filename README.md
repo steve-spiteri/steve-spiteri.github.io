@@ -314,43 +314,41 @@ Illustrations/Diagrams
 
             [2.1.4.2] Security Requirements
 
-[3.] Schedule/Progress Reports
+[3.] Hardware Build Instructions
 
-    [3.1] Schedule
+    [3.1] Build Introduction
 
-    [3.2] Progress Reports
+    [3.2] Basic System Overview
 
-        [3.2.1] Progress Report 3/02/2017
+    [3.3] Budget and Materials
 
-        [3.2.2] Progress Report 16/02/2017
+    [3.4] Time Commitment
 
-[4.] Hardware Build Instructions
+    [3.5] Development Platform Setup
 
-    [4.1] Build Introduction
+    [3.6] PCB Soldering/Testing
 
-    [4.2] Basic System Overview
+    [3.7] Unit Testing Sensors
 
-    [4.3] Budget and Materials
+    [3.8] Connecting the Circuit
 
-    [4.4] Time Commitment
+    [3.9] Box Creation and Final Assembly
 
-    [4.5] Development Platform Setup
+    [3.10] Build Conclusion
 
-    [4.6] PCB Soldering/Testing
+[4.] Schedule/Progress Reports
 
-    [4.7] Unit Testing Sensors
+    [4.1] Schedule
 
-    [4.8] Connecting the Circuit
+    [4.2] Progress Reports
 
-    [4.9] Box Creation and Final Assembly
+        [4.2.1] Progress Report 3/02/2017
 
-    [4.10] Build Conclusion
+        [4.2.2] Progress Report 16/02/2017
 
-[5.] Progress Reports
+[5.] Conclusion
 
-[6.] Conclusion
-
-[7.] Recommendations
+[6.] Bibliography
 
  
 
@@ -568,117 +566,10 @@ solar cell and allow routing for the solar cell connection.
 
 \pagebreak
 
-3. Schedule/Progress Reports
-============================
-
-3.1 Schedule
-------------
-
- 
-
-3.2 Progress Reports
---------------------
-
-### 3.2.1 Progress Report 3/02/2017
-
-This status report will give you an idea of what our group has done for our
-project so far, what we plan to do in the near future, and any problems we have
-encountered. This week, Salvatore, Steven, and I have created the skeleton for
-our technical report in markdown using Texts. A Requirements Specification is
-written within this skeleton, and includes a description of the project and a
-breakdown of the work we assigned ourselves to. A template from a book was used
-(Wiegers, K. E. (1999). *Software requirements*. Redmond, WA: Microsoft Press).  
-
-
-We have roughly planned out the web interface, and Steven had begun work on a
-basic and functional version. It will be hosted on the same co-located server as
-the database.  
-
-
-Meanwhile, I have worked on a way to integrate the hardware with the database.
-Because many of the PHP scripts were written in the Software Project course, it
-was just be a matter of adding code to our Python program. Next, I hope to
-explore more ways on managing the data to improve efficiency and add redundancy.  
-
-
-Finally, Salvatore has been working on improving the Android application. The
-application is working well, but it could use some polish to be more
-presentable, better performing, and more efficient.
-
-Getting used to the markdown language is a challenge, but it is a welcome skill
-to our portfolios. The problems encountered were with learning markdown
-formatting. The solution was to find online resources to help us learn the
-language, as well as ask you for some assistance during class periods.  
-
-
-Financially, no significant changes have been made to the budget. We hope to
-improve our hardware by 3D printing a new case component to hold the solar cell
-in place on top of the box. This will be free for us at Humber, but we must make
-an effort to estimate the cost of this and add it to the budget. All other parts
-were purchased last semester, and we have no plans of adding more components to
-the hardware.  
-
-
-Regarding progress made in the previous semester, the database and Android
-application are mostly complete, and fully integrated with each other. This
-means there is less work needed here, and our time can be allocated to other
-parts of the project. All of our hardware from last semester is in working
-order, but we have decided to use mine as our primary development platform for
-this class.  
-
-
-I believe we have solid plan in place for our project, and we hope to remain on
-schedule throughout the semester. We do not expect to encounter many problems
-during our development, so I am confident we can continue to meet your
-expectations with our project.
-
- 
-
-### 3.2.2 Progress Report 16/02/2017
-
-Over the past two weeks, Richard, Steven and I went to the new prototype lab in
-J233 to cut and glue an acrylic holder for our solar cell. We modified the
-existing Coral Draw file and laser cut the necessary pieces. We then decided to
-glue the pieces together with acrylic cement, and we got to experience the new
-venting chamber in the prototype lab.
-
-Development has begun on the online web interface. A working login function has
-been created and initial tests for data manipulation have been completed. Our
-research into data presentation for HTML5 has lead us to use Chart.js. This is
-an open source HTML5 Javascript library that allows us to make our data
-presentable in interactive graph form very easily.
-
-Lastly, we have started integration of our hardware with the database. Last
-Friday we pushed real data to our database for the first time. A new test user
-was created to use this real data across the mobile application and web
-interface. Besides little formatting issues, everything pushes fine. More pushes
-to the database will occur.
-
-Our report is on track to comply with OACETT standards for technical reports.
-Since the last status update we have added and you have looked over our
-Introduction, Abstract and Declaration of Authorship sections.
-
-Financially, as stated in the last status report we needed to get an estimate on
-how much our solar cell holder would cost. We emailed HotPopFactory.com to get
-an estimate for how much the entire case would be as a whole on the
-recommendation that you gave us. The estimated price of the entire case with the
-new top was about \$31.60. This will be reflected in the budget.
-
-In terms of bugs, we have encountered one in the mobile application. The library
-resource we used to display graphs has a known problem for not displaying
-anything if you let it dynamically adjust the x or y axis. When we pushed the
-real data to the database, there were some issues with displaying the power of
-the solar cell. This problem was solved by letting the y axis be a set minimum
-of zero.
-
- 
-
-\pagebreak
-
-4. Hardware Build Instructions
+3. Hardware Build Instructions
 ==============================
 
-4.1 Build Introduction
+3.1 Build Introduction
 ----------------------
 
 This section contains all the knowledge necessary in order to reproduce the
@@ -689,7 +580,7 @@ and electrical components.
 
  
 
-4.2 Basic System Overview
+3.2 Basic System Overview
 -------------------------
 
 The system will require the input from the sensors, which will receive their
@@ -700,7 +591,7 @@ requests it.
 
  
 
-4.3 Budget and Materials
+3.3 Budget and Materials
 ------------------------
 
 | **Material Estimates**    | **Cost**       | **Notes**                                                                                                                                                                |
@@ -723,7 +614,7 @@ requests it.
 
  
 
-4.4 Time Commitment
+3.4 Time Commitment
 -------------------
 
 | **Task**                   | **Time Required (Approx.)** |
@@ -742,7 +633,7 @@ requests it.
 
  
 
-4.5 Development Platform Setup
+3.5 Development Platform Setup
 ------------------------------
 
 Once the Broadcom development platform has been acquired, begin by connecting it
@@ -793,7 +684,7 @@ part of this project.
 
  
 
-4.6 PCB Soldering/Testing
+3.6 PCB Soldering/Testing
 -------------------------
 
 The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was
@@ -836,7 +727,7 @@ boards pass all the tests, then you are ready to move on.
 
  
 
-4.7 Unit Testing Sensors
+3.7 Unit Testing Sensors
 ------------------------
 
 To test the sensors, first connect the Modular Sensor Hat to your development
@@ -865,7 +756,7 @@ to connect the circuit.
 
  
 
-4.8 Connecting the Circuit
+3.8 Connecting the Circuit
 --------------------------
 
 In this step, the mechanical assembly will be complete. The components required
@@ -910,7 +801,7 @@ functioning piece of hardware, it is time to make a nice box to put it in.
 
  
 
-4.9 Box Creation and Final Assembly
+3.9 Box Creation and Final Assembly
 -----------------------------------
 
 It is recommended that clear 3mm acrylic is used for the process, but any
@@ -939,7 +830,7 @@ bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
 
  
 
-4.10 Build Conclusion
+3.10 Build Conclusion
 ---------------------
 
 By following this guide, you should be able to reproduce this project with
@@ -961,8 +852,219 @@ is reduced.
 
 \pagebreak
 
-5. Recommendations
-==================
+4. Schedule/Progress Reports
+============================
+
+4.1 Schedule
+------------
+
+Phase 1
+
+-   Week 1 - Project Selection  
+    Tue. 9/6/16 - Mon. 9/12/16
+
+-   Week 2 - Project Proposal  
+    Tue. 9/13/16 - Mon. 9/19/16
+
+-   Week 3 - Project Schedule, Initial Meeting  
+    Tue. 9/20/16 - Mon. 9/26/16
+
+-   Week 4 - Budget, Status Meetings  
+    Tue. 9/27/16 - Mon. 10/3/16
+
+-   Week 5 - Acquire Parts, Parts Acquired Milestone, Progress Report  
+    Tue. 10/4/16 - Mon. 10/10/16
+
+-   Week 6 - Mechanically Assemble, Mechanically Assemble Milestone, Status
+    Meeting, Progress Report  
+    Tue. 10/11/16 - Mon. 10/17/26
+
+-   Week 7 - PCB Fabrications, Interface Wiring, Status Meeting, Power Up
+    Milestone  
+    Tue. 10/18/16 - Mon. 10/24/16
+
+-   Week 8 - Placard Design  
+    Tue. 10/25/16 - Mon. 10/31/16
+
+-   Week 9 - Project Demonstration, Progress Report  
+    Tue. 11/1/16 - Mon. 11/7/16
+
+-   Week 10 - Peer Grading Demonstration  
+    Tue. 11/8/16 - Mon. 11/14/16
+
+-   Week 11 - Individual Build Video, Status Meeting  
+    Tue. 11/15/16 - Mon. 11/21/16
+
+-   Week 12 - Progress Report  
+    Tue. 11/22/16 - Mon. 11/28/16
+
+-   Week 13 - Presentation Powererpoint  
+    Tue. 11/29/16 - Mon. 12/5/16
+
+-   Week 14 - Build Instructions  
+    Tue. 12/6/16 - Mon. 12/12/16
+
+-   Week 15 - Final Script, Final Film, Phase 1 Milestone  
+    Tue. 12/13/16 - Mon. 12/19/16
+
+ 
+
+Phase 2
+
+-   Week 1 - Scheduling and Group Meetings  
+    Mon. 1/9/17 - Fri. 1/13/17
+
+-   Week 2 - Group Project Status Update  
+    Mon. 1/16/17 - Fri. 1/20/17
+
+-   Week 3 - App, Web, and Database Software Requirement  
+    Mon. 1/23/17 - Fri. 1/27/17
+
+-   Week 4 - Group Project Status Update  
+    Mon. 1/30/17 - Fri. 2/3/17
+
+-   Week 5 - Group Project Status Update  
+    Mon. 2/6/17 - Fri. 2/10/17
+
+-   Week 6 - App, Web, and Database Independent  
+    Mon. 2/13/17 - Fri. 2/24/17
+
+-   Week 7 - Group Project Status Update  
+    Mon. 2/27/17 - Fri. 3/3/17
+
+-   Week 8 - Group Integration  
+    Mon. 3/6/17 - Fri. 3/10/17
+
+-   Week 9 - Group Project Status Update  
+    Mon. 3/13/17 - Fri. 3/17/17
+
+-   Week 10 - Group Troubleshooting  
+    Mon. 3/20/17 - Fri. 3/24/17
+
+-   Week 11 - Group Project Status Update  
+    Mon. 3/27/17 - Fri. 3/31/17
+
+-   Week 12 - Project Demonstration at Open House  
+    Mon. 4/3/17 - Fri. 4/7/17
+
+-   Week 13 - Group Presentations  
+    Mon. 4/10/17 - Fri. 4/14/17
+
+-   Week 14 - Group Final Report  
+    Mon. 4/17/17 - Fri. 4/21/17
+
+-   Week 15 - Group Video Script  
+    Mon. 4/24/17 - Fri. 4/28/17
+
+ 
+
+4.2 Progress Reports
+--------------------
+
+### 4.2.1 Progress Report 3/02/2017
+
+To: Kristian Medri
+
+From: Richard Burak
+
+ 
+
+This status report will give you an idea of what our group has done for our
+project so far, what we plan to do in the near future, and any problems we have
+encountered. This week, Salvatore, Steven, and I have created the skeleton for
+our technical report in markdown using Texts. A Requirements Specification is
+written within this skeleton, and includes a description of the project and a
+breakdown of the work we assigned ourselves to. A template from a book was used
+(Wiegers, K. E. (1999). *Software requirements*. Redmond, WA: Microsoft Press).
+
+We have roughly planned out the web interface, and Steven had begun work on a
+basic and functional version. It will be hosted on the same co-located server as
+the database.
+
+Meanwhile, I have worked on a way to integrate the hardware with the database.
+Because many of the PHP scripts were written in the Software Project course, it
+was just be a matter of adding code to our Python program. Next, I hope to
+explore more ways on managing the data to improve efficiency and add redundancy.
+
+Finally, Salvatore has been working on improving the Android application. The
+application is working well, but it could use some polish to be more
+presentable, better performing, and more efficient.
+
+Getting used to the markdown language is a challenge, but it is a welcome skill
+to our portfolios. The problems encountered were with learning markdown
+formatting. The solution was to find online resources to help us learn the
+language, as well as ask you for some assistance during class periods.
+
+Financially, no significant changes have been made to the budget. We hope to
+improve our hardware by 3D printing a new case component to hold the solar cell
+in place on top of the box. This will be free for us at Humber, but we must make
+an effort to estimate the cost of this and add it to the budget. All other parts
+were purchased last semester, and we have no plans of adding more components to
+the hardware.
+
+Regarding progress made in the previous semester, the database and Android
+application are mostly complete, and fully integrated with each other. This
+means there is less work needed here, and our time can be allocated to other
+parts of the project. All of our hardware from last semester is in working
+order, but we have decided to use mine as our primary development platform for
+this class.
+
+I believe we have solid plan in place for our project, and we hope to remain on
+schedule throughout the semester. We do not expect to encounter many problems
+during our development, so I am confident we can continue to meet your
+expectations with our project.
+
+ 
+
+### 4.2.2 Progress Report 16/02/2017
+
+To: Kristian Medri
+
+From: Salvatore Angilletta
+
+ 
+
+Over the past two weeks, Richard, Steven and I went to the new prototype lab in
+J233 to cut and glue an acrylic holder for our solar cell. We modified the
+existing Coral Draw file and laser cut the necessary pieces. We then decided to
+glue the pieces together with acrylic cement, and we got to experience the new
+venting chamber in the prototype lab.
+
+Development has begun on the online web interface. A working login function has
+been created and initial tests for data manipulation have been completed. Our
+research into data presentation for HTML5 has lead us to use Chart.js. This is
+an open source HTML5 Javascript library that allows us to make our data
+presentable in interactive graph form very easily.
+
+Lastly, we have started integration of our hardware with the database. Last
+Friday we pushed real data to our database for the first time. A new test user
+was created to use this real data across the mobile application and web
+interface. Besides little formatting issues, everything pushes fine. More pushes
+to the database will occur.
+
+Our report is on track to comply with OACETT standards for technical reports.
+Since the last status update we have added and you have looked over our
+Introduction, Abstract and Declaration of Authorship sections.
+
+Financially, as stated in the last status report we needed to get an estimate on
+how much our solar cell holder would cost. We emailed HotPopFactory.com to get
+an estimate for how much the entire case would be as a whole on the
+recommendation that you gave us. The estimated price of the entire case with the
+new top was about \$31.60. This will be reflected in the budget.
+
+In terms of bugs, we have encountered one in the mobile application. The library
+resource we used to display graphs has a known problem for not displaying
+anything if you let it dynamically adjust the x or y axis. When we pushed the
+real data to the database, there were some issues with displaying the power of
+the solar cell. This problem was solved by letting the y axis be a set minimum
+of zero.
+
+ 
+
+\pagebreak
+
+5. Conclusion
+=============
 
  
 
