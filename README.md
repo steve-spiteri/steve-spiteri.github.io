@@ -291,7 +291,7 @@ Specifications](#21-software-requirements-specifications)
 
             [2.1.2.1] [Product Perspective](#2121-product-perspective)
 
-            [2.1.2.2] [Product Functions](#2122-production-functions)
+            [2.1.2.2] [Product Functions](#2122-product-functions)
 
             [2.1.2.3] [User Classes and
 Characteristics](#2123-user-classes-and-characteristics)
@@ -307,38 +307,38 @@ Requirements](#213-external-interface-requirements)
 
             [2.1.3.2] [Mobile Application](#2132-mobile-application)
 
-            [2.1.3.3] [Web Interface](#2133-web-interface)
+            [2.1.3.3] [Online Web Interface](#2133-online-web-interface)
 
             [2.1.3.4] [Additional Hardware](#2134-additional-hardware)
 
         [2.1.4] [Other Non-Functional
 Requirements](#214-other-non-functional-requirements)
 
-            [2.1.4.1] [Safety Requirements](2141-safety-requirements)
+            [2.1.4.1] [Safety Requirements](#2141-safety-requirements)
 
             [2.1.4.2] [Security Requirements](#2142-security-requirements)
 
 [3.] [Hardware Build Instructions](#3-hardware-build-instructions)
 
-    [3.1] [Build Introduction](31-build-introduction)
+    [3.1] [Build Introduction](#31-build-introduction)
 
-    [3.2] [Basic System Overview](32-basic-system-overview)
+    [3.2] [Basic System Overview](#32-basic-system-overview)
 
     [3.3] [Budget and Materials](#33-budget-and-materials)
 
-    [3.4] [Time Commitment](#34-time-commitement)
+    [3.4] [Time Commitment](#34-time-commitment)
 
     [3.5] [Development Platform Setup](#35-development-platform-setup)
 
-    [3.6] [PCB Soldering/Testing](#26-pcb-solderingtesting)
+    [3.6] [PCB Soldering/Testing](#36-pcb-solderingtesting)
 
     [3.7] [Unit Testing Sensors](#37-unit-testing-sensors)
 
     [3.8] [Connecting the Circuit](#38-connecting-the-circuit)
 
-    [3.9] [Box Creation and Final Assembly](#39-box-creating-and-final-assembly)
+    [3.9] [Box Creation and Final Assembly](#39-box-creation-and-final-assembly)
 
-    [3.10] [Build Conclusion](#310-build-conclustion)
+    [3.10] [Build Conclusion](#310-build-conclusion)
 
 [4.] [Schedule/Progress Reports](#4-scheduleprogress-reports)
 
