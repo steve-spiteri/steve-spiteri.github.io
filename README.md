@@ -274,81 +274,85 @@ Table of Contents
 
 [1.] [Introduction](#1-introduction)
 
-[2.] Project Description
+[2.] [Project Description](#2-product-description)
 
-    [2.1] Software Requirements Specifications
+    [2.1] [Software Requirements
+Specifications](#21-software-requirements-specifications)
 
-        [2.1.1] Production Introduction
+        [2.1.1] [Product Introduction](#211-product-introduction)
 
-            [2.1.1.1] Purpose
+            [2.1.1.1] [Purpose](#2111-purpose)
 
-            [2.1.1.1] Intended Audience
+            [2.1.1.2] [Intended Audience](#2112-intended-audience)
 
-            [2.1.1.3] Product Scope
+            [2.1.1.3] [Product Scope](#2113-product-scope)
 
-        [2.1.2] Overall Description
+        [2.1.2] [Overall Description](#212-overall-description)
 
-            [2.1.2.1] Product Perspective
+            [2.1.2.1] [Product Perspective](#2121-product-perspective)
 
-            [2.1.2.2] Product Functions
+            [2.1.2.2] [Product Functions](#2122-production-functions)
 
-            [2.1.2.3] User Classes and Characteristics
+            [2.1.2.3] [User Classes and
+Characteristics](#2123-user-classes-and-characteristics)
 
-            [2.1.2.4] Operating Environment
+            [2.1.2.4] [Operating Environment](#2124-operating-environment)
 
-            [2.1.2.5] User Documentation
+            [2.1.2.5] [User Documentation](#2125-user-documentation)
 
-        [2.1.3] External Interface Requirements
+        [2.1.3] [External Interface
+Requirements](#213-external-interface-requirements)
 
-            [2.1.3.1] Database
+            [2.1.3.1] [Database](#2131-database)
 
-            [2.1.3.2] Mobile Application
+            [2.1.3.2] [Mobile Application](#2132-mobile-application)
 
-            [2.1.3.3] Web Interface
+            [2.1.3.3] [Web Interface](#2133-web-interface)
 
-            [2.1.3.4] Additional Hardware
+            [2.1.3.4] [Additional Hardware](#2134-additional-hardware)
 
-        [2.1.4] Other Non-Functional Requirements
+        [2.1.4] [Other Non-Functional
+Requirements](#214-other-non-functional-requirements)
 
-            [2.1.4.1] Safety Requirements
+            [2.1.4.1] [Safety Requirements](2141-safety-requirements)
 
-            [2.1.4.2] Security Requirements
+            [2.1.4.2] [Security Requirements](#2142-security-requirements)
 
-[3.] Hardware Build Instructions
+[3.] [Hardware Build Instructions](#3-hardware-build-instructions)
 
-    [3.1] Build Introduction
+    [3.1] [Build Introduction](31-build-introduction)
 
-    [3.2] Basic System Overview
+    [3.2] [Basic System Overview](32-basic-system-overview)
 
-    [3.3] Budget and Materials
+    [3.3] [Budget and Materials](#33-budget-and-materials)
 
-    [3.4] Time Commitment
+    [3.4] [Time Commitment](#34-time-commitement)
 
-    [3.5] Development Platform Setup
+    [3.5] [Development Platform Setup](#35-development-platform-setup)
 
-    [3.6] PCB Soldering/Testing
+    [3.6] [PCB Soldering/Testing](#26-pcb-solderingtesting)
 
-    [3.7] Unit Testing Sensors
+    [3.7] [Unit Testing Sensors](#37-unit-testing-sensors)
 
-    [3.8] Connecting the Circuit
+    [3.8] [Connecting the Circuit](#38-connecting-the-circuit)
 
-    [3.9] Box Creation and Final Assembly
+    [3.9] [Box Creation and Final Assembly](#39-box-creating-and-final-assembly)
 
-    [3.10] Build Conclusion
+    [3.10] [Build Conclusion](#310-build-conclustion)
 
-[4.] Schedule/Progress Reports
+[4.] [Schedule/Progress Reports](#4-scheduleprogress-reports)
 
-    [4.1] Schedule
+    [4.1] [Schedule](#41-schedule)
 
-    [4.2] Progress Reports
+    [4.2] [Progress Reports](#42-progress-reports)
 
-        [4.2.1] Progress Report 3/02/2017
+        [4.2.1] [Progress Report 3/02/2017](#421-progress-report-3022017)
 
-        [4.2.2] Progress Report 16/02/2017
+        [4.2.2] [Progress Report 16/02/2017](#422-progress-report-16022017)
 
-[5.] Conclusion
+[5.] [Conclusion](#5-conclusion)
 
-[6.] Bibliography
+[6.] [Bibliography](#6-bibliography)
 
  
 
