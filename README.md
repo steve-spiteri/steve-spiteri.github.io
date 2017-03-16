@@ -400,10 +400,10 @@ firmware using Adafruit Python libraries.
 
 \pagebreak
 
-2. Product Description
+[2.] Product Description
 ======================
 
-2.1 Software Requirements Specifications
+[2.1] Software Requirements Specifications
 ----------------------------------------
 
 ### 2.1.1 Product Introduction
