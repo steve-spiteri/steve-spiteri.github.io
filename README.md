@@ -272,7 +272,7 @@ Table of Contents
 
 [Illustrations/Diagrams](#illustrationsdiagrams)
 
-[1.] Introduction
+[1.] [Introduction](#1-introduction)
 
 [2.] Project Description
 
@@ -362,7 +362,7 @@ Illustrations/Diagrams
 \pagebreak
 
 [1.] Introduction
-===============
+=================
 
 In the current marketplace home owners, who posses solar power generation
 systems, have difficulty easily accessing power production information and
@@ -401,10 +401,10 @@ firmware using Adafruit Python libraries.
 \pagebreak
 
 [2.] Product Description
-======================
+========================
 
 [2.1] Software Requirements Specifications
-----------------------------------------
+------------------------------------------
 
 ### [2.1.1] Product Introduction
 
@@ -567,10 +567,10 @@ solar cell and allow routing for the solar cell connection.
 \pagebreak
 
 [3.] Hardware Build Instructions
-==============================
+================================
 
 [3.1] Build Introduction
-----------------------
+------------------------
 
 This section contains all the knowledge necessary in order to reproduce the
 solar panel project. An individual should be able to recreate this product by
@@ -581,7 +581,7 @@ and electrical components.
  
 
 [3.2] Basic System Overview
--------------------------
+---------------------------
 
 The system will require the input from the sensors, which will receive their
 input from the physical environment surrounding them. The data must then be
@@ -592,7 +592,7 @@ requests it.
  
 
 [3.3] Budget and Materials
-------------------------
+--------------------------
 
 | **Material Estimates**    | **Cost**       | **Notes**                                                                                                                                                                |
 |---------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -615,7 +615,7 @@ requests it.
  
 
 [3.4] Time Commitment
--------------------
+---------------------
 
 | **Task**                   | **Time Required (Approx.)** |
 |----------------------------|-----------------------------|
@@ -634,7 +634,7 @@ requests it.
  
 
 [3.5] Development Platform Setup
-------------------------------
+--------------------------------
 
 Once the Broadcom development platform has been acquired, begin by connecting it
 to a display. Next, connect the keyboard and mouse. You can now plug the
@@ -685,7 +685,7 @@ part of this project.
  
 
 [3.6] PCB Soldering/Testing
--------------------------
+---------------------------
 
 The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was
 provided by Humber College. The board must first be printed, and the components
@@ -728,7 +728,7 @@ boards pass all the tests, then you are ready to move on.
  
 
 [3.7] Unit Testing Sensors
-------------------------
+--------------------------
 
 To test the sensors, first connect the Modular Sensor Hat to your development
 platform. Next, connect the barometric pressure sensor to the 4-pin header
@@ -757,7 +757,7 @@ to connect the circuit.
  
 
 [3.8] Connecting the Circuit
---------------------------
+----------------------------
 
 In this step, the mechanical assembly will be complete. The components required
 here are:
@@ -802,7 +802,7 @@ functioning piece of hardware, it is time to make a nice box to put it in.
  
 
 [3.9] Box Creation and Final Assembly
------------------------------------
+-------------------------------------
 
 It is recommended that clear 3mm acrylic is used for the process, but any
 colour/transparency can be used. To print my box, we used Humber's Prototype
@@ -831,7 +831,7 @@ bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
  
 
 [3.10] Build Conclusion
----------------------
+-----------------------
 
 By following this guide, you should be able to reproduce this project with
 relative ease. While the current construction and parts are great for small
@@ -853,10 +853,10 @@ is reduced.
 \pagebreak
 
 [4.] Schedule/Progress Reports
-============================
+==============================
 
 [4.1] Schedule
-------------
+--------------
 
 Phase 1
 
@@ -959,7 +959,7 @@ Phase 2
  
 
 [4.2] Progress Reports
---------------------
+----------------------
 
 ### [4.2.1] Progress Report 3/02/2017
 
@@ -1064,11 +1064,11 @@ of zero.
 \pagebreak
 
 [5.] Conclusion
-=============
+===============
 
  
 
 \pagebreak
 
 [6.] Bibliography
-===============
+=================
