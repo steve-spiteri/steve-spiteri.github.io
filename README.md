@@ -361,7 +361,7 @@ Illustrations/Diagrams
 
 \pagebreak
 
-1. Introduction
+[1.] Introduction
 ===============
 
 In the current marketplace home owners, who posses solar power generation
