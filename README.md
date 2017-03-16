@@ -260,17 +260,17 @@ Table of Contents
 
 [Approved Proposal](#approved-proposal)
 
-    Executive Summary
+    [Executive Summary](#executive-summary)
 
-    Background
+    [Background](#background)
 
-    Methodology
+    [Methodology](#methodology)
 
-    Concluding Remarks
+    [Concluding Remarks](#concluding-remarks)
 
-Abstract
+[Abstract](#abstract)
 
-Illustrations/Diagrams
+[Illustrations/Diagrams](#illustrationsdiagrams)
 
 [1.] Introduction
 
