@@ -408,7 +408,7 @@ firmware using Adafruit Python libraries.
 
 ### [2.1.1] Product Introduction
 
-### 2.1.1.1 Purpose
+### [2.1.1.1] Purpose
 
 This product is to be used in tandem with a solar power generation system. It is
 meant to enhance solar panel ownership by providing an intuitive way of
@@ -416,14 +416,14 @@ gathering and examining data for both home owners and researchers.
 
  
 
-### 2.1.1.2 Intended Audience
+### [2.1.1.2] Intended Audience
 
 This document is intended for industry professionals and educational
 institutions for research and evaluation.
 
  
 
-### 2.1.1.3 Product Scope
+### [2.1.1.3] Product Scope
 
 The product is built using a Broadcom development platform to interface with a
 solar cell and a variety of sensors. All of the data is gathered using these
@@ -434,16 +434,16 @@ weather data and used to further our research into solar energy.
 
  
 
-### 2.1.2 Overall Description
+### [2.1.2] Overall Description
 
-### 2.1.2.1 Product Perspective
+### [2.1.2.1] Product Perspective
 
 This product is aimed to be a new way to gather and display data from any
 existing solar power generation system.
 
  
 
-### 2.1.2.2 Product Functions
+### [2.1.2.2] Product Functions
 
 The various sensors are tasked with gathering the raw data. The DHT-11 is used
 for humidity, the BMP085 for barometric pressure and temperature, the YL-40 for
@@ -455,7 +455,7 @@ application or the online web interface.
 
  
 
-### 2.1.2.3 User Classes and Characteristics
+### [2.1.2.3] User Classes and Characteristics
 
 The expected user of this product is any homeowner with a private solar power
 generation system. The software interface is geared towards being simple and
@@ -464,7 +464,7 @@ researchers looking to further work in solar panel technology.
 
  
 
-### 2.1.2.4 Operating Environment
+### [2.1.2.4] Operating Environment
 
 The mobile application must run on Android API 19 and above, on either a
 smartphone or tablet device. The software running on the development platform is
@@ -473,7 +473,7 @@ MySQL and is accessed with PHP scripts.
 
  
 
-### 2.1.2.5 User Documentation
+### [2.1.2.5] User Documentation
 
 Users will have access to hardware build instructions that provide a
 step-by-step guide for putting the product together. Instructions for the Linux
@@ -481,9 +481,9 @@ software configuration are included as part of the build instructions.
 
  
 
-### 2.1.3 External Interface Requirements
+### [2.1.3] External Interface Requirements
 
-### 2.1.3.1 Database
+### [2.1.3.1] Database
 
 The MySQL database will run on a co-located free-hosting website. The database
 will use phpMyAdmin to for administrative interaction on the front-end. The
@@ -497,7 +497,7 @@ be populated by data downloaded from the hardware.
 
  
 
-### 2.1.3.2 Mobile Application
+### [2.1.3.2] Mobile Application
 
 The mobile application, available on Android platforms, will take the data from
 the MySQL database and temporarily store it on the target device in memory. It
@@ -514,7 +514,7 @@ Fahrenheit.
 
  
 
-### 2.1.3.3 Online Web Interface
+### [2.1.3.3] Online Web Interface
 
 An online web interface will be developed and mirror the functionality of the
 mobile application. After the user logs in they will have access to their data
@@ -527,7 +527,7 @@ Fahrenheit.
 
  
 
-### 2.1.3.4 Additional Hardware
+### [2.1.3.4] Additional Hardware
 
 A new top for the product casing will be laser cut to allow mounting of the
 solar cell and allow routing for the solar cell connection.
@@ -538,9 +538,9 @@ solar cell and allow routing for the solar cell connection.
 
  
 
-### 2.1.4 Other Non-Functional Requirements
+### [2.1.4] Other Non-Functional Requirements
 
-### 2.1.4.1 Safety Requirements
+### [2.1.4.1] Safety Requirements
 
 -   This product shall only be connected to an external power supply rated at 5
     Volts DC.
@@ -556,7 +556,7 @@ solar cell and allow routing for the solar cell connection.
 
  
 
-### 2.1.4.2 Security Requirements
+### [2.1.4.2] Security Requirements
 
 -   Do not share your identity authentication and password.
 
@@ -566,10 +566,10 @@ solar cell and allow routing for the solar cell connection.
 
 \pagebreak
 
-3. Hardware Build Instructions
+[3.] Hardware Build Instructions
 ==============================
 
-3.1 Build Introduction
+[3.1] Build Introduction
 ----------------------
 
 This section contains all the knowledge necessary in order to reproduce the
@@ -580,7 +580,7 @@ and electrical components.
 
  
 
-3.2 Basic System Overview
+[3.2] Basic System Overview
 -------------------------
 
 The system will require the input from the sensors, which will receive their
@@ -591,7 +591,7 @@ requests it.
 
  
 
-3.3 Budget and Materials
+[3.3] Budget and Materials
 ------------------------
 
 | **Material Estimates**    | **Cost**       | **Notes**                                                                                                                                                                |
@@ -614,7 +614,7 @@ requests it.
 
  
 
-3.4 Time Commitment
+[3.4] Time Commitment
 -------------------
 
 | **Task**                   | **Time Required (Approx.)** |
@@ -633,7 +633,7 @@ requests it.
 
  
 
-3.5 Development Platform Setup
+[3.5] Development Platform Setup
 ------------------------------
 
 Once the Broadcom development platform has been acquired, begin by connecting it
@@ -684,7 +684,7 @@ part of this project.
 
  
 
-3.6 PCB Soldering/Testing
+[3.6] PCB Soldering/Testing
 -------------------------
 
 The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was
@@ -727,7 +727,7 @@ boards pass all the tests, then you are ready to move on.
 
  
 
-3.7 Unit Testing Sensors
+[3.7] Unit Testing Sensors
 ------------------------
 
 To test the sensors, first connect the Modular Sensor Hat to your development
@@ -756,7 +756,7 @@ to connect the circuit.
 
  
 
-3.8 Connecting the Circuit
+[3.8] Connecting the Circuit
 --------------------------
 
 In this step, the mechanical assembly will be complete. The components required
@@ -801,7 +801,7 @@ functioning piece of hardware, it is time to make a nice box to put it in.
 
  
 
-3.9 Box Creation and Final Assembly
+[3.9] Box Creation and Final Assembly
 -----------------------------------
 
 It is recommended that clear 3mm acrylic is used for the process, but any
@@ -830,7 +830,7 @@ bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
 
  
 
-3.10 Build Conclusion
+[3.10] Build Conclusion
 ---------------------
 
 By following this guide, you should be able to reproduce this project with
@@ -852,10 +852,10 @@ is reduced.
 
 \pagebreak
 
-4. Schedule/Progress Reports
+[4.] Schedule/Progress Reports
 ============================
 
-4.1 Schedule
+[4.1] Schedule
 ------------
 
 Phase 1
@@ -958,10 +958,10 @@ Phase 2
 
  
 
-4.2 Progress Reports
+[4.2] Progress Reports
 --------------------
 
-### 4.2.1 Progress Report 3/02/2017
+### [4.2.1] Progress Report 3/02/2017
 
 To: Kristian Medri
 
@@ -1016,7 +1016,7 @@ expectations with our project.
 
  
 
-### 4.2.2 Progress Report 16/02/2017
+### [4.2.2] Progress Report 16/02/2017
 
 To: Kristian Medri
 
@@ -1063,12 +1063,12 @@ of zero.
 
 \pagebreak
 
-5. Conclusion
+[5.] Conclusion
 =============
 
  
 
 \pagebreak
 
-6. Bibliography
+[6.] Bibliography
 ===============
