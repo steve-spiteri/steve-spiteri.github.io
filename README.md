@@ -406,7 +406,7 @@ firmware using Adafruit Python libraries.
 [2.1] Software Requirements Specifications
 ----------------------------------------
 
-### 2.1.1 Product Introduction
+### [2.1.1] Product Introduction
 
 ### 2.1.1.1 Purpose
 
