@@ -258,7 +258,7 @@ solar power generation system.
 Table of Contents
 =================
 
-Approved Proposal
+[Approved Proposal](#approved-proposal)
 
     Executive Summary
 
