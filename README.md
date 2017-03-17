@@ -653,7 +653,9 @@ connecting to the device. The IP can be found by hovering the mouse over the
 WiFi symbol on the top-right. Once connected to the internet, open the command
 line terminal and run the following command:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 sudo apt-get update
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This will update the development platform to the most recent version. This is
 important, as security updates are required to keep the device safe. Next, SSH
@@ -661,20 +663,26 @@ must be enabled by default, otherwise you will not be able to remotely access
 the development platform. To ensure SSH starts when the development platform is
 booted up, run this in the command line:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 mv /boot/boot_enable_ssh.rc /boot/boot.rc
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that SSH is enabled, VNC must be installed and enabled. VNC allows users to
 navigate the GUI of the development platform remotely. To install this, run the
 following commands:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 sudo install tightvncserver tightvncserver
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Setup a password for VNC when asked. You will now be able to run VNC server by
 accessing the development platform through SSH, then interface using any VNC
 client. To prepare the development platform for use with the sensors, I2C must
 be enabled. To do this, start by running the following command:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 sudo raspi-config
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use the arrow keys to navigate to advanced options and hit enter. Once there,
 navigate to I2C and hit enter again. Select "Yes" to have I2C enabled on the
@@ -683,6 +691,63 @@ with the sensors. The program below (solar.py) will show the data gathered by
 the sensors in the circuit. It will not successfully run until all the sensors
 have been tested and connected. Simply place the file in any directory on the
 development platform.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#!/usr/bin/python
+
+import Adafruit_BMP.BMP085 as BMP085
+import Adafruit_DHT
+import RPi.GPIO as GPIO
+import time
+import smbus
+import sys
+import requests
+
+GPIO.VERSION
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+GPIO.setup(11, GPIO.OUT)
+GPIO.setup(12,GPIO.OUT)
+
+try:
+    while True:
+        sensor = BMP085.BMP085()
+        bus = smbus.SMBus(1)
+
+        humidity, temperature = Adafruit_DHT.read_retry(11, 4)
+        # Un-comment the line below to convert the temperature to Fahrenheit.
+        # temperature = temperature * 9/5.0 + 32
+        temp = sensor.read_temperature()
+        pressure = sensor.read_pressure()
+        altitude = sensor.read_altitude()
+        power = bus.read_byte(0x48)/50
+        light = bus.read_byte(0x48)
+        time_date = str(time.strftime("%d/%m/%Y %H:%M:%S"))
+        print('Temp = {0:0.2f} *C'.format(temp))
+        print('Humidity={0:0.1f}%'.format(humidity))
+        print('Pressure = {0:0.2f} Pa'.format(pressure))
+        print('Altitude = {0:0.2f} m'.format(altitude))
+        print('Sealevel Pressure = {0:0.2f} Pa'.format(sensor.read_sealevel_pressure()))
+        bus.write_byte_data(0x48,0x40 | ((0) & 0x03), 0)
+        print('Solar Panel (V) = {0:0.2f}'.format(power))
+        bus.write_byte_data(0x48,0x40 | ((2) & 0x03), 0)
+        print('Light Level = {0:0.2f}'.format(light))
+        print('Time = '+ time_date + '\n\n')
+        # the next two lines are part of the database uploading, keep them commented out for hardware build
+        # url = 'http://springdb.eu5.org/spring/test_files/insert_test_input.php?id_login=99&power='+str(power)+'&temperature='+str(temp)+'&light='+str(light)+'&bar_pressure='+str(pressure)+'&humidity='+str(humidity)+'&date='+str(time_date)
+        # requests.get(url)
+        # if the code reaches here, all sensors worked, turn led green
+        GPIO.output(11,0)
+        GPIO.output(12,1)
+        time.sleep(15)
+        
+except Exception:
+    # if the code reaches here, a sensor failed, led turns red
+    GPIO.output(11,1)
+    GPIO.output(12,0)
+except KeyboardInterrupt:
+    GPIO.cleanup()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 With the development platform now configured, we can move on to the hardware
 part of this project.
@@ -695,8 +760,12 @@ part of this project.
 The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was
 provided by Humber College. The board must first be printed, and the components
 aquired (from the Prototype Lab in J building). Solder the components provided
-according to the Eagle .brd and .sch files. Be sure to wear safety glasses while
-soldering, and consider all aspects of your own (and others') safety.
+according to the Eagle
+[.brd](https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/HSHV4-student%20version.brd)
+and
+[.sch](https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/HSHV4-student%20version.sch)
+files. Be sure to wear safety glasses while soldering, and consider all aspects
+of your own (and others') safety.
 
 Caution: There is a problem with the Modular Sensor Hat, we have included a
 quote from our instructor regarding the problem below.
@@ -709,8 +778,10 @@ surface mount resistor near the unused I2C header by pushing it off the PCB with
 Since this project is not using the RTC, it should not cause a problem, but it
 is something to keep in mind when building.
 
-Next, the additional Custom PCB must be printed and soldered. The materials
-required for this step are as follows:
+Next, the additional [Custom
+PCB](https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/solarpanel2.brd)
+must be printed and soldered. The materials required for this step are as
+follows:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 10K Resistor (From Pi Starter Kit)
@@ -743,7 +814,9 @@ neighbouring 4-pin header labelled "PCF - ADC", also making sure to match the
 labels. Back on the development platform, run the following command to test the
 connection to the sensors:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 i2cdetect -y 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The output should contain 48 and 77. To test the Solar Cell, simply connect it
 to a multimeter and measure how much voltage is being generated. Try covering it
@@ -753,7 +826,9 @@ power, as the DHT is fragile. Connect the pin labelled 'S' to pin 7 of the GPIO.
 In the solar.py file, comment out lines 26-32. This will mean that only the DHT
 will be read from. Run the program using:
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 python solar.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the DHT is functioning, then readings will appear on screen, otherwise the
 program will fail to run. If all of the sensors are functioning, you are ready
@@ -1070,6 +1145,29 @@ of zero.
 
 [5.] Conclusion
 ===============
+
+With this product, home owners should have an easy time accessing the power
+production information of their solar power generation system. This product
+monitors solar cell voltage generation, surrounding temperature, light levels,
+barometric pressure, and humidity. The database stores the sensor data and is
+accessed by both the Android mobile application and the online web interface.
+The Android mobile application displays the data in an easy-to-read manner for
+the end user. The online web interface provides the same functionality with a
+more interactive approach. With the simplicity provided by these features, this
+product is able to meet the goal we initially had.
+
+ 
+
+It is recommended to engineer a different circuit for the supplemental board, as
+the YL-40 maximum input voltage is 8 volts, if you intended to use a solar cell
+with greater output voltage. With the current design, this product is designed
+solely for indoor testing. If you intended to operate the product outdoors, a
+weather proof case design is highly recommend, as weather elements may damage
+the product. If manufacturing this product on a large scale, it is recommended
+that the two provided circuit board designs are further developed and condensed
+into a single board without redundant space and function. As a result, the will
+also affect the size of the case containing the hardware internals thus making
+it smaller and more affordable.
 
  
 
