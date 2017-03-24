@@ -59,27 +59,14 @@ to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
 PCB with various sensors. The database will store historical production and
 weather data. The mobile device functionality will include the ability to view
-the system status, DC output power overview,
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-ather factors, past power production data and will be further detailed in the
-mobile application proposal. This semester I plan to continue working with
-Richard Burak and Salvatore Angilletta, who also built similar hardware last
-term and have worked on the mobile application. The hardware has been completed
-in CENG 317 Hardware Production Techniques independently and the application has
-been completed in CENG 319 Software Project. These will be integrated together
-this term in CENG 355 Computer Systems Project as a member of a 3 student group.
+the system status, DC output power overview, weather factors, past power
+production data and will be further detailed in the mobile application proposal.
+This semester I plan to continue working with Richard Burak and Salvatore
+Angilletta, who also built similar hardware last term and have worked on the
+mobile application. The hardware has been completed in CENG 317 Hardware
+Production Techniques independently and the application has been completed in
+CENG 319 Software Project. These will be integrated together this term in CENG
+355 Computer Systems Project as a member of a 3 student group.
 
  
 
@@ -959,13 +946,22 @@ is reduced.
 
  
 
-[4.] Mobile Application Design Document
+[4.] Software Implementation Instruction
+========================================
+
+ 
+
+\pagebreak
+
+ 
+
+[5.] Mobile Application Design Document
 =======================================
 
-[4.1] Introduction
+[5.1] Introduction
 ------------------
 
-### [4.1.1] Purpose
+### [5.1.1] Purpose
 
 This document describes the features of the mobile application. The members used
 the information in this document as an outline for the development of the
@@ -973,7 +969,7 @@ application.
 
  
 
-### [4.1.2] Scope
+### [5.1.2] Scope
 
 The main goal of this application is to monitor the status of a solar panel by
 taking information from a database. It will allow the user to view historical
@@ -981,17 +977,17 @@ data
 
  
 
-### [4.1.3] Intended Audience
+### [5.1.3] Intended Audience
 
 This document is intended to be viewed by the group members, and any Humber
 College School of Applied Technology and Advanced Learning instructors.
 
  
 
-[4.2] Design Overview
+[5.2] Design Overview
 ---------------------
 
-### [4.2.1] The Problem
+### [5.2.1] The Problem
 
 Outlined in the project proposal is the problem this application aims to solve.
 Accessing solar panel data can be difficult. Many homeowners may not be aware of
@@ -1002,7 +998,7 @@ to see how weather affects power generation.
 
  
 
-### [4.2.2] Technology Used
+### [5.2.2] Technology Used
 
 The application was developed to run on the Android platform. Android Studio is
 being used as the development environment, and the application has been tested
@@ -1015,7 +1011,7 @@ network connection to communicate with the database and display the data.
 
  
 
-### [4.2.3] Requirements Analysis
+### [5.2.3] Requirements Analysis
 
 As a user, I should be able to login with my credentials and be shown data
 associated with my solar panel.
@@ -1034,7 +1030,7 @@ Fahrenheit and vice versa.
 
  
 
-### [4.2.4] User Login
+### [5.2.4] User Login
 
 The user must be registered to access the database. When the application
 launches, a login screen will appear. The user must have a network connection to
@@ -1043,14 +1039,14 @@ activity will launch.
 
  
 
-### [4.2.5] Database Access
+### [5.2.5] Database Access
 
 With the main activity launched, live data will begin displaying on the initial
 screen.
 
  
 
-### [4.2.6] Data Manipulation
+### [5.2.6] Data Manipulation
 
 The application must allow the user to view the data how they want. For example,
 they might want to see power generation for a certain range of months or days.
@@ -1059,7 +1055,7 @@ created.
 
  
 
-[4.4] Work Breakdown
+[5.4] Work Breakdown
 --------------------
 
 This describes the distribution of work of the mobile application. All work has
