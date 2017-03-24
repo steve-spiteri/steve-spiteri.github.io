@@ -3,6 +3,10 @@ csl: apa.csl
 bibliography: SpringCitations.bib
 ---
 
+\linespread{2}
+
+\selectfont
+
 **Solar Panel Project**
 =======================
 
@@ -12,7 +16,7 @@ Discipline: Computer Engineering Technology
 
 Project Website: <https://steve-spiteri.github.io/>
 
-Date of Submission: January 27th, 2017
+Date of Submission: March 31st, 2017
 
  
 
@@ -55,14 +59,27 @@ to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
 PCB with various sensors. The database will store historical production and
 weather data. The mobile device functionality will include the ability to view
-the system status, DC output power overview, weather factors, past power
-production data and will be further detailed in the mobile application proposal.
-This semester I plan to continue working with Richard Burak and Salvatore
-Angilletta, who also built similar hardware last term and have worked on the
-mobile application. The hardware has been completed in CENG 317 Hardware
-Production Techniques independently and the application has been completed in
-CENG 319 Software Project. These will be integrated together this term in CENG
-355 Computer Systems Project as a member of a 3 student group.
+the system status, DC output power overview,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ather factors, past power production data and will be further detailed in the
+mobile application proposal. This semester I plan to continue working with
+Richard Burak and Salvatore Angilletta, who also built similar hardware last
+term and have worked on the mobile application. The hardware has been completed
+in CENG 317 Hardware Production Techniques independently and the application has
+been completed in CENG 319 Software Project. These will be integrated together
+this term in CENG 355 Computer Systems Project as a member of a 3 student group.
 
  
 
@@ -341,23 +358,27 @@ Assembly](\#39-box-creation-and-final-assembly)
 
     [3.10] [Build Conclusion](\#310-build-conclusion)
 
-[4.] [Schedule/Progress Reports](\#4-scheduleprogress-reports)
+[4.] [Software Implementation Instructions]
 
-    [4.1] [Schedule](\#41-schedule)
+[5.] [Mobile Application Design Document]
 
-    [4.2] [Progress Reports](\#42-progress-reports)
+[6.] [Schedule/Progress Reports](\#4-scheduleprogress-reports)
 
-        [4.2.1] [Progress Report 3/02/2017](\#421-progress-report-3022017)
+    [6.1] [Schedule](\#41-schedule)
 
-        [4.2.2] [Progress Report 16/02/2017](\#422-progress-report-16022017)
+    [6.2] [Progress Reports](\#42-progress-reports)
 
-        [4.2.3] [Progress Report 10/03/2017](\#423-progress-report-10032017)
+        [6.2.1] [Progress Report 3/02/2017](\#421-progress-report-3022017)
 
-        [4.2.4] [Progress Report 24/03/2017](\#424-progress-report-24032017)
+        [6.2.2] [Progress Report 16/02/2017](\#422-progress-report-16022017)
 
-[5.] [Conclusion](\#5-conclusion)
+        [6.2.3] [Progress Report 10/03/2017](\#423-progress-report-10032017)
 
-[6.] [Bibliography](\#6-bibliography)
+        [6.2.4] [Progress Report 24/03/2017](\#424-progress-report-24032017)
+
+[7.] [Conclusion](\#5-conclusion)
+
+[8.] [Bibliography](\#6-bibliography)
 
  
 
@@ -936,10 +957,150 @@ is reduced.
 
 \pagebreak
 
-[4.] Schedule/Progress Reports
+ 
+
+[4.] Mobile Application Design Document
+=======================================
+
+[4.1] Introduction
+------------------
+
+### [4.1.1] Purpose
+
+This document describes the features of the mobile application. The members used
+the information in this document as an outline for the development of the
+application.
+
+ 
+
+### [4.1.2] Scope
+
+The main goal of this application is to monitor the status of a solar panel by
+taking information from a database. It will allow the user to view historical
+data
+
+ 
+
+### [4.1.3] Intended Audience
+
+This document is intended to be viewed by the group members, and any Humber
+College School of Applied Technology and Advanced Learning instructors.
+
+ 
+
+[4.2] Design Overview
+---------------------
+
+### [4.2.1] The Problem
+
+Outlined in the project proposal is the problem this application aims to solve.
+Accessing solar panel data can be difficult. Many homeowners may not be aware of
+how much power is being generated. Even if they are aware, they may have
+questions. “Why is it generating so little power?”, for example. By allowing
+weather data to be viewed at the same time, a comparison can be made by the user
+to see how weather affects power generation.
+
+ 
+
+### [4.2.2] Technology Used
+
+The application was developed to run on the Android platform. Android Studio is
+being used as the development environment, and the application has been tested
+on smartphones running Android API 23, while emulators have been used to test
+API versions 19-24. Photoshop and Inkscape were used to generate images used in
+the application, and Microsoft Project was used to create the project schedule.
+
+Data from the solar panel is stored on a remote server. The application uses a
+network connection to communicate with the database and display the data.
+
+ 
+
+### [4.2.3] Requirements Analysis
+
+As a user, I should be able to login with my credentials and be shown data
+associated with my solar panel.
+
+As a user, I should be able to view weather data that may be affecting solar
+panel power output.
+
+As a user, I should be able to view historical data of solar panel power output,
+humidity, temperature, barometric pressure, and light.
+
+As a user, I should be able to change the application theme from light mode to
+dark mode.
+
+As a user, I should be able to change the temperature notation from Celsius to
+Fahrenheit and vice versa.
+
+ 
+
+### [4.2.4] User Login
+
+The user must be registered to access the database. When the application
+launches, a login screen will appear. The user must have a network connection to
+make the initial connection required to login. Once the login succeeds, the main
+activity will launch.
+
+ 
+
+### [4.2.5] Database Access
+
+With the main activity launched, live data will begin displaying on the initial
+screen.
+
+ 
+
+### [4.2.6] Data Manipulation
+
+The application must allow the user to view the data how they want. For example,
+they might want to see power generation for a certain range of months or days.
+These options are provided by using the business logic that the members have
+created.
+
+ 
+
+[4.4] Work Breakdown
+--------------------
+
+This describes the distribution of work of the mobile application. All work has
+been completed by members Salvatore Angilletta, Richard Burak, and Steven
+Spiteri.
+
+Salvatore acted as project manager. His strong organizational skills were well
+suited for this role. He has developed the project plan with the team and
+managed the team’s performance of tasks. Development of the Gantt Chart was
+Salvatore’s responsibility. He has ensured the Project Team completed the
+project on time and within scope by leading status meetings.
+
+Richard and Steven have acted as the Project Team. They have been responsible
+for executing the tasks and producing the deliverables outlined in the project
+plan. They have ensured effective communication between each other so that
+development was efficient.
+
+Due to Richard’s articulate speech he was responsible for all forward facing
+content and documentation. He has authored a mock-up, requirement analysis,
+design document, and architecture diagram.
+
+Steven’s skill with software such as Adobe Photoshop CC 2014 and Inkscape 0.91
+have allowed him to focus on building the images for an intuitive UI.
+
+Together, Richard and Steven, were also responsible for developing the database
+schema and establishing initial setup of the database.
+
+Coding has been performed by all team members. All other responsibilities of the
+project were performed by all team members to allow everyone to gain the
+experience building an Android application provides.
+
+ 
+
+\pagebreak
+
+ 
+
+[6.] Schedule/Progress Reports
 ==============================
 
-[4.1] Schedule
+[6.1] Schedule
 --------------
 
 Phase 1
@@ -1042,10 +1203,10 @@ Phase 2
 
  
 
-[4.2] Progress Reports
+[6.2] Progress Reports
 ----------------------
 
-### [4.2.1] Progress Report 3/02/2017
+### [6.2.1] Progress Report 3/02/2017
 
 To: Kristian Medri
 
@@ -1100,7 +1261,7 @@ expectations with our project.
 
  
 
-### [4.2.2] Progress Report 16/02/2017
+### [6.2.2] Progress Report 16/02/2017
 
 To: Kristian Medri
 
@@ -1145,7 +1306,7 @@ of zero.
 
  
 
-### [4.2.3] Progress Report 10/03/2017
+### [6.2.3] Progress Report 10/03/2017
 
 To: Kristian Medri
 
@@ -1197,7 +1358,7 @@ hope we can continue at a steady pace for the remainder of the semester.
 
  
 
-### [4.2.4] Progress Report 24/03/2017
+### [6.2.4] Progress Report 24/03/2017
 
 To: Kristian Medri
 
@@ -1239,7 +1400,7 @@ interface.
 
 \pagebreak
 
-[5.] Conclusion
+[7.] Conclusion
 ===============
 
 With this product, home owners should have an easy time accessing the power
@@ -1269,5 +1430,5 @@ it smaller and more affordable.
 
 \pagebreak
 
-[6.] Bibliography
+[8.] Bibliography
 =================
