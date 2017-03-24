@@ -348,6 +348,45 @@ Assembly](\#39-box-creation-and-final-assembly)
 [4.] [Software Implementation Instructions]
 
 [5.] [Mobile Application Design Document]
+(\#5-mobile-application-design-document)
+
+    [5.1] [Introduction] (\#51-introduction)
+
+        [5.1.1] [Purpose] (\#511-purpose)
+
+        [5.1.2] [Scope] (\#512-scope)
+
+        [5.1.3] [Intended Audience] (\#513-intended-audience)
+
+    [5.2] [Design Overview] (\#52-design-overview)
+
+        [5.2.1] [The Problem] (\#521-the-problem)
+
+        [5.2.2] [Technology Used] (\#522-technology-used)
+
+        [5.2.3] [Requirements Analysis] (\#523-requirements-analysis)
+
+        [5.2.4] [User Login] (\#524-user-login)
+
+        [5.2.5] [Database Access] (\#525-database-access)
+
+        [5.2.6] [Data Manipulation] (\#526-data-manipulation)
+
+    [5.3] [Design Mock-ups]
+
+        [5.3.1] [Initial Login]
+
+        [5.3.2] [Initial Login (Bad Credentials)]
+
+        [5.3.3] [Initial Login (No Connection)]
+
+        [5.3.4] [Home Screen]
+
+        [5.3.5] [Database Screen]
+
+        [5.3.6] [Settings Screen]
+
+    [5.4] [Work Breakdown] (\#54-work-breakdown)
 
 [6.] [Schedule/Progress Reports](\#4-scheduleprogress-reports)
 
