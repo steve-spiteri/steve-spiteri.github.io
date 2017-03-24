@@ -394,13 +394,13 @@ Assembly](\#39-box-creation-and-final-assembly)
 
     [6.2] [Progress Reports](\#42-progress-reports)
 
-        [6.2.1] [Progress Report 3/02/2017](\#421-progress-report-3022017)
+        [6.2.1] [Progress Report 3/02/2017](\#621-progress-report-3022017)
 
-        [6.2.2] [Progress Report 16/02/2017](\#422-progress-report-16022017)
+        [6.2.2] [Progress Report 16/02/2017](\#622-progress-report-16022017)
 
-        [6.2.3] [Progress Report 10/03/2017](\#423-progress-report-10032017)
+        [6.2.3] [Progress Report 10/03/2017](\#623-progress-report-10032017)
 
-        [6.2.4] [Progress Report 24/03/2017](\#424-progress-report-24032017)
+        [6.2.4] [Progress Report 24/03/2017](\#624-progress-report-24032017)
 
 [7.] [Conclusion](\#5-conclusion)
 
