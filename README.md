@@ -351,6 +351,10 @@ Assembly](\#39-box-creation-and-final-assembly)
 
         [4.2.2] [Progress Report 16/02/2017](\#422-progress-report-16022017)
 
+        [4.2.3] [Progress Report 10/03/2017](\#423-progress-report-10032017)
+
+        [4.2.4] [Progress Report 24/03/2017](\#424-progress-report-24032017)
+
 [5.] [Conclusion](\#5-conclusion)
 
 [6.] [Bibliography](\#6-bibliography)
@@ -1140,6 +1144,98 @@ the solar cell. This problem was solved by letting the y axis be a set minimum
 of zero.
 
  
+
+### [4.2.3] Progress Report 10/03/2017
+
+To: Kristian Medri
+
+From: Richard Burak
+
+ 
+
+Since the last status update, we made sure to continue working on the project at
+a steady pace. Mid-term exams during this time required all three of us to focus
+our attention elsewhere, but relevant progress was still made. Most of the work
+was done for the web interface, but some slight database changes were made along
+with a filming session.
+
+One of the PHP scripts used to receive data from the development platform was
+changed to process the barometric value (dividing it by one thousand for kPa
+instead of Pa). This was done on the basis of having the web-hosting service
+process the data, while preventing the user’s device and the hardware from doing
+extra work.
+
+I also made a change to the way webpages communicate with each other in the web
+interface. Previously, we were using GET to transfer data, but this was unsecure
+as the user’s ID was displayed in the URL. Since redirection cannot be used with
+POST, I changed the pages to use PHP SESSION variables to keep the information
+more secure, while using less bandwidth when accessing new pages.
+
+Since the hardware is fully developed, and the database and application are
+stable, the three of us are focusing our efforts on the online web interface.
+The goal is to have an aesthetically pleasing interface, while ensuring it is
+efficient and intuitive. Graphs from the previously stated JavaScript library
+will be displayed in one of four quadrants on screen, and they will randomly
+cycle between data at different intervals. This will provide an interesting way
+to show data on a large display. We decided to use HTML frames to evenly split
+the screen and have individual timers and pieces of code running.
+
+On Sunday March 5th, we met with media instructor George Paravantes and one of
+his students to film the video for our project. The student came early and was
+prepared with all of the required recording equipment. The three of us were
+interviewed about our project, and our experience at Humber College, before
+filming some footage of our hardware and mobile application. Allowing someone
+who specializes in media studies, and who has professional equipment, film us
+will ensure a high quality video that should positively frame the Solar Project
+and Humber College.
+
+No changes have been made regarding the budget, as most of the work recently has
+been software engineering and development. Since most aspects of the project are
+in a functional state, all three of us are working on the online web interface
+while updating our technical report weekly. No problems were encountered, and I
+hope we can continue at a steady pace for the remainder of the semester.
+
+ 
+
+### [4.2.4] Progress Report 24/03/2017
+
+To: Kristian Medri
+
+From: Salvatore Angilletta
+
+ 
+
+Over the past two weeks we have been integrating the database with the mobile
+application further by pushing and testing enough data to populate the graphs
+for one week and one month worth of data. In doing so we have encountered a
+problem with the temperature graph and light level graph. They weren't
+displaying the data properly or at all. With our troubleshooting, we were able
+to pinpoint the problems and smoothly iron out the bugs.
+
+Further development in the web interface has proven to be productive. We are in
+the process of finalizing our methods and should be on track to be integrated
+with our project soon. We can grab data from our database and insert it into a
+graph that is displayed to the user. The only thing left is to display multiple
+of these graphs with different data sets and make it look nicer for the end
+user.
+
+Lastly, we further tested our hardware. We made sure that the hardware was able
+to run for extended periods of time under the supervision of Richard. He took
+the project home over a night and we changed the hardware to push to the
+database every 15 seconds. This is not reflective of how the project is suppose
+to work in the real world but is sufficient enough for testing and populating
+the database. We simulated day and night cycles to the best that we could.
+Richard was sure to keep an eye on the project and take safety measures.
+
+Financially there has been no adjustments to the budget. This is because all of
+our progress has been primarily made through software and no additional hardware
+has been added. Also, we have tried contacting George again with asking for the
+student's email address as recommended. 
+
+We feel like we are on track and in the near future there will be more
+integration between hardware and software. More testing of hardware and more
+development into the software portion will occur, more specifically the web
+interface.
 
 \pagebreak
 
