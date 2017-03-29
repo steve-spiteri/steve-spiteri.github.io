@@ -534,7 +534,7 @@ Fahrenheit.
 An online web interface will be developed and mirror the functionality of the
 mobile application. After the user logs in they will have access to their data
 in an easy-to-read manner. On a single page, the web interface will contain the
-users most recent data and a table containing historical data. An option will be
+users most recent data and a table containing historical data. An option may be
 available for the user to change the temperature notation from Celsius to
 Fahrenheit.
 
@@ -684,6 +684,8 @@ the sensors in the circuit. It will not successfully run until all the sensors
 have been tested and connected. Simply place the file in any directory on the
 development platform.
 
+(https://raw.githubusercontent.com/steve-spiteri/steve-spiteri.github.io/master/solar.py)
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #!/usr/bin/python
 
@@ -750,26 +752,25 @@ part of this project.
 The main PCB that holds the I2C circuits, called the Modular Sensor Hat, was
 provided by Humber College. The board must first be printed, and the components
 aquired (from the Prototype Lab in J building). Solder the components provided
-according to the Eagle
-[.brd](https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/HSHV4-student%20version.brd)
-and
-[.sch](https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/HSHV4-student%20version.sch)
+according to the Eagle .brd
+(https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/HSHV4-student%20version.brd)
+and .sch
+(https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/HSHV4-student%20version.sch)
 files. Be sure to wear safety glasses while soldering, and consider all aspects
 of your own (and others') safety.
 
 Caution: There is a problem with the Modular Sensor Hat, we have included a
 quote from our instructor regarding the problem below.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"RTC module can charge the CR2032 battery causing damage. To permanently disable the charging circuit, please remove the 200 ohm 
-surface mount resistor near the unused I2C header by pushing it off the PCB with a hot soldering iron." 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"RTC module can charge the CR2032 battery causing damage. To permanently disable
+the charging circuit, please remove the 200 ohm surface mount resistor near the
+unused I2C header by pushing it off the PCB with a hot soldering iron."
 
 Since this project is not using the RTC, it should not cause a problem, but it
 is something to keep in mind when building.
 
-Next, the additional [Custom
-PCB](https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/solarpanel2.brd)
+Next, the additional Custom PCB
+(https://github.com/richard-burak/richard-burak.github.io/raw/master/BuildFiles/solarpanel2.brd)
 must be printed and soldered. The materials required for this step are as
 follows:
 
@@ -828,34 +829,40 @@ to connect the circuit.
 In this step, the mechanical assembly will be complete. The components required
 here are:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Broadcom development platform
-Modular Sensor Hat
-Custom PCB
-DHT-11 Humidity & Temperature Sensor
-BMP180 Barometric Pressure Sensor
-YL-40 Breakout Board
-6V Solar Cell
-Male-to-female Prototyping Wire (From Canakit Starter Kit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Broadcom development platform Modular Sensor Hat Custom PCB DHT-11 Humidity &
+Temperature Sensor BMP180 Barometric Pressure Sensor YL-40 Breakout Board 6V
+Solar Cell Male-to-female Prototyping Wire (From Canakit Starter Kit)
 
 To assemble the project, follow these steps:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Disconnect the development platform from power
-Connect the BMP180 and YL-40 to the Modular Sensor Hat, the same way when you were testing
-Install the Modular Sensor Hat on the development platform 3 GPIO header. Connect it so that the Sensor Hat hovers over the 
-development platform, and does not extend beyond it
-Stack the Custom PCB with the Sensor Hat. This time, make sure the Custom PCB hangs over the edge of the development platform, and 
-does NOT hover over the Sensor Hat
-Look at the Custom PCB board file. Connect the DHT-11 to the right-hand 5-pin header. Looking at the DHT-11 breakout board, make sure 
-that the pins go into the correct header input. Make sure it is properly inserted by following the traces to the GPIO header (G to pin 
-6, V to pin 1, S to pin 7)
-Connect the Solar Cell to the left-hand 5-pin header. The black wire (ground) should plug into the right-most header input (which is 
-connected to GPIO pin 6). The red wire can connect to either header input connected to the 10K resistor
-Connect the male end of the prototyping wire to the remaining resistor-connected header input. This will be used to probe the Solar 
-Cell. The female end should connect to AIN2 on the top of the YL-40, which leads to an analog-to-digital converter.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-   Disconnect the development platform from power.
+
+-   Connect the BMP180 and YL-40 to the Modular Sensor Hat, the same way when
+    you were testing.
+
+-   Install the Modular Sensor Hat on the development platform 3 GPIO header.
+
+-   Connect it so that the Sensor Hat hovers over the development platform, and
+    does not extend beyond it Stack the Custom PCB with the Sensor Hat. This
+    time, make sure the Custom PCB hangs over the edge of the development
+    platform, and does NOT hover over the Sensor Hat.
+
+-   Look at the Custom PCB board file. Connect the DHT-11 to the right-hand
+    5-pin header.
+
+-   Looking at the DHT-11 breakout board, make sure that the pins go into the
+    correct header input. Make sure it is properly inserted by following the
+    traces to the GPIO header (G to pin 6, V to pin 1, S to pin 7)
+
+-   Connect the Solar Cell to the left-hand 5-pin header. The black wire
+    (ground) should plug into the right-most header input (which is connected to
+    GPIO pin 6). The red wire can connect to either header input connected to
+    the 10K resistor.
+
+-   Connect the male end of the prototyping wire to the remaining
+    resistor-connected header input. This will be used to probe the Solar Cell.
+    The female end should connect to AIN2 on the top of the YL-40, which leads
+    to an analog-to-digital converter.
 
 Double-check the connections to make sure they are correct. Once you are sure,
 power up the development platform. Once the development platform has booted up,
@@ -876,10 +883,9 @@ that you go to them, or find another professional service, to have the box cut.
 Once the box has been cut, use acrylic glue to put everything (except the top)
 together. Be careful when using the glue, as it may contain harmful chemicals.
 Once everything has dried, you may begin to mount the development platform in
-the box. The full drying process may take up to 24 hours, but keep an eye on it
-The picture above has the colour-coded bars to represent the sides that go
-together. Just follow the lines and make sure the development platform's IO is
-accessible when in the box.
+the box. The full drying process may take up to 24 hours, but keep an eye on it.
+Just follow the lines and make sure the development platform's IO is accessible
+when in the box.
 
 The M2.5 kit is required for this step, and you will make sure the development
 platform is mounted on the standoffs with its IO ports facing the cutouts
@@ -960,6 +966,7 @@ assistant.
 
 Step 1:  
 Download “GraphView-4.2.1.jar” file from
+
 <http://www.android-graphview.org/download-getting-started/>
 
 Step 2:  
@@ -1036,8 +1043,8 @@ fetching.
 Whether the database is hosted remotely, or locally, should not matter to the
 hardware. The changes that must be made when setting up a new URL for the web
 interface are in the source code for both the hardware and the mobile
-application. On the hardware, the read.py file must be changed where the URL is.
-This is easy to find there, and the code is relatively short. However, the
+application. On the hardware, the solar.py file must be changed where the URL
+is. This is easy to find there, and the code is relatively short. However, the
 mobile application contains more code. When the project is open in Android
 Studio, open the file called “PageFragment.java”. The URLs are defined on lines
 38-40. Simply change the existing URLs to contain the new domain.
