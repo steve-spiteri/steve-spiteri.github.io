@@ -330,29 +330,33 @@ Abstract
 
 \quad [4.2] Database and Web Setup
 
-[5.] Mobile Application Design Document
+[5.] Mobile Application Documents
 
-\quad [5.1] [Introduction  
+\quad [5.1] Approved Software Proposal
+
+\quad [5.2] Design Document
+
+\quad \quad [5.2.1] Introduction  
   
-\quad \quad [5.1.1] Purpose
+\quad \quad \quad [5.2.1.1] Purpose
 
-\quad \quad [5.1.2] Scope
+\quad \quad \quad [5.2.1.2] Scope
 
-\quad \quad [5.1.3] Intended Audience
+\quad \quad \quad [5.2.1.3] Intended Audience
 
-\quad [5.2] Design Overview
+\quad \quad [5.2.2] Design Overview
 
-\quad \quad [5.2.1] The Problem
+\quad \quad \quad [5.2.2.1] The Problem
 
-\quad \quad [5.2.2] Technology Used
+\quad \quad \quad [5.2.2.2] Technology Used
 
-\quad \quad [5.2.3] Requirements Analysis
+\quad \quad \quad [5.2.2.3] Requirements Analysis
 
-\quad \quad [5.2.4] User Login
+\quad \quad \quad [5.2.2.4] User Login
 
-\quad \quad [5.2.5] Database Access
+\quad \quad \quad [5.2.2.5] Database Access
 
-\quad \quad [5.2.6] Data Manipulation
+\quad \quad \quad [5.2.2.6] Data Manipulation
 
 \quad [5.3] Work Breakdown
 
@@ -362,7 +366,7 @@ Abstract
 
 \quad [6.2] Progress Reports
 
-\quad \quad [6.2.1] Progress Report 04/10/2016
+\quad \quad [6.2.1] Progress Report 4/10/2016
 
 \quad \quad [6.2.2] Progress Report 11/10/2016
 
@@ -372,13 +376,13 @@ Abstract
 
 \quad \quad [6.2.5] Progress Report 22/11/2016
 
-\quad \quad [6.2.6] Progress Report 3/02/2017
+\quad \quad [6.2.6] Progress Report 3/2/2017
 
-\quad \quad [6.2.7] Progress Report 16/02/2017
+\quad \quad [6.2.7] Progress Report 16/2/2017
 
-\quad \quad [6.2.8] Progress Report 10/03/2017
+\quad \quad [6.2.8] Progress Report 10/3/2017
 
-\quad \quad [6.2.4] Progress Report 24/03/2017
+\quad \quad [6.2.4] Progress Report 24/3/2017
 
 [7.] Conclusion
 
@@ -905,6 +909,133 @@ is reduced.
 [4.] Software Implementation Instruction
 ========================================
 
+[4.1] Mobile Application Setup
+------------------------------
+
+In order to begin building the database, a webserver should be accessed in order
+to host it. The option of hosting your own server using WAMP or LAMP
+(Windows/Linux, Apache, MySQL, PHP), or using an online service to host it, will
+meet the requirements. If the decision is made to use your own service, these
+tutorials should help with any installation required. The LAMP server tutorial
+is made specifically for the Ubuntu operating system, but it should be portable
+with other GNU/Linux distributions. Although Linux will work, WAMP server and
+some online hosting services can use PHP MyAdmin, which is an intuitive
+graphical interface for the database.
+
+<https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/wampserver/>
+
+<http://howtoubuntu.org/how-to-install-lamp-on-ubuntu>
+
+When building our database and web interface, we used a website call Free Web
+Hosting Area.
+
+<http://www.freewebhostingarea.com/>
+
+To host the database and interface, there is no monetary charge. They also claim
+to have been running without major service interruptions since 2005, and
+stability is important for a product that should be running 24 hours a day. The
+stability and no-cost nature of the website were both good reasons to use it for
+our intended purpose.
+
+Once the web service is running, you may download the files required to access
+the web interface from the repository. As long as they are placed in the root
+directory of the web server, they can be loaded using any common web browser. If
+using Free Web Hosting Area, the files can also be accessed using any FTP (File
+Transfer Protocol) client.
+
+Once the website is up and running, access your PHP MyAdmin, and select the
+“Import” tab. Once there, you will be prompted to upload a file. You can find
+the file “SpringSchema.sql” in the repository. Once you have downloaded the
+file, select “Choose file” on the PHP MyAdmin page. Once you have selected the
+file, click on “Go” at the bottom of the webpage. This will create an empty
+database, and with the web files already hosted on the server, it is ready to be
+interfaced with using the provided PHP files.
+
+No manual interaction with the PHP files is required. They are each configured
+for specific tasks and are accessed by the hardware and mobile application. The
+hardware will only ever write to the database through the PHP script used to
+insert data. The mobile application will only ever read from the database. It
+will read the user’s account information to authenticate during the login
+process, and will read that user’s data for display. The web interface has a
+similar function, as it uses the same scripts for authentication and data
+fetching.
+
+Whether the database is hosted remotely, or locally, should not matter to the
+hardware. The changes that must be made when setting up a new URL for the web
+interface are in the source code for both the hardware and the mobile
+application. On the hardware, the read.py file must be changed where the URL is.
+This is easy to find there, and the code is relatively short. However, the
+mobile application contains more code. When the project is open in Android
+Studio, open the file called “PageFragment.java”. The URLs are defined on lines
+38-40. Simply change the existing URLs to contain the new domain.
+
+ 
+
+[4.2] Database and Web Setup
+----------------------------
+
+How to install the Android application:  
+  
+Step 1:  
+Install Android Studio onto a compatible computer. Android Studio or an
+equivalent IDE is required as it is the way that you will import the mobile
+application to put onto your Android mobile device. It is recommended that
+Android Studio is used over others because it has been tested and proven to be
+able to import the project.  
+  
+Step 2:  
+Download the Android application from the GitHub site. Go to this url,
+<https://github.com/steve-spiteri/Brave8.SPrINg>, and click the “Clone or
+download” button. After the little drop down menu appears click on “Download
+ZIP”. This will download the project from the GitHub site to the download folder
+of the computer.  
+  
+Step 3:  
+Open up Android Studio and click on “Open an existing Android Studio project”.
+Navigate to the download folder, click on the folder that was download from the
+GitHub site and click the “OK” button.  
+  
+Step 4:  
+Connect your Android mobile device to the computer via USB type A cable to your
+computer. In Android Studio click “Run”, it will look like a little green play
+button in the top row of buttons.  
+  
+Step 5:  
+Select the mobile device that was connected to the computer or choose a virtual
+device if you have one. Wait for it to finish building the project and you
+should see the application running on your mobile device.  
+  
+How to import GraphView library:  
+  
+These are the steps required to import the GraphView library. The application
+should already have this library installed since the steps to importing the
+application has the user downloading and opening the project rather than the
+application its self. These steps are included in case there is ever a problem
+with it after opening the project. Uses these steps as a troubleshooting
+assistant.  
+  
+Step 1:  
+Download “GraphView-4.2.1.jar” file from
+<http://www.android-graphview.org/download-getting-started/>  
+  
+Step 2:  
+Navigate to the libs folder in the application’s folder. This can be done by
+right clicking on the application in Android Studio and clicking on “Reveal in
+Explorer” for Windows or “Reveal in Finder” on a Macintosh. Click on the “libs”
+folder and open it up.  
+  
+Step 3:  
+Copy the “GraphView-4.2.1.jar” file to the libs folder in the application’s
+folder.  
+  
+Step 4:  
+Go to the Gradle Script of the application and add the following line to the
+dependency:  
+  
+compile files('libs/GraphView-4.2.1.jar')
+
+ 
+
 \pagebreak
 
 [5.] Mobile Application Design Document
@@ -989,7 +1120,7 @@ they might want to see power generation for a certain range of months or days.
 These options are provided by using the business logic that the members have
 created.
 
-[5.4] Work Breakdown
+[5.3] Work Breakdown
 --------------------
 
 This describes the distribution of work of the mobile application. All work has
@@ -1128,7 +1259,207 @@ Phase 2
 [6.2] Progress Reports
 ----------------------
 
-### [6.2.1] Progress Report 3/02/2017
+### [6.2.1] Progress Report 4/10/2016
+
+To: Kristian Medri
+
+From: Richard Burak
+
+This status report will give information regarding the progress made on the
+Solar Panel project. Since the proposal for the project was approved, the
+schedule and the budget have been completed. The materials required to begin
+working on the hardware have been ordered as of Monday October 3rd, and are
+expected to arrive on Wednesday October 5th. The order contains items being used
+by all three students working on the Solar Panel project. This measure was taken
+to save the shipping cost on individual orders.
+
+Last week, we had a discussion regarding the goal of the project. There was a
+slight misunderstanding with what the goal originally was, but it is now clear.
+I understand know that the hardware must demonstrate the ability to retrieve and
+store solar and weather data in a database, and act as a proof of concept. This
+new understanding means an adjustment to the budget, and materials required, was
+made.
+
+The motion sensor has been removed from the project, as the focus is now on
+acquiring solar and weather data. Therefore, a small solar panel was purchased
+instead of the motion sensor. The price of the solar panel was coincidentally
+the same as the motion sensor, so funds required for the project have not
+increased.
+
+Regarding the budget, the expenses I have incurred put me well below the
+specified budget. I have been in possession of many items required for some
+time, and purchasing the rest in bulk with other students helped reduce the cost
+even more. The order receipt has been attached to this document for your
+viewing.  As for the schedule, I am currently on time with the tasks outlined.
+
+On October 3rd, my CENG 317 Software Project group met with Haki Sharifi,
+outlining many of the software elements our Android application will use. This
+means a basic user interface and layout have been created for the Solar Panel
+project as well, allowing me to focus on the hardware portion in this class.
+
+Overall, I have gained an understanding of what must be done for the Solar Panel
+project, and I am currently under budget and on schedule. I hope to receive
+ongoing feedback from you on my progress.
+
+ 
+
+### [6.2.2] Progress Report 11/10/2016
+
+To: Kristian Medri
+
+From: Salvatore Angilletta
+
+I am writing upon your request to update you on our progress of our hardware
+project, the Interactive Solar Panel Display. After getting our project approved
+I have completed two deliverables (Project Schedule and Project Budget). I have
+also achieved the parts acquired milestone and initial construction of the
+project has begun.  
+  
+A circuit has been made for our project and has been assembled. Initial testing
+of the solar panel has been done as well, it achieved a result of three volts
+under regular lighting conditions in the Humber Labs. A resistor has been added
+to the circuit between the Raspberry Pi and the solar panel in case our solar
+panel reaches a voltage higher than three volts. This was added to prevent the
+Raspberry Pi from getting damaged as it cannot accept any voltage higher than
+3.3 volts on the GPIO pins. All other testing needed (sensors and raspberry
+class) will be done in class on October. 11, 2016.  
+  
+Financial status of our project has been effected by the drop of the motion
+sensor. This effects the budget by subtracting \$14.81 from the total price.
+There is still an item not purchased, it is not mentioned on the budget either.
+It is nylon screws, nylon standoffs and heat shrink wrap. These components are
+not required with our current progress as of yet because they are for the
+project box and finishing touches. A total of \$157.37 has been spent so far, we
+managed to save \$35.08 in shipping since we bought all components from one
+place. I also found a pair of wire cutters at home which saved me \$20. I am
+under budget by approximately \$150 at the current moment. That concludes the
+current progress status of our project.  
+  
+The next tasks to be completed soon include soldering the modular sensor hat,
+program the code needed to get information from the sensors/solar panel and
+create/make a connection to a database.
+
+ 
+
+### [6.2.3] Progress Report 8/11/2016
+
+To: Kristian Medri
+
+From: Steven Spiteri
+
+I am writing to bring you up to date on the progress I have made on my hardware
+project, the interactive solar panel display. Recent project activities include
+a placard to be used in the open house demonstration on Saturday, November 12th
+2016 and a thirty second build video showcasing the major components used,
+assembly, power up, and the functionality I plan to demonstrate at the open
+house. Completing the placard and thirty second are defined in the project
+schedule Week 8 lines 26 through 27 – Week 9 lines 28 through 30.
+
+I have successfully assembled a circuit connected to the Raspberry Pi 3 that is
+able to accurately read temperature, humidity, pressure, altitude, and sea-level
+pressure. The circuit reads output voltage produced by the solar cell and light
+level but it requires some calibration as the reading does not accurately
+represent the correct value.
+
+As I was constructing the circuit that was outlined in the fritzing diagram
+provided last updated I noticed an opportunity of improvement. I was able to
+modify the circuit to include the sensor hat. This creates a tidier looking
+circuit. The project has been modified to include the sensor hat.  
+On the course website you will find an image of the circuit including the sensor
+hat.
+
+Completing the circuit has brought me closer to meeting the objectives of the
+project as defined in the approved approval. Notable upcoming tasks include the
+possibly printing a secondary circuit board to complement the sensor hat to
+allow a more complete package, calibrating the reading for solar cell output
+voltage and light level, pushing the data into a database, and cutting an
+acrylic case for the project.
+
+Financial updates are that no money has been spent since the last update. I
+expect to buy some components for the finished project such as stand-offs,
+shrink tubing, etc.
+
+On the course website, you will find some hyperlinks that helped me produce the
+code for the reading.
+
+ 
+
+### [6.2.4] Progress Report 15/11/2016
+
+To: Kristian Medri
+
+From: Steven Spiteri
+
+I am writing to bring you up to date on the progress I have made on my hardware
+project, the interactive solar panel display. Recent project activities working
+on a printed circuit board that will accompany the project with Eagle CAD
+software.
+
+I was having trouble designing the printed circuit board so I visited the
+Prototype Lab on Monday, November 14th, 2016 for some help. I received guidance,
+corrected my design, and I am hoping to have the printed circuit board within
+the week. The accompaniment of the printed circuit board will allow me to create
+a tidier looking circuit.
+
+As I and Richard were both busy, we could not attend the open house. Instead,
+Salvatore attended the event on Saturday November 12th. The feedback gathered
+was mostly positive from the general public, and many comments were made about
+the pseudo-graphic interface displaying the change in data dynamically. Finally,
+comments made about the project’s design requested a more polished physical
+container for it.
+
+After I receive the printed circuit board I will be able to move forward with
+cutting the acrylic case for the project since I will have the final dimensions.
+After the case is complete I will be able to buy the components for the finished
+project such as stand-offs, shrink tubing, etc.
+
+Completing the printed circuit board will bring me closer to meeting the
+objectives of the project as defined in the approved approval. Notable upcoming
+tasks include calibrating the reading for solar cell output voltage and light
+level, pushing the data into a database, and cutting an acrylic case for the
+project.
+
+Financial updates are that no money has been spent since the last update. I must
+purchase the stackable GPIO header and connectors for my printed circuit board.
+Staff at the prototype lab has told me they will provide me with the SKU’s for
+the components when I pick up the printed circuit board. As stated in the last
+progress report I expect to buy some components for the finished project such as
+stand-offs, shrink tubing, etc.
+
+ 
+
+### [6.2.5] Progress Report 22/11/2016
+
+To: Kristian Medri
+
+From: Richard Burak
+
+This status report will give information regarding the progress made on the
+Solar Panel project. Since the last status report, an additional circuit board
+for the project has been printed and is ready to be soldered. I ordered and
+received six 5-pin female headers for the PCB, similar to the ones used in the
+Modular Sensor Hat.
+
+These headers cost about \$13 after tax and shipping, but the members of the
+solar project group are splitting cost, so it ends up being a little over \$4,
+which still leaves me under budget.
+
+Only one PCB has been printed by Steven, this is in order to test the design and
+make sure it works before printing more. While Steven is soldering on Nov 22nd,
+I will be responsible for creating the design for the laser cut case. This is
+possible now because we can have the exact measurements of the hardware.
+
+Finally, the Python code on the Pi has been updated to show when an issue is
+occurring with any sensor. The LED will be red when a sensor is not detected or
+malfunctioning, while it will remain green if everything is working as expected.
+
+I hope this status report provides sufficient evidence of my progress and work.
+Week 12 has no other deliverables due, and I am close to finalizing my project
+for this semester.
+
+ 
+
+### [6.2.6] Progress Report 3/2/2017
 
 To: Kristian Medri
 
@@ -1179,7 +1510,7 @@ schedule throughout the semester. We do not expect to encounter many problems
 during our development, so I am confident we can continue to meet your
 expectations with our project.
 
-### [6.2.2] Progress Report 16/02/2017
+### [6.2.7] Progress Report 16/2/2017
 
 To: Kristian Medri
 
@@ -1220,7 +1551,7 @@ real data to the database, there were some issues with displaying the power of
 the solar cell. This problem was solved by letting the y axis be a set minimum
 of zero.
 
-### [6.2.3] Progress Report 10/03/2017
+### [6.2.8] Progress Report 10/3/2017
 
 To: Kristian Medri
 
@@ -1268,7 +1599,7 @@ in a functional state, all three of us are working on the online web interface
 while updating our technical report weekly. No problems were encountered, and I
 hope we can continue at a steady pace for the remainder of the semester.
 
-### [6.2.4] Progress Report 24/03/2017
+### [6.2.9] Progress Report 24/3/2017
 
 To: Kristian Medri
 
