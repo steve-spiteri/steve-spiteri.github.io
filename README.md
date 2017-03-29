@@ -918,68 +918,6 @@ is reduced.
 [4.1] Mobile Application Setup
 ------------------------------
 
-In order to begin building the database, a webserver should be accessed in order
-to host it. The option of hosting your own server using WAMP or LAMP
-(Windows/Linux, Apache, MySQL, PHP), or using an online service to host it, will
-meet the requirements. If the decision is made to use your own service, these
-tutorials should help with any installation required. The LAMP server tutorial
-is made specifically for the Ubuntu operating system, but it should be portable
-with other GNU/Linux distributions. Although Linux will work, WAMP server and
-some online hosting services can use PHP MyAdmin, which is an intuitive
-graphical interface for the database.
-
-<https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/wampserver/>
-
-<http://howtoubuntu.org/how-to-install-lamp-on-ubuntu>
-
-When building our database and web interface, we used a website call Free Web
-Hosting Area.
-
-<http://www.freewebhostingarea.com/>
-
-To host the database and interface, there is no monetary charge. They also claim
-to have been running without major service interruptions since 2005, and
-stability is important for a product that should be running 24 hours a day. The
-stability and no-cost nature of the website were both good reasons to use it for
-our intended purpose.
-
-Once the web service is running, you may download the files required to access
-the web interface from the repository. As long as they are placed in the root
-directory of the web server, they can be loaded using any common web browser. If
-using Free Web Hosting Area, the files can also be accessed using any FTP (File
-Transfer Protocol) client.
-
-Once the website is up and running, access your PHP MyAdmin, and select the
-“Import” tab. Once there, you will be prompted to upload a file. You can find
-the file “SpringSchema.sql” in the repository. Once you have downloaded the
-file, select “Choose file” on the PHP MyAdmin page. Once you have selected the
-file, click on “Go” at the bottom of the webpage. This will create an empty
-database, and with the web files already hosted on the server, it is ready to be
-interfaced with using the provided PHP files.
-
-No manual interaction with the PHP files is required. They are each configured
-for specific tasks and are accessed by the hardware and mobile application. The
-hardware will only ever write to the database through the PHP script used to
-insert data. The mobile application will only ever read from the database. It
-will read the user’s account information to authenticate during the login
-process, and will read that user’s data for display. The web interface has a
-similar function, as it uses the same scripts for authentication and data
-fetching.
-
-Whether the database is hosted remotely, or locally, should not matter to the
-hardware. The changes that must be made when setting up a new URL for the web
-interface are in the source code for both the hardware and the mobile
-application. On the hardware, the read.py file must be changed where the URL is.
-This is easy to find there, and the code is relatively short. However, the
-mobile application contains more code. When the project is open in Android
-Studio, open the file called “PageFragment.java”. The URLs are defined on lines
-38-40. Simply change the existing URLs to contain the new domain.
-
- 
-
-[4.2] Database and Web Setup
-----------------------------
-
 How to install the Android application:
 
 Step 1:  
@@ -1039,6 +977,70 @@ Go to the Gradle Script of the application and add the following line to the
 dependency:
 
 compile files('libs/GraphView-4.2.1.jar')
+
+ 
+
+[4.2] Database and Web Setup
+----------------------------
+
+In order to begin building the database, a webserver should be accessed in order
+to host it. The option of hosting your own server using WAMP or LAMP
+(Windows/Linux, Apache, MySQL, PHP), or using an online service to host it, will
+meet the requirements. If the decision is made to use your own service, these
+tutorials should help with any installation required. The LAMP server tutorial
+is made specifically for the Ubuntu operating system, but it should be portable
+with other GNU/Linux distributions. Although Linux will work, WAMP server and
+some online hosting services can use PHP MyAdmin, which is an intuitive
+graphical interface for the database.
+
+<https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/wampserver/>
+
+<http://howtoubuntu.org/how-to-install-lamp-on-ubuntu>
+
+When building our database and web interface, we used a website call Free Web
+Hosting Area.
+
+<http://www.freewebhostingarea.com/>
+
+To host the database and interface, there is no monetary charge. They also claim
+to have been running without major service interruptions since 2005, and
+stability is important for a product that should be running 24 hours a day. The
+stability and no-cost nature of the website were both good reasons to use it for
+our intended purpose.
+
+Once the web service is running, you may download the files required to access
+the web interface from the repository
+(https://github.com/steve-spiteri/steve-spiteri.github.io/blob/master/Website.7z?raw=true).
+As long as they are placed in the root directory of the web server, they can be
+loaded using any common web browser. If using Free Web Hosting Area, the files
+can also be accessed using any FTP (File Transfer Protocol) client.
+
+Once the website is up and running, access your PHP MyAdmin, and select the
+“Import” tab. Once there, you will be prompted to upload a file. You can find
+the file “SpringSchema.sql” in the repository
+(https://github.com/steve-spiteri/steve-spiteri.github.io/raw/master/SpringSchema.sql).
+Once you have downloaded the file, select “Choose file” on the PHP MyAdmin page.
+Once you have selected the file, click on “Go” at the bottom of the webpage.
+This will create an empty database, and with the web files already hosted on the
+server, it is ready to be interfaced with using the provided PHP files.
+
+No manual interaction with the PHP files is required. They are each configured
+for specific tasks and are accessed by the hardware and mobile application. The
+hardware will only ever write to the database through the PHP script used to
+insert data. The mobile application will only ever read from the database. It
+will read the user’s account information to authenticate during the login
+process, and will read that user’s data for display. The web interface has a
+similar function, as it uses the same scripts for authentication and data
+fetching.
+
+Whether the database is hosted remotely, or locally, should not matter to the
+hardware. The changes that must be made when setting up a new URL for the web
+interface are in the source code for both the hardware and the mobile
+application. On the hardware, the read.py file must be changed where the URL is.
+This is easy to find there, and the code is relatively short. However, the
+mobile application contains more code. When the project is open in Android
+Studio, open the file called “PageFragment.java”. The URLs are defined on lines
+38-40. Simply change the existing URLs to contain the new domain.
 
  
 
