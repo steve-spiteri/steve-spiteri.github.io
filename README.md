@@ -5,7 +5,10 @@ bibliography: SpringCitations.bib
 
 \linespread{2}
 
+\setmainfont{Arial}
+
 \selectfont
+
 
 **Solar Panel Project**
 =======================
@@ -18,7 +21,17 @@ Project Website: <https://steve-spiteri.github.io/>
 
 Date of Submission: March 31st, 2017
 
- 
+\begin{table}[h!]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lllll}
+1 & 2 &  & 3 &  \\
+  &   &  &   &  \\
+  &   &  &   &  \\
+  &   &  &   & 
+\end{tabular}
+\end{table} 
 
 \pagebreak
 
@@ -34,7 +47,7 @@ MySQL database. Salvatore Angilletta was in charge of managing the Android
 mobile application. Work on the hardware was distributed amongst the three of
 us.
 
- 
+ 
 
 \pagebreak
 
@@ -47,7 +60,7 @@ Prepared by Steven Spiteri, Richard Burak, Salvatore Angilletta
 *Computer Engineering Technology Students*  
 steve-spiteri.github.io
 
- 
+ 
 
 Executive Summary
 -----------------
@@ -68,7 +81,7 @@ Production Techniques independently and the application has been completed in
 CENG 319 Software Project. These will be integrated together this term in CENG
 355 Computer Systems Project as a member of a 3 student group.
 
- 
+ 
 
 Background
 ----------
@@ -120,7 +133,7 @@ following topics from the respective relevant courses:
 This knowledge and skill set will enable me to build the subsystems and
 integrate them together as my capstone project.
 
- 
+ 
 
 Methodology
 -----------
@@ -207,10 +220,10 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | 2x20 GPIO Header                                                                          | \$9.99         | [Adafruit](https://www.amazon.ca/GPIO-Stacking-Header-Pi-Extra-long/dp/B00TW0W9HQ/ref=sr_1_2?ie=UTF8&qid=1480734825&sr=8-2&keywords=gpio+header)                         |
 | Humber PCB Components Kit                                                                 | \~\$40.00      | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
 | Custom PCB                                                                                | **TBD**        | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
-| Laser-cut Acrylic Box                                                                     | \~\$30.00**​**  | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
+| Laser-cut Acrylic Box                                                                     | \~\$30.00      | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
 | Digital Multimeter                                                                        | \$14.59        | [RobotShop](http://www.robotshop.com/ca/en/m-1000e-compact-digital-multimeter.html)                                                                                      |
 | M2.5 Screws/Standoffs                                                                     | \$11.99 (Bulk) | [HVAZI](https://www.amazon.com/HVAZI-Standoff-Stainless-Assortment-Male-Female/dp/B01L06CUJG/ref=sr_1_5?s=industrial&ie=UTF8&qid=1480722221&sr=1-5&keywords=m2.5+screws) |
-| **Phase 1 Total**                                                                         | **\$​267.43**   |                                                                                                                                                                          |
+| **Phase 1 Total**                                                                         | \$​267.43       |                                                                                                                                                                          |
 | **Phase 2**                                                                               |                |                                                                                                                                                                          |
 | Laser-cut Acrylic Top of Box                                                              | **TBD**        | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
 | **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                                                          |
@@ -221,7 +234,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                                          |
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                                          |
 
- 
+ 
 
 Concluding remarks
 ------------------
@@ -231,7 +244,7 @@ accessing solar panel data. This is an opportunity to integrate the knowledge
 and skills developed in our program to create a collaborative IoT capstone
 project. I request approval of this project.
 
- 
+ 
 
 \pagebreak
 
@@ -255,7 +268,7 @@ with a more interactive approach. This product has the potential to enhance
 solar panel ownership and research by allowing users to intuitively manage their
 solar power generation system.
 
- 
+ 
 
 \pagebreak
 
@@ -264,13 +277,13 @@ Table of Contents
 
 [Approved Proposal](#approved-proposal)
 
-    [Executive Summary](#executive-summary)
+\quad[Executive Summary](#executive-summary)
 
-    [Background](#background)
+    [Background](#background)
 
-    [Methodology](#methodology)
+    [Methodology](#methodology)
 
-    [Concluding Remarks](#concluding-remarks)
+    [Concluding Remarks](#concluding-remarks)
 
 [Abstract](#abstract)
 
@@ -280,140 +293,140 @@ Table of Contents
 
 [2.] [Project Description](\#2-product-description)
 
-    [2.1] [Software Requirements
+    [2.1] [Software Requirements
 Specifications](\#21-software-requirements-specifications)
 
-        [2.1.1] [Product Introduction](\#211-product-introduction)
+        [2.1.1] [Product Introduction](\#211-product-introduction)
 
-            [2.1.1.1] [Purpose](\#2111-purpose)
+            [2.1.1.1] [Purpose](\#2111-purpose)
 
-            [2.1.1.2] [Intended Audience](\#2112-intended-audience)
+            [2.1.1.2] [Intended Audience](\#2112-intended-audience)
 
-            [2.1.1.3] [Product Scope](\#2113-product-scope)
+            [2.1.1.3] [Product Scope](\#2113-product-scope)
 
-        [2.1.2] [Overall Description](\#212-overall-description)
+        [2.1.2] [Overall Description](\#212-overall-description)
 
-            [2.1.2.1] [Product Perspective](\#2121-product-perspective)
+            [2.1.2.1] [Product Perspective](\#2121-product-perspective)
 
-            [2.1.2.2] [Product Functions](\#2122-product-functions)
+            [2.1.2.2] [Product Functions](\#2122-product-functions)
 
-            [2.1.2.3] [User Classes and
+            [2.1.2.3] [User Classes and
 Characteristics](\#2123-user-classes-and-characteristics)
 
-            [2.1.2.4] [Operating Environment](\#2124-operating-environment)
+            [2.1.2.4] [Operating Environment](\#2124-operating-environment)
 
-            [2.1.2.5] [User Documentation](\#2125-user-documentation)
+            [2.1.2.5] [User Documentation](\#2125-user-documentation)
 
-        [2.1.3] [External Interface
+        [2.1.3] [External Interface
 Requirements](\#213-external-interface-requirements)
 
-            [2.1.3.1] [Database](\#2131-database)
+            [2.1.3.1] [Database](\#2131-database)
 
-            [2.1.3.2] [Mobile Application](\#2132-mobile-application)
+            [2.1.3.2] [Mobile Application](\#2132-mobile-application)
 
-            [2.1.3.3] [Online Web Interface](\#2133-online-web-interface)
+            [2.1.3.3] [Online Web Interface](\#2133-online-web-interface)
 
-            [2.1.3.4] [Additional Hardware](\#2134-additional-hardware)
+            [2.1.3.4] [Additional Hardware](\#2134-additional-hardware)
 
-        [2.1.4] [Other Non-Functional
+        [2.1.4] [Other Non-Functional
 Requirements](\#214-other-non-functional-requirements)
 
-            [2.1.4.1] [Safety Requirements](\#2141-safety-requirements)
+            [2.1.4.1] [Safety Requirements](\#2141-safety-requirements)
 
-            [2.1.4.2] [Security Requirements](\#2142-security-requirements)
+            [2.1.4.2] [Security Requirements](\#2142-security-requirements)
 
 [3.] [Hardware Build Instructions](\#3-hardware-build-instructions)
 
-    [3.1] [Build Introduction](\#31-build-introduction)
+    [3.1] [Build Introduction](\#31-build-introduction)
 
-    [3.2] [Basic System Overview](\#32-basic-system-overview)
+    [3.2] [Basic System Overview](\#32-basic-system-overview)
 
-    [3.3] [Budget and Materials](\#33-budget-and-materials)
+    [3.3] [Budget and Materials](\#33-budget-and-materials)
 
-    [3.4] [Time Commitment](\#34-time-commitment)
+    [3.4] [Time Commitment](\#34-time-commitment)
 
-    [3.5] [Development Platform Setup](\#35-development-platform-setup)
+    [3.5] [Development Platform Setup](\#35-development-platform-setup)
 
-    [3.6] [PCB Soldering/Testing](\#36-pcb-solderingtesting)
+    [3.6] [PCB Soldering/Testing](\#36-pcb-solderingtesting)
 
-    [3.7] [Unit Testing Sensors](\#37-unit-testing-sensors)
+    [3.7] [Unit Testing Sensors](\#37-unit-testing-sensors)
 
-    [3.8] [Connecting the Circuit](\#38-connecting-the-circuit)
+    [3.8] [Connecting the Circuit](\#38-connecting-the-circuit)
 
-    [3.9] [Box Creation and Final
+    [3.9] [Box Creation and Final
 Assembly](\#39-box-creation-and-final-assembly)
 
-    [3.10] [Build Conclusion](\#310-build-conclusion)
+    [3.10] [Build Conclusion](\#310-build-conclusion)
 
 [4.] [Software Implementation Instructions]
 
 [5.] [Mobile Application Design
 Document](\#5-mobile-application-design-document)
 
-    [5.1] [Introduction](\#51-introduction)
+    [5.1] [Introduction](\#51-introduction)
 
-        [5.1.1] [Purpose](\#511-purpose)
+        [5.1.1] [Purpose](\#511-purpose)
 
-        [5.1.2] [Scope](\#512-scope)
+        [5.1.2] [Scope](\#512-scope)
 
-        [5.1.3] [Intended Audience](\#513-intended-audience)
+        [5.1.3] [Intended Audience](\#513-intended-audience)
 
-    [5.2] [Design Overview](\#52-design-overview)
+    [5.2] [Design Overview](\#52-design-overview)
 
-        [5.2.1] [The Problem](\#521-the-problem)
+        [5.2.1] [The Problem](\#521-the-problem)
 
-        [5.2.2] [Technology Used](\#522-technology-used)
+        [5.2.2] [Technology Used](\#522-technology-used)
 
-        [5.2.3] [Requirements Analysis](\#523-requirements-analysis)
+        [5.2.3] [Requirements Analysis](\#523-requirements-analysis)
 
-        [5.2.4] [User Login](\#524-user-login)
+        [5.2.4] [User Login](\#524-user-login)
 
-        [5.2.5] [Database Access](\#525-database-access)
+        [5.2.5] [Database Access](\#525-database-access)
 
-        [5.2.6] [Data Manipulation](\#526-data-manipulation)
+        [5.2.6] [Data Manipulation](\#526-data-manipulation)
 
-    [5.3] [Design Mock-ups]
+    [5.3] [Design Mock-ups]
 
-        [5.3.1] [Initial Login]
+        [5.3.1] [Initial Login]
 
-        [5.3.2] [Initial Login (Bad Credentials)]
+        [5.3.2] [Initial Login (Bad Credentials)]
 
-        [5.3.3] [Initial Login (No Connection)]
+        [5.3.3] [Initial Login (No Connection)]
 
-        [5.3.4] [Home Screen]
+        [5.3.4] [Home Screen]
 
-        [5.3.5] [Database Screen]
+        [5.3.5] [Database Screen]
 
-        [5.3.6] [Settings Screen]
+        [5.3.6] [Settings Screen]
 
-    [5.4] [Work Breakdown](\#54-work-breakdown)
+    [5.4] [Work Breakdown](\#54-work-breakdown)
 
 [6.] [Schedule/Progress Reports](\#4-scheduleprogress-reports)
 
-    [6.1] [Schedule](\#41-schedule)
+    [6.1] [Schedule](\#41-schedule)
 
-    [6.2] [Progress Reports](\#42-progress-reports)
+    [6.2] [Progress Reports](\#42-progress-reports)
 
-        [6.2.1] [Progress Report 3/02/2017](\#621-progress-report-3022017)
+        [6.2.1] [Progress Report 3/02/2017](\#621-progress-report-3022017)
 
-        [6.2.2] [Progress Report 16/02/2017](\#622-progress-report-16022017)
+        [6.2.2] [Progress Report 16/02/2017](\#622-progress-report-16022017)
 
-        [6.2.3] [Progress Report 10/03/2017](\#623-progress-report-10032017)
+        [6.2.3] [Progress Report 10/03/2017](\#623-progress-report-10032017)
 
-        [6.2.4] [Progress Report 24/03/2017](\#624-progress-report-24032017)
+        [6.2.4] [Progress Report 24/03/2017](\#624-progress-report-24032017)
 
 [7.] [Conclusion](\#5-conclusion)
 
 [8.] [Bibliography](\#6-bibliography)
 
- 
+ 
 
 \pagebreak
 
 Illustrations/Diagrams
 ======================
 
- 
+ 
 
 \pagebreak
 
@@ -452,7 +465,7 @@ Following AGPLv3, all of our source code will be made available online for
 public viewing. This is due to the Android application using GraphView and our
 firmware using Adafruit Python libraries.
 
- 
+ 
 
 \pagebreak
 
@@ -470,14 +483,14 @@ This product is to be used in tandem with a solar power generation system. It is
 meant to enhance solar panel ownership by providing an intuitive way of
 gathering and examining data for both home owners and researchers.
 
- 
+ 
 
 ### [2.1.1.2] Intended Audience
 
 This document is intended for industry professionals and educational
 institutions for research and evaluation.
 
- 
+ 
 
 ### [2.1.1.3] Product Scope
 
@@ -488,7 +501,7 @@ barometric pressure, and light level around the hardware. Because the power
 generation of the solar cell is also tracked, it can be correlated with the
 weather data and used to further our research into solar energy.
 
- 
+ 
 
 ### [2.1.2] Overall Description
 
@@ -497,7 +510,7 @@ weather data and used to further our research into solar energy.
 This product is aimed to be a new way to gather and display data from any
 existing solar power generation system.
 
- 
+ 
 
 ### [2.1.2.2] Product Functions
 
@@ -509,7 +522,7 @@ raw data into readable values. These values are then uploaded to a remote
 database for future access. This database can be read using either the Android
 application or the online web interface.
 
- 
+ 
 
 ### [2.1.2.3] User Classes and Characteristics
 
@@ -518,7 +531,7 @@ generation system. The software interface is geared towards being simple and
 accessible for casual smartphone users. A secondary user base can include
 researchers looking to further work in solar panel technology.
 
- 
+ 
 
 ### [2.1.2.4] Operating Environment
 
@@ -527,7 +540,7 @@ smartphone or tablet device. The software running on the development platform is
 designed to work with a Linux-based operating system. Finally, the database uses
 MySQL and is accessed with PHP scripts.
 
- 
+ 
 
 ### [2.1.2.5] User Documentation
 
@@ -535,7 +548,7 @@ Users will have access to hardware build instructions that provide a
 step-by-step guide for putting the product together. Instructions for the Linux
 software configuration are included as part of the build instructions.
 
- 
+ 
 
 ### [2.1.3] External Interface Requirements
 
@@ -551,7 +564,7 @@ be populated by data downloaded from the hardware.
 
 (Developed by Richard Burak)
 
- 
+ 
 
 ### [2.1.3.2] Mobile Application
 
@@ -568,7 +581,7 @@ Fahrenheit.
 
 (Developed by Salvatore Angilletta)
 
- 
+ 
 
 ### [2.1.3.3] Online Web Interface
 
@@ -581,18 +594,18 @@ Fahrenheit.
 
 (Developed by Steven Spiteri)
 
- 
+ 
 
 ### [2.1.3.4] Additional Hardware
 
 A new top for the product casing will be laser cut to allow mounting of the
 solar cell and allow routing for the solar cell connection.
 
- 
+ 
 
 (Developed by Steven Spiteri, Richard Burak, and Salvatore Angilletta)
 
- 
+ 
 
 ### [2.1.4] Other Non-Functional Requirements
 
@@ -610,7 +623,7 @@ solar cell and allow routing for the solar cell connection.
 
 -   Do not use this product for anything outside it’s intended purpose.
 
- 
+ 
 
 ### [2.1.4.2] Security Requirements
 
@@ -618,7 +631,7 @@ solar cell and allow routing for the solar cell connection.
 
 -   Keep software up-to-date to ensure proper operation.
 
- 
+ 
 
 \pagebreak
 
@@ -634,7 +647,7 @@ following these instructions. Before continuing with this section, be sure to
 remember all proper safety procedures when interacting with computer hardware
 and electrical components.
 
- 
+ 
 
 [3.2] Basic System Overview
 ---------------------------
@@ -645,7 +658,7 @@ processed and converted to values that are readable and relevant. Once these
 number values are obtained, they will be displayed on demand, or whenever a user
 requests it.
 
- 
+ 
 
 [3.3] Budget and Materials
 --------------------------
@@ -664,11 +677,11 @@ requests it.
 | 2x20 GPIO Header          | \$9.99         | [Adafruit](https://www.amazon.ca/GPIO-Stacking-Header-Pi-Extra-long/dp/B00TW0W9HQ/ref=sr_1_2?ie=UTF8&qid=1480734825&sr=8-2&keywords=gpio+header)                         |
 | Humber PCB Components Kit | \~\$40.00      | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
 | Custom PCB                | **TBD**        | [Humber College - Prototype Lab](http://humber.zone/)                                                                                                                    |
-| Laser-cut Acrylic Box     | \~\$30.00**​**  | [Humber College - Prototype Lab or Hot Pop Factory](http://www.hotpopfactory.com/http://humber.zone/)                                                                    |
+| Laser-cut Acrylic Box     | \~\$30.00      | [Humber College - Prototype Lab or Hot Pop Factory](http://www.hotpopfactory.com/http://humber.zone/)                                                                    |
 | Digital Multimeter        | \$14.59        | [RobotShop](http://www.robotshop.com/ca/en/m-1000e-compact-digital-multimeter.html)                                                                                      |
 | M2.5 Screws/Standoffs     | \$11.99 (Bulk) | [HVAZI](https://www.amazon.com/HVAZI-Standoff-Stainless-Assortment-Male-Female/dp/B01L06CUJG/ref=sr_1_5?s=industrial&ie=UTF8&qid=1480722221&sr=1-5&keywords=m2.5+screws) |
 
- 
+ 
 
 [3.4] Time Commitment
 ---------------------
@@ -687,7 +700,7 @@ requests it.
 | Box Assembly               | 1 hour (24 hours to dry)    |
 | Mount project in box       | 5 minutes                   |
 
- 
+ 
 
 [3.5] Development Platform Setup
 --------------------------------
@@ -803,7 +816,7 @@ except KeyboardInterrupt:
 With the development platform now configured, we can move on to the hardware
 part of this project.
 
- 
+ 
 
 [3.6] PCB Soldering/Testing
 ---------------------------
@@ -852,7 +865,7 @@ of the circuit. Measure both resistance and voltage, to make sure the values are
 correct. If any problems are detected, resoldering may be required. If the
 boards pass all the tests, then you are ready to move on.
 
- 
+ 
 
 [3.7] Unit Testing Sensors
 --------------------------
@@ -885,7 +898,7 @@ If the DHT is functioning, then readings will appear on screen, otherwise the
 program will fail to run. If all of the sensors are functioning, you are ready
 to connect the circuit.
 
- 
+ 
 
 [3.8] Connecting the Circuit
 ----------------------------
@@ -930,7 +943,7 @@ see the LED on the Sensor Hat light up green when everything is working fine. If
 it lights up red, that means a sensor is not connected properly. With a
 functioning piece of hardware, it is time to make a nice box to put it in.
 
- 
+ 
 
 [3.9] Box Creation and Final Assembly
 -------------------------------------
@@ -959,7 +972,7 @@ the box to make sure it generates optimal power. Now just put the top on (do not
 glue) and the build is complete. If the circuit is too tall, you may carefully
 bend the DHT-11 and AIN2 pin on the YL-40 to accomodate.
 
- 
+ 
 
 [3.10] Build Conclusion
 -----------------------
@@ -979,20 +992,20 @@ all of the parts are used. Finally, with the smaller scale of the project, the
 box can be made smaller. Again, smaller means less acrylic is used, and the cost
 is reduced.
 
- 
+ 
 
 \pagebreak
 
- 
+ 
 
 [4.] Software Implementation Instruction
 ========================================
 
- 
+ 
 
 \pagebreak
 
- 
+ 
 
 [5.] Mobile Application Design Document
 =======================================
@@ -1006,7 +1019,7 @@ This document describes the features of the mobile application. The members used
 the information in this document as an outline for the development of the
 application.
 
- 
+ 
 
 ### [5.1.2] Scope
 
@@ -1014,14 +1027,14 @@ The main goal of this application is to monitor the status of a solar panel by
 taking information from a database. It will allow the user to view historical
 data
 
- 
+ 
 
 ### [5.1.3] Intended Audience
 
 This document is intended to be viewed by the group members, and any Humber
 College School of Applied Technology and Advanced Learning instructors.
 
- 
+ 
 
 [5.2] Design Overview
 ---------------------
@@ -1035,7 +1048,7 @@ questions. “Why is it generating so little power?”, for example. By allowing
 weather data to be viewed at the same time, a comparison can be made by the user
 to see how weather affects power generation.
 
- 
+ 
 
 ### [5.2.2] Technology Used
 
@@ -1048,7 +1061,7 @@ the application, and Microsoft Project was used to create the project schedule.
 Data from the solar panel is stored on a remote server. The application uses a
 network connection to communicate with the database and display the data.
 
- 
+ 
 
 ### [5.2.3] Requirements Analysis
 
@@ -1067,7 +1080,7 @@ dark mode.
 As a user, I should be able to change the temperature notation from Celsius to
 Fahrenheit and vice versa.
 
- 
+ 
 
 ### [5.2.4] User Login
 
@@ -1076,14 +1089,14 @@ launches, a login screen will appear. The user must have a network connection to
 make the initial connection required to login. Once the login succeeds, the main
 activity will launch.
 
- 
+ 
 
 ### [5.2.5] Database Access
 
 With the main activity launched, live data will begin displaying on the initial
 screen.
 
- 
+ 
 
 ### [5.2.6] Data Manipulation
 
@@ -1092,7 +1105,16 @@ they might want to see power generation for a certain range of months or days.
 These options are provided by using the business logic that the members have
 created.
 
- 
+ 
+
+[5.3] Design Mock-Ups
+---------------------
+
+### [5.3.1] Initial Login
+
+The user is required to enter login information.
+
+![](images/design1.png)
 
 [5.4] Work Breakdown
 --------------------
@@ -1126,11 +1148,11 @@ Coding has been performed by all team members. All other responsibilities of the
 project were performed by all team members to allow everyone to gain the
 experience building an Android application provides.
 
- 
+ 
 
 \pagebreak
 
- 
+ 
 
 [6.] Schedule/Progress Reports
 ==============================
@@ -1187,7 +1209,7 @@ Phase 1
 -   Week 15 - Final Script, Final Film, Phase 1 Milestone  
     Tue. 12/13/16 - Mon. 12/19/16
 
- 
+ 
 
 Phase 2
 
@@ -1236,7 +1258,7 @@ Phase 2
 -   Week 15 - Group Video Script  
     Mon. 4/24/17 - Fri. 4/28/17
 
- 
+ 
 
 [6.2] Progress Reports
 ----------------------
@@ -1247,7 +1269,7 @@ To: Kristian Medri
 
 From: Richard Burak
 
- 
+ 
 
 This status report will give you an idea of what our group has done for our
 project so far, what we plan to do in the near future, and any problems we have
@@ -1294,7 +1316,7 @@ schedule throughout the semester. We do not expect to encounter many problems
 during our development, so I am confident we can continue to meet your
 expectations with our project.
 
- 
+ 
 
 ### [6.2.2] Progress Report 16/02/2017
 
@@ -1302,7 +1324,7 @@ To: Kristian Medri
 
 From: Salvatore Angilletta
 
- 
+ 
 
 Over the past two weeks, Richard, Steven and I went to the new prototype lab in
 J233 to cut and glue an acrylic holder for our solar cell. We modified the
@@ -1339,7 +1361,7 @@ real data to the database, there were some issues with displaying the power of
 the solar cell. This problem was solved by letting the y axis be a set minimum
 of zero.
 
- 
+ 
 
 ### [6.2.3] Progress Report 10/03/2017
 
@@ -1347,7 +1369,7 @@ To: Kristian Medri
 
 From: Richard Burak
 
- 
+ 
 
 Since the last status update, we made sure to continue working on the project at
 a steady pace. Mid-term exams during this time required all three of us to focus
@@ -1391,7 +1413,7 @@ in a functional state, all three of us are working on the online web interface
 while updating our technical report weekly. No problems were encountered, and I
 hope we can continue at a steady pace for the remainder of the semester.
 
- 
+ 
 
 ### [6.2.4] Progress Report 24/03/2017
 
@@ -1399,7 +1421,7 @@ To: Kristian Medri
 
 From: Salvatore Angilletta
 
- 
+ 
 
 Over the past two weeks we have been integrating the database with the mobile
 application further by pushing and testing enough data to populate the graphs
@@ -1426,7 +1448,7 @@ Richard was sure to keep an eye on the project and take safety measures.
 Financially there has been no adjustments to the budget. This is because all of
 our progress has been primarily made through software and no additional hardware
 has been added. Also, we have tried contacting George again with asking for the
-student's email address as recommended. 
+student's email address as recommended. 
 
 We feel like we are on track and in the near future there will be more
 integration between hardware and software. More testing of hardware and more
@@ -1448,7 +1470,7 @@ the end user. The online web interface provides the same functionality with a
 more interactive approach. With the simplicity provided by these features, this
 product is able to meet the goal we initially had.
 
- 
+ 
 
 It is recommended to engineer a different circuit for the supplemental board, as
 the YL-40 maximum input voltage is 8 volts, if you intended to use a solar cell
@@ -1461,7 +1483,7 @@ into a single board without redundant space and function. As a result, the will
 also affect the size of the case containing the hardware internals thus making
 it smaller and more affordable.
 
- 
+ 
 
 \pagebreak
 
