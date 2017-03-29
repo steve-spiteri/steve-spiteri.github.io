@@ -5,9 +5,11 @@ bibliography: SpringCitations.bib
 
 \linespread{2}
 
-\selectfont
-
 \setmainfont{Arial}
+
+\fontsize{12}{14.4}
+
+\selectfont
 
 **Solar Panel Project**
 =======================
@@ -336,8 +338,8 @@ Abstract
 
 \quad [5.2] Design Document
 
-\quad \quad [5.2.1] Introduction  
-  
+\quad \quad [5.2.1] Introduction
+
 \quad \quad \quad [5.2.1.1] Purpose
 
 \quad \quad \quad [5.2.1.2] Scope
@@ -372,17 +374,21 @@ Abstract
 
 \quad \quad [6.2.3] Progress Report 8/11/2016
 
-\quad \quad [6.2.4] Progress Report 15/11/2016
+\quad \quad [6.2.4] Progress Report 11/11/2016
 
-\quad \quad [6.2.5] Progress Report 22/11/2016
+\quad \quad [6.2.5] Progress Report 15/11/2016
 
-\quad \quad [6.2.6] Progress Report 3/2/2017
+\quad \quad [6.2.6] Progress Report 22/11/2016
 
-\quad \quad [6.2.7] Progress Report 16/2/2017
+\quad \quad [6.2.7] Progress Report 12/12/2016
 
-\quad \quad [6.2.8] Progress Report 10/3/2017
+\quad \quad [6.2.8] Progress Report 3/2/2017
 
-\quad \quad [6.2.4] Progress Report 24/3/2017
+\quad \quad [6.2.9] Progress Report 16/2/2017
+
+\quad \quad [6.2.10] Progress Report 10/3/2017
+
+\quad \quad [6.2.11] Progress Report 24/3/2017
 
 [7.] Conclusion
 
@@ -974,97 +980,155 @@ Studio, open the file called “PageFragment.java”. The URLs are defined on li
 [4.2] Database and Web Setup
 ----------------------------
 
-How to install the Android application:  
-  
+How to install the Android application:
+
 Step 1:  
 Install Android Studio onto a compatible computer. Android Studio or an
 equivalent IDE is required as it is the way that you will import the mobile
 application to put onto your Android mobile device. It is recommended that
 Android Studio is used over others because it has been tested and proven to be
-able to import the project.  
-  
+able to import the project.
+
 Step 2:  
 Download the Android application from the GitHub site. Go to this url,
 <https://github.com/steve-spiteri/Brave8.SPrINg>, and click the “Clone or
 download” button. After the little drop down menu appears click on “Download
 ZIP”. This will download the project from the GitHub site to the download folder
-of the computer.  
-  
+of the computer.
+
 Step 3:  
 Open up Android Studio and click on “Open an existing Android Studio project”.
 Navigate to the download folder, click on the folder that was download from the
-GitHub site and click the “OK” button.  
-  
+GitHub site and click the “OK” button.
+
 Step 4:  
 Connect your Android mobile device to the computer via USB type A cable to your
 computer. In Android Studio click “Run”, it will look like a little green play
-button in the top row of buttons.  
-  
+button in the top row of buttons.
+
 Step 5:  
 Select the mobile device that was connected to the computer or choose a virtual
 device if you have one. Wait for it to finish building the project and you
-should see the application running on your mobile device.  
-  
-How to import GraphView library:  
-  
+should see the application running on your mobile device.
+
+How to import GraphView library:
+
 These are the steps required to import the GraphView library. The application
 should already have this library installed since the steps to importing the
 application has the user downloading and opening the project rather than the
 application its self. These steps are included in case there is ever a problem
 with it after opening the project. Uses these steps as a troubleshooting
-assistant.  
-  
+assistant.
+
 Step 1:  
 Download “GraphView-4.2.1.jar” file from
-<http://www.android-graphview.org/download-getting-started/>  
-  
+<http://www.android-graphview.org/download-getting-started/>
+
 Step 2:  
 Navigate to the libs folder in the application’s folder. This can be done by
 right clicking on the application in Android Studio and clicking on “Reveal in
 Explorer” for Windows or “Reveal in Finder” on a Macintosh. Click on the “libs”
-folder and open it up.  
-  
+folder and open it up.
+
 Step 3:  
 Copy the “GraphView-4.2.1.jar” file to the libs folder in the application’s
-folder.  
-  
+folder.
+
 Step 4:  
 Go to the Gradle Script of the application and add the following line to the
-dependency:  
-  
+dependency:
+
 compile files('libs/GraphView-4.2.1.jar')
 
  
 
 \pagebreak
 
-[5.] Mobile Application Design Document
-=======================================
+[5.] Mobile Application Documents
+=================================
 
-[5.1] Introduction
-------------------
+[5.1] Approved Software Proposal
+--------------------------------
 
-### [5.1.1] Purpose
+To: Haki Sharifi
+
+From: Steven Spiteri, Richard Burak, and Salvatore Angilletta
+
+ 
+
+This proposal requests the approval to develop software that connects to a
+database and a hardware device over the internet. The hardware device monitors
+the status of a solar panel and stores the data collected in the database for
+analysis. The purpose of the application is to provide a means of accessing the
+solar panel information and database remotely.
+
+With the popularity of renewable energy, many homeowners and businesses are
+installing solar panels. With a private solar panel comes the responsibility of
+managing it, but this can be difficult if one cannot easily access the data
+required. Being able to monitor power production, as well as weather data is an
+important factor for solar energy management and research. Not only is it
+important for the owner of the panel, but also for researchers looking to
+advance the technology and collect data. An intuitive and reliable interface is
+required to catalog and examine this data at a moment's notice.
+
+This project solves this problem by giving homeowners and researchers the
+ability to track this data from anywhere. With the proposed companion mobile
+application, the ability to easily monitor system status, track power
+production, view historical production data and view weather data is gained. It
+will provide an intuitive and reliable interface required to make remotely
+managing a solar panel simple.
+
+The application includes a graphical user interface that will show the live
+status of the solar panel on the initial screen. There will be tabs included to
+access app settings, and the historical database (which can be saved for offline
+access on the device). When the application is initially launched, it will
+require the user to connect to the network that the solar panel is on and will
+give the option to save the information. The UI is intended to be simple and
+intuitive, allowing users to quickly get used to working with the application.
+
+The members include Salvatore Angilletta, Richard Burak, and Steven Spiteri.
+Salvatore will act as project manager. He will develop the project plan with the
+team and manage the team’s performance of tasks. He will ensure the Project Team
+completes the project on time and within scope by leading status meetings.
+Richard and Steven will act as the Project Team. They will be responsible for
+executing the tasks and producing the deliverables outlined in the project plan.
+They will ensure effective communication between each other so that development
+is efficient. Currently, Steven will focus on building the intuitive UI while
+Richard will focus on building the database. Other parts of the project will be
+performed by all team members to allow everyone to gain the experience building
+an Android application provides.
+
+We look forward to hearing what you think of our proposal, as we truly believe
+it can be used to solve a real problem and are prepared to work hard to ensure
+it meets the requirements of the course.
+
+ 
+
+[5.2] Design Document
+---------------------
+
+### [5.2.1] Introduction
+
+### [5.2.1.1] Purpose
 
 This document describes the features of the mobile application. The members used
 the information in this document as an outline for the development of the
 application.
 
-### [5.1.2] Scope
+### [5.2.1.2] Scope
 
 The main goal of this application is to monitor the status of a solar panel by
 taking information from a database. It will allow the user to view historical
 data
 
-### [5.1.3] Intended Audience
+### [5.2.1.3] Intended Audience
 
 This document is intended to be viewed by the group members, and any Humber
 College School of Applied Technology and Advanced Learning instructors.
 
-[5.2] Design Overview
----------------------
+### [5.2.2] Design Overview
 
-### [5.2.1] The Problem
+### [5.2.2.1] The Problem
 
 Outlined in the project proposal is the problem this application aims to solve.
 Accessing solar panel data can be difficult. Many homeowners may not be aware of
@@ -1073,7 +1137,7 @@ questions. “Why is it generating so little power?”, for example. By allowing
 weather data to be viewed at the same time, a comparison can be made by the user
 to see how weather affects power generation.
 
-### [5.2.2] Technology Used
+### [5.2.2.2] Technology Used
 
 The application was developed to run on the Android platform. Android Studio is
 being used as the development environment, and the application has been tested
@@ -1084,7 +1148,7 @@ the application, and Microsoft Project was used to create the project schedule.
 Data from the solar panel is stored on a remote server. The application uses a
 network connection to communicate with the database and display the data.
 
-### [5.2.3] Requirements Analysis
+### [5.2.2.3] Requirements Analysis
 
 As a user, I should be able to login with my credentials and be shown data
 associated with my solar panel.
@@ -1101,19 +1165,19 @@ dark mode.
 As a user, I should be able to change the temperature notation from Celsius to
 Fahrenheit and vice versa.
 
-### [5.2.4] User Login
+### [5.2.2.4] User Login
 
 The user must be registered to access the database. When the application
 launches, a login screen will appear. The user must have a network connection to
 make the initial connection required to login. Once the login succeeds, the main
 activity will launch.
 
-### [5.2.5] Database Access
+### [5.2.2.5] Database Access
 
 With the main activity launched, live data will begin displaying on the initial
 screen.
 
-### [5.2.6] Data Manipulation
+### [5.2.2.6] Data Manipulation
 
 The application must allow the user to view the data how they want. For example,
 they might want to see power generation for a certain range of months or days.
@@ -1313,8 +1377,8 @@ I am writing upon your request to update you on our progress of our hardware
 project, the Interactive Solar Panel Display. After getting our project approved
 I have completed two deliverables (Project Schedule and Project Budget). I have
 also achieved the parts acquired milestone and initial construction of the
-project has begun.  
-  
+project has begun.
+
 A circuit has been made for our project and has been assembled. Initial testing
 of the solar panel has been done as well, it achieved a result of three volts
 under regular lighting conditions in the Humber Labs. A resistor has been added
@@ -1322,8 +1386,8 @@ to the circuit between the Raspberry Pi and the solar panel in case our solar
 panel reaches a voltage higher than three volts. This was added to prevent the
 Raspberry Pi from getting damaged as it cannot accept any voltage higher than
 3.3 volts on the GPIO pins. All other testing needed (sensors and raspberry
-class) will be done in class on October. 11, 2016.  
-  
+class) will be done in class on October. 11, 2016.
+
 Financial status of our project has been effected by the drop of the motion
 sensor. This effects the budget by subtracting \$14.81 from the total price.
 There is still an item not purchased, it is not mentioned on the budget either.
@@ -1333,8 +1397,8 @@ project box and finishing touches. A total of \$157.37 has been spent so far, we
 managed to save \$35.08 in shipping since we bought all components from one
 place. I also found a pair of wire cutters at home which saved me \$20. I am
 under budget by approximately \$150 at the current moment. That concludes the
-current progress status of our project.  
-  
+current progress status of our project.
+
 The next tasks to be completed soon include soldering the modular sensor hat,
 program the code needed to get information from the sensors/solar panel and
 create/make a connection to a database.
@@ -1384,7 +1448,34 @@ code for the reading.
 
  
 
-### [6.2.4] Progress Report 15/11/2016
+### [6.2.4] Progress Report 11/11/2016
+
+To: Haki Sharifi
+
+From: Steven Spiteri
+
+Work is progressing nicely. Other than very minor stylistic changes the layout
+and design is complete. Richard was responsible for interfacing with the
+database. He has shown me how it will be done and has implemented into a sample
+into the application. Full database integration is not fully implemented but
+once it is the application will be nearly complete. Salvatore added landscape
+functionality and will be implementing the settings for the application theme
+and temperature notation. All the components are in place and it is only a
+matter of applying the finish to the application to make it cohesively function.
+
+Other team members have delivered on their expected tasks as outline in the work
+distribution document submitted in the first deliverable. As outlined in the
+document Salvatore acted as project manager. He did a great job managing the
+team’s performance of tasks. He also adapted the application to landscape and
+will be implementing the settings for changing the application theme and
+temperature notation. Richard’s main focus was database implementation. It was
+large difficult task and he succeeded. The distribution of work was fair and
+everyone completed their task’s. We had no trouble meeting outside of class
+hours and working with Salvatore and Richard was great.
+
+ 
+
+### [6.2.5] Progress Report 15/11/2016
 
 To: Kristian Medri
 
@@ -1428,7 +1519,7 @@ stand-offs, shrink tubing, etc.
 
  
 
-### [6.2.5] Progress Report 22/11/2016
+### [6.2.6] Progress Report 22/11/2016
 
 To: Kristian Medri
 
@@ -1456,6 +1547,37 @@ malfunctioning, while it will remain green if everything is working as expected.
 I hope this status report provides sufficient evidence of my progress and work.
 Week 12 has no other deliverables due, and I am close to finalizing my project
 for this semester.
+
+ 
+
+### [6.2.7] Progress Report 12/12/2016
+
+To: Haki Sharifi
+
+From: Richard Burak
+
+Overall, I was completely responsible for the database portion of the
+application, and will continues to work on that as we finalize the project.
+Volley was used before, but I ported to Asynctask and Httphandler after learning
+how to do so in class. While I worked on a way of caching data, Steven took over
+the login coding, but I was there with him to help figure out the logic of the
+program. I also helped in finalizing the graphs, and made sure its axis’ were
+properly scaling.
+
+Salvatore continued to be responsible for managing the project, but he also took
+on the UI design for the application. He was responsible for designing the
+layouts for different orientations as well as different screens/devices. This
+means the app properly supports portrait and landscape, while also being aware
+when it is run on a tablet. To add to this, Salvatore also implemented the
+Settings tab in the menu bar (moving it from the main tabs). He figured out how
+to change the temperature reading and logout.
+
+Steven was in charge of much of the program’s business logic. Steven imported a
+custom library called GraphView to display our data in a clear way. The graph
+portion of the program was very important, and had little documentation. He
+helped Salvatore with the menu bar creation and moving the settings tab. As
+stated above, much of the login screen was finished by Steven. Finally, I helped
+Steven write the Junit testing for some of our methods.
 
  
 
