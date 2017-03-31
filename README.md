@@ -159,7 +159,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | PCB fabrication.                                                                          | 9              | Progress Report due (Mechanical Assembly milestone).                                                                                                                     |
 | Interface wiring, Placard design, Status Meeting.                                         | 9              | PCB Due (power up milestone).                                                                                                                                            |
 | Preparing for demonstration.                                                              | 9              | Placard due.                                                                                                                                                             |
-| Writing progress report and demonstrating project.                                        | 9              | Progress Report due (Demonstrations at Open House Saturday, November 7, 2015 from 10 a.m. - 2 p.m.).                                                                     |
+| Writing progress report and demonstrating project.                                        | 9              | Progress Report due. Demonstrations at Open House Saturday, November 12, 2016.                                                                                           |
 | Editing build video.                                                                      | 9              | Peer grading of demonstrations due.                                                                                                                                      |
 | Incorporation of feedback from demonstration and writing progress report. Status Meeting. | 9              | 30 second build video due.                                                                                                                                               |
 | Practice presentations                                                                    | 9              | Progress Report due.                                                                                                                                                     |
@@ -179,7 +179,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Testing.                                                                                  | 9              | Progress Report                                                                                                                                                          |
 | Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                                           |
 | Prepare for demonstration.                                                                | 9              | Progress Report                                                                                                                                                          |
-| Complete presentation.                                                                    | 9              | Demonstration at Open House Saturday, April 9, 2016 10 a.m. to 2 p.m.                                                                                                    |
+| Complete presentation.                                                                    | 9              | Demonstration at Open House Saturday, April 8, 2017.                                                                                                                     |
 | Complete final report. 1st round of Presentations.                                        | 9              | Presentation PowerPoint file due.                                                                                                                                        |
 | Write video script. 2nd round of Presentations, delivery of project.                      | 9              | Final written report including final budget and record of expenditures, covering both this semester and the previous semester.                                           |
 | Project videos.                                                                           | 9              | Video script due                                                                                                                                                         |
@@ -247,6 +247,29 @@ solar power generation system.
 
 \pagebreak
 
+Illustrations/Diagrams
+======================
+
+Figure 1: Modular Sensor Hat Board
+
+Figure 2: Modular Sensor Hat Schematic
+
+Figure 3: Supplementary Board
+
+Figure 4: User Login
+
+Figure 5: Incorrect Login
+
+Figure 6: No network connection
+
+Figure 7: Live data on home screen
+
+Figure 8: Database view
+
+Figure 9: Settings for the app
+
+\pagebreak
+
 Table of Contents
 =================
 
@@ -261,6 +284,8 @@ Approved Proposal
 \quad Concluding Remarks
 
 Abstract
+
+Illustrations/Diagrams
 
 [1.] Introduction
 
@@ -359,6 +384,20 @@ Abstract
 \quad \quad \quad [5.2.2.5] Database Access
 
 \quad \quad \quad [5.2.2.6] Data Manipulation
+
+\quad \quad [5.2.3] Design Mock-ups
+
+\quad \quad \quad [5.2.3.1] Initial Login
+
+\quad \quad \quad [5.2.3.2] Initial Login (Bad Credentials)
+
+\quad \quad \quad [5.2.3.3] Initial Login (No Connection)
+
+\quad \quad \quad [5.2.3.4] Home Screen
+
+\quad \quad \quad [5.2.3.6] Database Screen
+
+\quad \quad \quad [5.2.3.7] Settings Screen
 
 \quad [5.3] Work Breakdown
 
@@ -792,6 +831,16 @@ of the circuit. Measure both resistance and voltage, to make sure the values are
 correct. If any problems are detected, resoldering may be required. If the
 boards pass all the tests, then you are ready to move on.
 
+\pagebreak
+
+![Modular Sensor Hat Board](images/Zsensorhatboard.png)
+
+![Modular Sensor Hat Schematic](images/Zsenorhatschematic.png)
+
+![Supplementary Board](images/Zcustom_board.png)
+
+\pagebreak
+
 [3.7] Unit Testing Sensors
 --------------------------
 
@@ -1192,6 +1241,76 @@ The application must allow the user to view the data how they want. For example,
 they might want to see power generation for a certain range of months or days.
 These options are provided by using the business logic that the members have
 created.
+
+ 
+
+### [5.2.3] Design Mock-ups
+
+\pagebreak
+
+### [5.2.3.1] Initial Login
+
+The user is required to enter login information.
+
+![User Login](images/design1.png)
+
+ 
+
+\pagebreak
+
+### [5.2.3.2] Initial Login (Bad Credentials)
+
+The user will be prompted again if login information cannot be verified.
+
+![Incorrect Login](images/design2.png)
+
+ 
+
+\pagebreak
+
+### [5.2.3.3] Initial Login (No Connection)
+
+If there is no connection to the network, the user will be notified. (Not yet
+implemented)
+
+![No network connection](images/design3.png)
+
+ 
+
+\pagebreak
+
+### [5.2.3.4] Home Screen
+
+Live data is displayed on the home screen.
+
+![Live data on home screen](images/design4.png)
+
+ 
+
+\pagebreak
+
+### [5.2.3.5] Database Screen
+
+The data will be displayed here. The spinners will allow the user to manipulate
+the data.
+
+![Database view](images/design5.png)
+
+ 
+
+\pagebreak
+
+### [5.2.3.6] Settings Screen
+
+This screen will allow the user to change the application theme from light mode
+to dark theme and change the temperature notation to Celsius and Fahrenheit and
+vice versa.
+
+![Settings for the app](images/design6.png)
+
+ 
+
+\pagebreak
 
 [5.3] Work Breakdown
 --------------------
